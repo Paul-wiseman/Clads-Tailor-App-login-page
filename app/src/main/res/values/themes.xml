@@ -14,24 +14,6 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <!-- Loading TextView -->
-    <style name="loading">
-        <item name="android:textSize">@dimen/loading_text_size</item>
-        <item name="android:textColor">@color/loading_color</item>
-    </style>
 
 
-
-    <!-- Clads TextView -->
-    <style name="clads">
-        <item name="android:textSize">@dimen/clads_text_size</item>
-        <item name="android:textColor">@color/white</item>
-    </style>
-
-
-    <!-- lorem_ipsum TextView -->
-    <style name="lorem_ipsum">
-        <item name="android:textSize">@dimen/lorem_ipsum_textsize</item>
-        <item name="android:textColor">@color/white</item>
-    </style>
 </resources>
