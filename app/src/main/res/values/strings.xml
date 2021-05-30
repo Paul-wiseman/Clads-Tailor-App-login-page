@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Clads</string>
+
+    <!-- loading TextView -->
+    <string name="splash_screen_loading">Loading...</string>
+
+    <!-- Clads TextView -->
+    <string name="all_clads_app_logo">CLADS</string>
+
+
+    <!--  lorem_ipsum TextView -->
+    <string name="sign_up_login_tag_line"> Lorem ipsum. ipsum sum</string>
+    lorem_ipsum
+
 </resources>
