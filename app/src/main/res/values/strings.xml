@@ -15,5 +15,6 @@
     <string name ="sign_up_email_password">Password</string>
     <string name ="sign_up_email_confirm_password">Confirm Password</string>
     <string name="splash_screen_placeholder_text">Splash Screen</string>
+    <string name="fragment_signup_choices_button_text">Signup with Google</string>
 
 </resources>

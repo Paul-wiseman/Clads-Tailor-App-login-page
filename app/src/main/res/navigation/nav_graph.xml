@@ -26,10 +26,7 @@
         android:label="fragment_signup_choices"
         tools:layout="@layout/fragment_signup_choices" >
         <action
-            android:id="@+id/action_signupChoicesFragment_to_signupGoogleFragment2"
-            app:destination="@id/signup_google_fragment" />
-        <action
-            android:id="@+id/action_signupChoicesFragment_to_signupEmailFragment2"
+            android:id="@+id/action_signupChoicesFragment_to_signupEmailFragment"
             app:destination="@id/signup_email_fragment" />
     </fragment>
     <fragment
@@ -40,15 +37,6 @@
         <action
             android:id="@+id/action_signupEmailFragment_to_emailVerificationFragment"
             app:destination="@id/email_verification_fragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/signup_google_fragment"
-        android:name="com.decagonhq.clads.SignupGoogleFragment"
-        android:label="fragment_signup_google"
-        tools:layout="@layout/fragment_signup_google" >
-        <action
-            android:id="@+id/action_signupGoogleFragment_to_signupEmailFragment"
-            app:destination="@id/signup_email_fragment" />
     </fragment>
     <fragment
         android:id="@+id/login_fragment"

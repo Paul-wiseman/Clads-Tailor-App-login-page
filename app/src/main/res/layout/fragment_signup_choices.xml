@@ -5,10 +5,11 @@
     android:layout_height="match_parent"
     tools:context=".SignupChoicesFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/all_placeholder_text" />
+    <com.google.android.gms.common.internal.SignInButtonImpl
+        android:id="@+id/signup_choices_fragment_google_signup_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fragment_signup_choices_button_text"
+        android:layout_gravity="center"/>
 
 </FrameLayout>
