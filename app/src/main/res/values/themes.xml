@@ -19,5 +19,4 @@
             <item name="android:statusBarColor">@color/deep_sky_blue</item>
        </style>
 
-
 </resources>
