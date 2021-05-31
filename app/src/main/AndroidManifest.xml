@@ -9,28 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Clads">
-<<<<<<< HEAD
-        <activity android:name=".SplashScreenClass">
-=======
-        <activity android:name=".SplashScreenActivity">
->>>>>>> bfb4f590c65107e407f38fe5f2a2a1f67d48247d
+        <activity android:name=".CladsActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-<<<<<<< HEAD
-        <activity android:name=".CladsActivity">
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
-
-<!--                <category android:name="android.intent.category.DEFAULT" />-->
-<!--            </intent-filter>-->
-        </activity>
-=======
-        <activity android:name=".CladsActivity"></activity>
->>>>>>> bfb4f590c65107e407f38fe5f2a2a1f67d48247d
     </application>
 
 </manifest>
