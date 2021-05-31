@@ -3,15 +3,17 @@
 
     <!-- loading TextView -->
     <string name="splash_screen_loading">Loading...</string>
-
     <!-- Clads TextView -->
-    <string name="all_clads_app_logo">CLADS</string>
-
-
-    <!--  lorem_ipsum TextView -->
     <string name="sign_up_login_tag_line"> Lorem ipsum. ipsum sum</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    lorem_ipsum
+    <string name="all_placeholder_text">Hello blank fragment</string>
+    <string name ="sign_up_email_title">Create an account</string>
+    <string name ="sign_up_email_description">Lets get to know you</string>
+    <string name ="sign_up_email_first_name">First Name</string>
+    <string name ="sign_up_email_last_name">Last Name</string>
+    <string name ="sign_up_email_other_name">Other Name</string>
+    <string name ="sign_up_email_email_address">Email Address</string>
+    <string name ="sign_up_email_password">Password</string>
+    <string name ="sign_up_email_confirm_password">Confirm Password</string>
+    <string name="splash_screen_placeholder_text">Splash Screen</string>
 
 </resources>
