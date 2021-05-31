@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/signupLoginFragment">
+
+    <activity
+        android:id="@+id/cladsActivity"
+        android:name="com.decagonhq.clads.CladsActivity"
+        android:label="activity_clads"
+        tools:layout="@layout/activity_clads" />
+    <fragment
+        android:id="@+id/signupLoginFragment"
+        android:name="com.decagonhq.clads.SignupLoginFragment"
+        android:label="fragment_signup_login"
+        tools:layout="@layout/fragment_signup_login"
+        app:startDestination="@id/action_signupLoginFragment_to_signupChoicesFragment">
+        <action
+            android:id="@+id/action_signupLoginFragment_to_signupChoicesFragment"
+            app:destination="@id/signupChoicesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signupChoicesFragment"
+        android:name="com.decagonhq.clads.SignupChoicesFragment"
+        android:label="fragment_signup_choices"
+        tools:layout="@layout/fragment_signup_choices" >
+        <action
+            android:id="@+id/action_signupChoicesFragment_to_signupGoogleFragment2"
+            app:destination="@id/signupGoogleFragment" />
+        <action
+            android:id="@+id/action_signupChoicesFragment_to_signupEmailFragment2"
+            app:destination="@id/signupEmailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signupEmailFragment"
+        android:name="com.decagonhq.clads.SignupEmailFragment"
+        android:label="fragment_signup_email"
+        tools:layout="@layout/fragment_signup_email" >
+        <action
+            android:id="@+id/action_signupEmailFragment_to_emailVerificationFragment"
+            app:destination="@id/emailVerificationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signupGoogleFragment"
+        android:name="com.decagonhq.clads.SignupGoogleFragment"
+        android:label="fragment_signup_google"
+        tools:layout="@layout/fragment_signup_google" >
+        <action
+            android:id="@+id/action_signupGoogleFragment_to_signupEmailFragment"
+            app:destination="@id/signupEmailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.decagonhq.clads.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_forgotPasswordFragment"
+            app:destination="@id/forgotPasswordFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_placeholder"
+            app:destination="@id/placeholder" />
+    </fragment>
+    <fragment
+        android:id="@+id/emailVerificationFragment"
+        android:name="com.decagonhq.clads.EmailVerificationFragment"
+        android:label="fragment_email_verification"
+        tools:layout="@layout/fragment_email_verification" >
+        <action
+            android:id="@+id/action_emailVerificationFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/forgotPasswordFragment"
+        android:name="com.decagonhq.clads.ForgotPasswordFragment"
+        android:label="fragment_forgot_password"
+        tools:layout="@layout/fragment_forgot_password" >
+        <action
+            android:id="@+id/action_forgotPasswordFragment_to_resetPasswordVerification"
+            app:destination="@id/resetPasswordVerification" />
+    </fragment>
+    <fragment
+        android:id="@+id/resetPasswordVerification"
+        android:name="com.decagonhq.clads.ResetPasswordVerification"
+        android:label="fragment_reset_password_verification"
+        tools:layout="@layout/fragment_reset_password_verification" >
+        <action
+            android:id="@+id/action_resetPasswordVerification_to_resetPassword"
+            app:destination="@id/resetPassword" />
+    </fragment>
+    <fragment
+        android:id="@+id/resetPassword"
+        android:name="com.decagonhq.clads.ResetPassword"
+        android:label="fragment_reset_password"
+        tools:layout="@layout/fragment_reset_password" >
+        <action
+            android:id="@+id/action_resetPassword_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment android:id="@+id/placeholder" />
+</navigation>
