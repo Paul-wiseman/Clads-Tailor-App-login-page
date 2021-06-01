@@ -35,8 +35,10 @@ class SignupChoicesFragment : Fragment() {
         auth = Firebase.auth
     }
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
-                              savedInstanceState: Bundle?
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
     ): View {
         // Inflate the layout for this fragment
         _binding = FragmentSignupChoicesBinding.inflate(inflater, container, false)
@@ -74,14 +76,15 @@ class SignupChoicesFragment : Fragment() {
         if (requestCode == REQUEST_SIGN_IN) {
             val task = GoogleSignIn.getSignedInAccountFromIntent(data)
             try {
-//                handleSignInResult(task)
                 // Google Sign In was successful, authenticate with Firebase
                 val account = task.getResult(ApiException::class.java)!!
                 d("firebaseAuthWithGoogle: ${account.id}")
                 firebaseAuthWithGoogle(account.idToken!!)
             } catch (e: ApiException) {
-                Toast.makeText(requireContext(), "Login Failed: ${e.statusCode}",
-                    Toast.LENGTH_SHORT).show()
+                Toast.makeText(
+                    requireContext(), "Login Failed: ${e.statusCode}",
+                    Toast.LENGTH_SHORT
+                ).show()
             }
         }
     }
@@ -118,8 +121,7 @@ class SignupChoicesFragment : Fragment() {
             val action =
                 SignupChoicesFragmentDirections.actionSignupChoicesFragmentToSignupEmailFragment(accountEmail)
             findNavController().navigate(action)
-        }
-        catch (e: ApiException) {
+        } catch (e: ApiException) {
             // The ApiException status code indicates the detailed failure reason.
             d("Google sign-in Error: ${e.statusCode}")
         }
