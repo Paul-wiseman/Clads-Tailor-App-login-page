@@ -94,4 +94,9 @@ dependencies {
 
     implementation "com.jakewharton.timber:timber:$versions.timber_version"
 
+    //to test fragment
+    val fragment_version = "1.3.4"
+
+    debugImplementation("androidx.fragment:fragment-testing:$fragment_version")
+
 }

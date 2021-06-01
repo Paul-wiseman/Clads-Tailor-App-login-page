@@ -15,5 +15,14 @@
     <string name ="sign_up_email_password">Password</string>
     <string name ="sign_up_email_confirm_password">Confirm Password</string>
     <string name="splash_screen_placeholder_text">Splash Screen</string>
+    <string name="view_in_browser">view in browser</string>
+    <string name="email_confirmation">Email Confirmation</string>
+    <string name="prompt_message">Hey Ijeoma, you are almost ready to start <br/> enjoying Obioma. Simply click the big blue<br/>button below to verify your email address.</string>
+    <string name="verify_email_address">Verify Email Address</string>
+    <string name="stay_in_touch">Stay in touch</string>
+    <string name="email_sent_by">email sent by Obioma</string>
+    <string name="copyright">copyright 2020. All Rights Reserved</string>
+
+
 
 </resources>
