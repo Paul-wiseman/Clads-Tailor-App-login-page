@@ -36,7 +36,12 @@
         tools:layout="@layout/fragment_signup_email" >
         <action
             android:id="@+id/action_signupEmailFragment_to_emailVerificationFragment"
-            app:destination="@id/email_verification_fragment" />
+            app:destination="@id/email_verification_fragment">
+        </action>
+        <argument
+            android:name="userEmail"
+            app:argType="string"
+            app:nullable="true" />
     </fragment>
     <fragment
         android:id="@+id/login_fragment"
