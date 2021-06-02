@@ -3,7 +3,6 @@ package com.decagonhq.clads
 import androidx.fragment.app.testing.FragmentScenario
 import androidx.fragment.app.testing.launchFragmentInContainer
 import androidx.test.espresso.Espresso.onView
-import androidx.test.espresso.action.ViewActions.click
 import androidx.test.espresso.action.ViewActions.replaceText
 import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.matcher.ViewMatchers.isDisplayed
@@ -118,6 +117,5 @@ class LoginScreenFragmentTest {
             )
         )
         onView(withId(R.id.fragment_login_screen_login_button)).check(matches(isDisplayed()))
-        onView(withId(R.id.fragment_login_screen_login_button)).perform(click())
     }
 }
