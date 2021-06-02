@@ -1,23 +1,17 @@
 package com.decagonhq.clads
 
-import android.view.View
 import androidx.fragment.app.testing.FragmentScenario
 import androidx.fragment.app.testing.launchFragmentInContainer
-import androidx.navigation.NavController
-import androidx.navigation.Navigation
-import androidx.navigation.testing.TestNavHostController
-import androidx.test.core.app.ApplicationProvider
 import androidx.test.espresso.Espresso.onView
-import androidx.test.espresso.action.ViewActions
-import androidx.test.espresso.action.ViewActions.*
+import androidx.test.espresso.action.ViewActions.click
+import androidx.test.espresso.action.ViewActions.replaceText
 import androidx.test.espresso.assertion.ViewAssertions.matches
-import androidx.test.espresso.matcher.ViewMatchers
-import androidx.test.espresso.matcher.ViewMatchers.*
+import androidx.test.espresso.matcher.ViewMatchers.isDisplayed
+import androidx.test.espresso.matcher.ViewMatchers.withId
 import androidx.test.internal.runner.junit4.AndroidJUnit4ClassRunner
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mockito.Mockito.*
 
 @RunWith(AndroidJUnit4ClassRunner::class)
 class LoginScreenFragmentTest {
@@ -113,7 +107,6 @@ class LoginScreenFragmentTest {
     @Test
     fun `does_login_page_login_Button_navigate_to_the_next_page`() {
 
-
         onView(withId(R.id.fragment_login_screen_email_address_text_input_edit_text)).perform(
             replaceText(
                 email
@@ -126,6 +119,5 @@ class LoginScreenFragmentTest {
         )
         onView(withId(R.id.fragment_login_screen_login_button)).check(matches(isDisplayed()))
         onView(withId(R.id.fragment_login_screen_login_button)).perform(click())
-
     }
 }

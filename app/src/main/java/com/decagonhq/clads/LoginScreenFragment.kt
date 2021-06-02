@@ -7,7 +7,6 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.Toast
 import androidx.fragment.app.Fragment
-import androidx.navigation.fragment.findNavController
 import com.decagonhq.clads.databinding.FragmentLoginScreenBinding
 import com.google.android.material.textfield.TextInputEditText
 
@@ -25,6 +24,7 @@ class LoginScreenFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
         // Inflate the layout for this fragment
         _binding = FragmentLoginScreenBinding.inflate(inflater, container, false)
         return binding.root
@@ -42,13 +42,11 @@ class LoginScreenFragment : Fragment() {
         *  input is correct the next fragment is launched else the user is notified which field is not
         * field properly
         */
+
         loginButton.setOnClickListener {
             val email = emailEditText.text.toString()
             val password = passwordEditText.text.toString()
             if (Validator.validateEmail(email) && Validator.validatePassword(password)) {
-                val action =
-                    LoginScreenFragmentDirections.actionLoginFragmentToBlankFragment()
-                findNavController().navigate(action)
             } else {
                 when {
                     !Validator.validatePassword(password) -> Toast.makeText(
