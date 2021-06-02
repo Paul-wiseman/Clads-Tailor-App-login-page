@@ -19,7 +19,7 @@ class ValidatorTest {
     }
 
     @Test
-    fun `ValidEmail returns false if the email input is empty`() {
+    fun `ValidateEmail returns false if the email input is empty`() {
         val result = Validator.validateEmail(" ")
         assertFalse(result)
     }
@@ -27,7 +27,7 @@ class ValidatorTest {
     @Test
     fun `ValidateEmail returns false if the pattern of the email is not correct`() {
         val result = Validator.validateEmail("emeka")
-        assertTrue(result)
+        assertFalse(result)
     }
 
     /**
@@ -41,7 +41,7 @@ class ValidatorTest {
     }
 
     @Test
-    fun `Validate password returns false if the password input is empty`() {
+    fun `ValidatePassword returns false if the password input is empty`() {
         val result = Validator.validatePassword(" ")
         assertFalse(result)
     }

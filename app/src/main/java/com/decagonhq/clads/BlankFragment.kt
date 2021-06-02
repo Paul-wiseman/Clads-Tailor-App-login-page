@@ -11,7 +11,6 @@ import com.decagonhq.clads.databinding.FragmentBlankBinding
 class BlankFragment : Fragment() {
     private var _binding: FragmentBlankBinding? = null
     private val binding get() = _binding!!
-    private val args: BlankFragmentArgs by navArgs()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,9 +28,6 @@ class BlankFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        var email = binding.tvEmail
-        var password = binding.tvPassword
-        email.text = args.email
-        password.text = args.password
+
     }
 }

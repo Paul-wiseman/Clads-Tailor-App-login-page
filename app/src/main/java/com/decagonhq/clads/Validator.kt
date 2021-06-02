@@ -1,19 +1,20 @@
 package com.decagonhq.clads
 
-import android.util.Patterns
-
 /**
  * the user can only login if the input field for the email and password is:
  * ... not empty
- * ... contains valid formate for email and password...
+ * ... contains valid format for email and password...
  *
  */
 object Validator {
 
+    // validation function for Email Address
     fun validateEmail(email: String): Boolean {
-        return !(email.trim().isEmpty() && !Patterns.EMAIL_ADDRESS.matcher(email.trim()).matches())
+        val pattern = Regex("[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+")
+        return pattern.matches(email)
     }
 
+    // validation function Password
     fun validatePassword(
         password: String
     ): Boolean {
