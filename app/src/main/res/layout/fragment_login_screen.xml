@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/deep_sky_blue"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    tools:context=".LoginScreenFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/fragment_login_screen_welcomeback_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="65dp"
+            android:layout_marginEnd="190dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/welcome_back"
+            android:textColor="@color/white"
+            android:textFontWeight="700"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/fragment_login_screen_login_to_continue_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="200dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/login_to_continue"
+            android:textColor="@color/white"
+            android:textFontWeight="400"
+            android:textSize="14dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="18dp"
+            android:ems="10"
+            android:hint="@string/email_address"
+            android:outlineAmbientShadowColor="@color/white"
+            android:outlineSpotShadowColor="@color/white"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            app:boxStrokeColor="@color/white"
+            app:hintTextColor="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/fragment_login_screen_email_address_text_input_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/deep_sky_blue"
+                android:inputType="textEmailAddress"
+                android:paddingStart="0dp"
+                android:textColor="@color/white" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="18dp"
+            android:ems="10"
+            android:hint="@string/password"
+            android:outlineAmbientShadowColor="@color/white"
+            android:outlineSpotShadowColor="@color/white"
+            android:textColorHint="@color/white"
+            app:boxStrokeColor="@color/white"
+            app:hintTextColor="@color/white"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/grey">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/fragment_login_screen_password_text_input_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/deep_sky_blue"
+                android:inputType="textPassword"
+                android:paddingStart="0dp"
+                android:textColor="@color/white" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/fragment_login_screen_login_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="18dp"
+            android:background="@drawable/custom_button"
+            android:fontFamily="@font/poppins"
+            android:text="@string/login"
+            android:textAllCaps="false"
+            android:textColor="@color/deep_sky_blue"
+            android:textFontWeight="700"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:backgroundTint="@color/white" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="87dp"
+            android:layout_marginTop="37dp"
+            android:layout_marginEnd="83dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/fragment_login_screen_newuser_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:text="@string/new_user"
+                android:textColor="@color/grey"
+                android:textFontWeight="400"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_signUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/signup_for_free"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_forgetPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="116dp"
+            android:text="@string/forgot_password"
+            android:textColor="@color/grey"
+            android:textSize="14sp" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
