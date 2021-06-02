@@ -3,15 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-<<<<<<< HEAD
-    app:startDestination="@id/landingScreenFragment">
 
-    <fragment
-        android:id="@+id/landingScreenFragment"
-        android:name="com.decagonhq.clads.LandingScreenFragment"
-        android:label="fragment_landing_screen"
-        tools:layout="@layout/fragment_landing_screen" />
-=======
     app:startDestination="@id/signup_login_fragment">
 
     <activity
@@ -27,7 +19,11 @@
         app:startDestination="@id/action_signupLoginFragment_to_signupChoicesFragment">
         <action
             android:id="@+id/action_signupLoginFragment_to_signupChoicesFragment"
-            app:destination="@id/signup_choices_fragment" />
+            app:destination="@id/signup_choices_fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/signup_choices_fragment"
@@ -108,5 +104,4 @@
             app:destination="@id/login_fragment" />
     </fragment>
     <fragment android:id="@+id/placeholder" />
->>>>>>> bfb4f590c65107e407f38fe5f2a2a1f67d48247d
 </navigation>

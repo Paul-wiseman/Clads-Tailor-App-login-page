@@ -1,37 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SplashScreenActivity">
+    android:background="@color/deep_sky_blue">
 
-<<<<<<< HEAD:app/src/main/res/layout/activity_main.xml
 
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fragmentContainerView"
-        android:name="androidx.navigation.fragment.NavHostFragment"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="1dp"
-        app:defaultNavHost="true"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <!--Clads logo icon -->
+    <ImageView
+        android:id="@+id/activity_splash_screen_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="202dp"
+        app:layout_constraintBottom_toTopOf="@+id/activity_splash_screen_gifImageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:navGraph="@navigation/nav_graph" />
-=======
-    <TextView
-        android:id="@+id/splash_screen_placeholder_textview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/splash_screen_placeholder_text"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_clad_logo_white" />
+
+
+    <!-- Plugin wrapper for progress bar animation -->
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/activity_splash_screen_gifImageView"
+        android:layout_width="55dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="240dp"
+        android:src="@drawable/splash_screen_progress_bar_animation"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Loading... -->
+    <TextView
+        android:id="@+id/activity_splash_screen_loading_textview"
+        android:layout_width="84dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="top"
+        android:text="@string/splash_screen_loading"
+        android:textAppearance="@style/loading_"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
->>>>>>> bfb4f590c65107e407f38fe5f2a2a1f67d48247d:app/src/main/res/layout/activity_splash_screen.xml
+        app:layout_constraintTop_toBottomOf="@+id/activity_splash_screen_gifImageView"
+        app:layout_constraintVertical_bias="0.3" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

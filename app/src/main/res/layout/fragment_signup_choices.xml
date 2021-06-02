@@ -1,14 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignupChoicesFragment">
+    android:background="@color/deep_sky_blue"
+    tools:context=".SignupChoicesFragment"
+    android:id="@+id/fragment_signup_choices_parent_layout">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/all_placeholder_text" />
+        android:layout_height="match_parent">
 
-</FrameLayout>
+
+        <Button
+            android:id="@+id/fragment_signup_choices_button_with_phone_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginTop_30dp"
+            android:background="@drawable/custom_login_button"
+            android:fontFamily="@font/poppins"
+            android:paddingHorizontal="20dp"
+
+            android:text="@string/sign_up_with_phone_number"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textFontWeight="500"
+            android:textSize="@dimen/textSize_18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fragment_signup_choices_button_with_email" />
+
+        <Button
+            android:id="@+id/fragment_signup_choices_button_with_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginTop_30dp"
+            android:background="@drawable/custom_login_button"
+            android:fontFamily="@font/poppins"
+            android:paddingHorizontal="40dp"
+            android:paddingVertical="6dp"
+            android:text="@string/sign_up_with_email"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textFontWeight="500"
+            android:textSize="@dimen/textSize_18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fragment_signup_choices_button_with_google" />
+
+        <ImageView
+            android:id="@+id/fragment_signup_choices_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="184dp"
+            android:contentDescription="@string/a_logo_of_the_app"
+            android:src="@drawable/ic_clad_logo_white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/fragment_signup_choices_button_with_google"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginTop_100dp"
+            android:background="@drawable/custom_sign_up_button"
+            android:drawableStart="@drawable/google_logo"
+            android:drawablePadding="@dimen/padding_10dp"
+            android:fontFamily="@font/poppins"
+            android:paddingHorizontal="40dp"
+            android:paddingVertical="6dp"
+            android:text="@string/signup_with_google"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textFontWeight="550"
+            android:textSize="@dimen/textSize_14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fragment_signup_choices_imageview" />
+
+        <TextView
+            android:id="@+id/fragment_signup_choices_textview_have_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="@dimen/marginTop_80dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/have_an_account"
+            android:textColor="@color/grey"
+            android:textFontWeight="400"
+            android:textSize="@dimen/textSize_16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/fragment_signup_choices_button_with_phone_number"
+            app:layout_constraintTop_toBottomOf="@+id/fragment_signup_choices_button_with_phone_number"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/fragment_signup_choices_textview_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="@string/login"
+            android:textColor="@color/white"
+            android:textFontWeight="700"
+            android:textSize="@dimen/textSize_16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/fragment_signup_choices_button_with_phone_number"
+            app:layout_constraintHorizontal_bias="0.06"
+            app:layout_constraintStart_toEndOf="@+id/fragment_signup_choices_textview_have_account"
+            app:layout_constraintTop_toTopOf="@+id/fragment_signup_choices_textview_have_account" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

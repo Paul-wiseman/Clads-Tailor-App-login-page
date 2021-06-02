@@ -68,6 +68,9 @@ dependencies {
     implementation "androidx.navigation:navigation-fragment-ktx:$versions.nav_version"
     implementation "androidx.navigation:navigation-ui-ktx:$versions.nav_version"
 
+    // Navigation testing
+    androidTestImplementation "androidx.navigation:navigation-testing:2.3.5"
+
     //Retrofit
     implementation "com.squareup.retrofit2:retrofit:$versions.retrofit_version"
     implementation "com.squareup.retrofit2:converter-gson:$versions.retrofit_version"
@@ -86,6 +89,12 @@ dependencies {
 
     //fragment Ktx
     implementation "androidx.fragment:fragment-ktx:$versions.fragment_version"
+    debugImplementation "androidx.fragment:fragment-testing:$versions.fragment_version"
+
+    //Mockito
+    testImplementation "org.mockito:mockito-core:$versions.mokito_version"
+    androidTestImplementation "org.mockito:mockito-android:$versions.mokito_version"
+
 
     //Glide
     implementation "com.github.bumptech.glide:glide:$versions.glide_version"
@@ -96,6 +105,5 @@ dependencies {
 
     // Library to use gif Images
     implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.22'
-
 
 }
