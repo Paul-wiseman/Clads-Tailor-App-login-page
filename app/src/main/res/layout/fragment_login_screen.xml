@@ -24,7 +24,7 @@
             android:fontFamily="@font/poppins"
             android:text="@string/fragment_login_screen_welcome_back"
             android:textColor="@color/white"
-            android:textSize="@dimen/textSize_18sp"
+            android:textSize="@dimen/text_size_18sp"
             android:textStyle="bold" />
 
         <TextView
@@ -36,7 +36,7 @@
             android:fontFamily="@font/poppins"
             android:text="@string/fragment_login_screen_login_to_continue"
             android:textColor="@color/white"
-            android:textSize="@dimen/textSize_14sp" />
+            android:textSize="@dimen/text_size_14sp" />
 
 
         <com.google.android.material.button.MaterialButton
@@ -51,9 +51,9 @@
             android:text="@string/fragment_login_screen_login_with_google"
             android:textAllCaps="false"
             android:textColor="@color/black"
-            android:textSize="@dimen/textSize_18sp"
+            android:textSize="@dimen/text_size_18sp"
             android:textStyle="bold"
-            app:cornerRadius="@dimen/cornerRadius_5dp"
+            app:cornerRadius="@dimen/corner_radius_5dp"
             app:icon="@drawable/google_icon2"
             app:iconGravity="textStart"
             app:iconTintMode="multiply" />
@@ -118,7 +118,7 @@
             android:textAllCaps="false"
             android:textColor="@color/deep_sky_blue"
             android:textFontWeight="700"
-            android:textSize="@dimen/textSize_18sp"
+            android:textSize="@dimen/text_size_18sp"
             android:textStyle="bold"
             app:backgroundTint="@color/white" />
 
@@ -147,7 +147,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/fragment_login_screen_signup_for_free"
                 android:textColor="@color/white"
-                android:textSize="@dimen/textSize_14sp"
+                android:textSize="@dimen/text_size_14sp"
                 android:textStyle="bold" />
         </LinearLayout>
 
@@ -159,7 +159,7 @@
             android:layout_marginTop="@dimen/margin_22dp"
             android:text="@string/fragment_login_screen_forgot_password"
             android:textColor="@color/grey"
-            android:textSize="@dimen/textSize_14sp" />
+            android:textSize="@dimen/text_size_14sp" />
 
 
     </LinearLayout>
