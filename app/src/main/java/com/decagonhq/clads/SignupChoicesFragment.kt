@@ -114,21 +114,12 @@ class SignupChoicesFragment : Fragment() {
             }
     }
 
-    private fun handleSignInResult(completedTask: Task<GoogleSignInAccount>) {
-        try {
-            val account: GoogleSignInAccount? = completedTask.getResult(ApiException::class.java)
-            // Signed in successfully, show authenticated UI.
-            val accountEmail = account?.email
-            val action =
-                SignupChoicesFragmentDirections.actionSignupChoicesFragmentToSignupEmailFragment(accountEmail)
-            findNavController().navigate(action)
-        } catch (e: ApiException) {
-            // The ApiException status code indicates the detailed failure reason.
-            d("Google sign-in Error: ${e.statusCode}")
-        }
-    }
-
     companion object {
         private var REQUEST_SIGN_IN = 100
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }
