@@ -19,7 +19,6 @@
     <dimen name="cornerRadius_5dp">5dp</dimen>
     <dimen name="padding_12dp">12dp</dimen>
     <dimen name="margin_9dp">9dp</dimen>
-    <dimen name="text_size_18sp">18sp</dimen>
 
 
 </resources>
