@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <dimen name="margin_0dp">0dp</dimen>
     <dimen name="margin_1dp">1dp</dimen>
     <dimen name="margin_2dp">2dp</dimen>
@@ -31,13 +32,24 @@
     <dimen name="margin_28dp">28dp</dimen>
     <dimen name="margin_29dp">29dp</dimen>
     <dimen name="margin_30dp">30dp</dimen>
-    <dimen name="textsize_22sp">22sp</dimen>
-    <dimen name="textsize_10sp">10sp</dimen>
-    <dimen name="textsize_12sp">12sp</dimen>
-    <dimen name="textsize_14sp">14sp</dimen>
-    <dimen name="textsize_11sp">11sp</dimen>
-    <dimen name="textsize_13sp">13sp</dimen>
+
+    //dimensions for textSize
+    <dimen name="text_size_22sp">22sp</dimen>
+    <dimen name="text_size_10sp">10sp</dimen>
+    <dimen name="text_size_12sp">12sp</dimen>
+    <dimen name="text_size_14sp">14sp</dimen>
+    <dimen name="text_size_11sp">11sp</dimen>
+    <dimen name="text_size_13sp">13sp</dimen>
+    <dimen name="text_size_18sp">18sp</dimen>
     <dimen name="margin_50dp">50dp</dimen>
 
+    //dimension for margin
+    <dimen name="margin_120dp">120dp</dimen>
+    <dimen name="margin_89dp">89dp</dimen>
+    <dimen name="margin_83dp">83dp</dimen>
+    <dimen name="margin_44dp">44dp</dimen>
+    <dimen name="margin_32dp">32dp</dimen>
+    <dimen name="cornerRadius_5dp">5dp</dimen>
+    <dimen name="padding_12dp">12dp</dimen>
 
 </resources>
