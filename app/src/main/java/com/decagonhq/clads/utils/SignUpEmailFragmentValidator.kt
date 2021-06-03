@@ -6,9 +6,9 @@ class SignUpEmailFragmentValidator {
 
     companion object {
 
-        private val NAME_PATTERN = "[a-zA-Z]{1,}"
-        private val EMAIL_PATTERN = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
-        private val PASSWORD_PATTERN = ".{6,}"
+        private const val NAME_PATTERN = "[a-zA-Z]{1,}"
+        private const val EMAIL_PATTERN = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+        private const val PASSWORD_PATTERN = ".{6,}"
 
         fun nameValidator(name: String): Boolean {
 
@@ -19,11 +19,12 @@ class SignUpEmailFragmentValidator {
             return matcher(EMAIL_PATTERN, email)
         }
 
+
         fun accountCategoryValidator(account_Category: String): Boolean {
             return when {
                 account_Category.toUpperCase() == AccountCategory.CLIENT.name ||
-                    account_Category == AccountCategory.WEAVER.name ||
-                    account_Category.toUpperCase() == AccountCategory.TAILOR.name -> {
+                        account_Category == AccountCategory.WEAVER.name ||
+                        account_Category.toUpperCase() == AccountCategory.TAILOR.name -> {
                     true
                 }
                 else -> false

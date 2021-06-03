@@ -6,23 +6,25 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
+import androidx.core.widget.doOnTextChanged
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.decagonhq.clads.R
 import com.decagonhq.clads.databinding.FragmentSignupEmailBinding
 import com.decagonhq.clads.utils.SignUpEmailFragmentValidator
 
-class SignupEmailFragment : Fragment(), AdapterView.OnItemSelectedListener {
+class SignupEmailFragment : Fragment() {
 
     private lateinit var binding: FragmentSignupEmailBinding
-    lateinit var itemSelected: String
+
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
+    ): View {
+
+        // Inflate the layout for this fragment and return the view
         binding = FragmentSignupEmailBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -33,13 +35,8 @@ class SignupEmailFragment : Fragment(), AdapterView.OnItemSelectedListener {
         setUpUI()
     }
 
-    override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
-        itemSelected = parent?.getItemAtPosition(position) as String
-    }
 
-    override fun onNothingSelected(parent: AdapterView<*>?) {
-    }
-
+    //bind the views
     private fun setUpUI() {
 
         ArrayAdapter.createFromResource(
@@ -50,11 +47,7 @@ class SignupEmailFragment : Fragment(), AdapterView.OnItemSelectedListener {
             adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
             binding.emailSignUpFragmentAccountCategoryAutoTextView.setAdapter(adapter) // Applies the adapter to the spinner
         }
-        binding.emailSignUpFragmentAccountCategoryAutoTextView.onItemSelectedListener = this
 
-//        val arrayAdapter = ArrayAdapter(requireContext(), R.layout.signup_email_autotextview,resources.getStringArray(R.array.clads_user_category))
-//        arrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-//        binding.accountCategoryFilledDropdown.setAdapter(arrayAdapter)
         binding.emailSignUpFragmentSignUpButton.apply {
             setOnClickListener {
                 if (validateFields()) {
@@ -62,56 +55,88 @@ class SignupEmailFragment : Fragment(), AdapterView.OnItemSelectedListener {
                 }
             }
         }
+
+        // register a text change listener on the fields to clear error meesages
+        binding.emailSignUpFragmentEmailAddressTextInputEditText.doOnTextChanged { _, _, _, _ ->
+            binding.emailSignUpFragmentEmailAddressTextInputLayout.error = ""
+        }
+        binding.emailSignUpFragmentPasswordTextInputEditText.doOnTextChanged { _, _, _, _ ->
+            binding.emailSignUpFragmentPasswordTextInputLayout.error = ""
+        }
+        binding.emailSignUpFragmentConfirmPasswordTextInputEditText.doOnTextChanged { _, _, _, _ ->
+            binding.emailSignUpFragmentConfirmPasswordTextInputLayout.error = ""
+        }
+        binding.emailSignUpFragmentFirstnameTextInputEditText.doOnTextChanged { _, _, _, _ ->
+            binding.emailSignUpFragmentFirstnameTextInputLayout.error = ""
+
+        }
+        binding.emailSignUpFragmentLastnameTextInputEditText.doOnTextChanged { _, _, _, _ ->
+            binding.emailSignUpFragmentLastnameTextInputLayout.error = ""
+
+        }
+        binding.emailSignUpFragmentAccountCategoryAutoTextView.apply {
+            doOnTextChanged { _, _, _, _ ->
+                binding.emailSignUpFragmentAccountCategoryTextInputLayout.error = ""
+            }
+        }
     }
 
+
+    // Validation of fields
     private fun validateFields(): Boolean {
 
         var isFieldValidated = true
 
         when {
-            (!SignUpEmailFragmentValidator.nameValidator(binding.emailSignUpFragmentFirstnameTextInputEditText.text.toString())) ->
-                {
-                    binding.emailSignUpFragmentFirstnameTextInputLayout.error = "Field is empty or invalid name format entered"
-                    isFieldValidated = false
-                }
+            (!SignUpEmailFragmentValidator.nameValidator(binding.emailSignUpFragmentFirstnameTextInputEditText.text.toString())) -> {
+                binding.emailSignUpFragmentFirstnameTextInputLayout.error =
+                    "Field is empty or invalid name format entered"
+                isFieldValidated = false
+
+            }
             else -> {
                 binding.emailSignUpFragmentFirstnameTextInputLayout.error = ""
             }
         }
 
         if (!SignUpEmailFragmentValidator.nameValidator(binding.emailSignUpFragmentLastnameTextInputEditText.text.toString())) {
-            binding.emailSignUpFragmentLastnameTextInputLayout.error = "Field is empty or invalid name format entered"
+            binding.emailSignUpFragmentLastnameTextInputLayout.error =
+                "Field is empty or invalid name format entered"
             isFieldValidated = false
         }
 
         if (!SignUpEmailFragmentValidator.emailValidator(
-                binding.emailSignUpFragmentEmailAddressTextInputEditText.text.toString().trim()
+                binding.emailSignUpFragmentEmailAddressTextInputEditText.text.toString()
             )
         ) {
-            binding.emailSignUpFragmentEmailAddressTextInputLayout.error = "Field is empty or Invalid email address entered"
+            binding.emailSignUpFragmentEmailAddressTextInputLayout.error =
+                "Field is empty or Invalid email address entered"
             isFieldValidated = false
         }
 
         if (!SignUpEmailFragmentValidator.accountCategoryValidator(binding.emailSignUpFragmentAccountCategoryAutoTextView.text.toString())) {
 
-            binding.emailSignUpFragmentAccountCategoryTextInputLayout.error = "Select an account type"
+            binding.emailSignUpFragmentAccountCategoryTextInputLayout.error =
+                "Select an account type"
             isFieldValidated = false
         }
 
         if (!SignUpEmailFragmentValidator.passwordValidator(
-                binding.emailSignUpFragmentConfirmPasswordTextInputEditText.text.toString().trim()
+                binding.emailSignUpFragmentConfirmPasswordTextInputEditText.text.toString()
             )
         ) {
-            binding.emailSignUpFragmentPasswordTextInputLayout.error = "Password must not be less than 6 digits"
+            binding.emailSignUpFragmentPasswordTextInputLayout.error =
+                "Password must not be less than 6 characters"
             binding.emailSignUpFragmentPasswordTextInputLayout.errorIconDrawable = null
             isFieldValidated = false
         }
 
         if (!SignUpEmailFragmentValidator.passwordValidator(
-                binding.emailSignUpFragmentConfirmPasswordTextInputEditText.text.toString().trim()
+                binding.emailSignUpFragmentConfirmPasswordTextInputEditText.text.toString()
             )
         ) {
-            binding.emailSignUpFragmentConfirmPasswordTextInputLayout.error = "Password must not be less than 6 digits"
+            binding.emailSignUpFragmentConfirmPasswordTextInputLayout.error =
+                "Password must not be less than 6 characters"
             binding.emailSignUpFragmentConfirmPasswordTextInputLayout.errorIconDrawable = null
             isFieldValidated = false
         }
@@ -123,11 +148,13 @@ class SignupEmailFragment : Fragment(), AdapterView.OnItemSelectedListener {
 
         ) {
 
-            binding.emailSignUpFragmentConfirmPasswordTextInputLayout.error = "Passwords do not match"
+            binding.emailSignUpFragmentConfirmPasswordTextInputLayout.error =
+                "Passwords do not match"
             binding.emailSignUpFragmentConfirmPasswordTextInputLayout.errorIconDrawable = null
             isFieldValidated = false
         }
 
         return isFieldValidated
     }
+
 }

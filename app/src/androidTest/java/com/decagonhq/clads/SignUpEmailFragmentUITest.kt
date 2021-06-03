@@ -33,16 +33,19 @@ class SignUpEmailFragmentUITest {
         onView(withId(R.id.email_sign_up_fragment_create_an_account_text_view))
             .check(matches(isDisplayed()))
     }
+
     @Test
     fun is_email_sign_up_fragment_description_text_view_in_view() {
         onView(withId(R.id.email_sign_up_fragment_description_text_view))
             .check(matches(isDisplayed()))
     }
+
     @Test
     fun is_email_sign_up_fragment_firstname_in_view() {
         onView(withId(R.id.email_sign_up_fragment_firstname_text_input_edit_text))
             .check(matches(isDisplayed()))
     }
+
     @Test
     fun is_email_sign_up_fragment_lastname_in_view() {
         onView(withId(R.id.email_sign_up_fragment_lastname_text_input_edit_text))
@@ -135,7 +138,9 @@ class SignUpEmailFragmentUITest {
             .perform(replaceText(lastNameToBetyped), ViewActions.closeSoftKeyboard())
 
 //
-        onView(withId(R.id.email_sign_up_fragment_account_category_auto_text_view)).perform(replaceText(accountItemToBeSelected))
+        onView(withId(R.id.email_sign_up_fragment_account_category_auto_text_view)).perform(
+            replaceText(accountItemToBeSelected)
+        )
 
         // get the email edittextview and perform a text typing action on it
         onView(withId(R.id.email_sign_up_fragment_email_address_text_input_edit_text))
