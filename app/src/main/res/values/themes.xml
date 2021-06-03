@@ -15,7 +15,7 @@
 
         <!-- Customize your theme here. -->
         <style name="splashScreenTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
-            <item name="android:windowBackground">@drawable/splash_screen_progress_bar_animation</item>
+            <item name="android:windowBackground">@drawable/splash_screen_background</item>
             <item name="android:statusBarColor">@color/deep_sky_blue</item>
        </style>
 

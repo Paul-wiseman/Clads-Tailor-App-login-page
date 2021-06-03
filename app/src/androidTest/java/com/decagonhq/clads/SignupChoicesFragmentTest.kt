@@ -55,11 +55,6 @@ class SignupChoicesFragmentTest : TestCase() {
             .check(ViewAssertions.matches(ViewMatchers.isDisplayed()))
     }
 
-    @Test
-    fun is_Signup_Choices_Fragment_Phonenumber_Button_Visible() {
-        Espresso.onView(ViewMatchers.withId(R.id.fragment_signup_choices_button_with_phone_number))
-            .check(ViewAssertions.matches(ViewMatchers.isDisplayed()))
-    }
 
     @Test
     fun is_Signup_Choices_Fragment_Have_Account_Textview_Visible() {

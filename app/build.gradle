@@ -104,6 +104,6 @@ dependencies {
     implementation "com.jakewharton.timber:timber:$versions.timber_version"
 
     // Library to use gif Images
-    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.22'
+    implementation "pl.droidsonroids.gif:android-gif-drawable:$versions.gif_version"
 
 }

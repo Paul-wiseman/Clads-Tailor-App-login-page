@@ -2,7 +2,7 @@
     <string name="app_name">Clads</string>
 
     <!-- loading TextView -->
-    <string name="splash_screen_loading">Loading...</string>
+    <string name="splash_screen_loading_text">Loading...</string>
     <!-- Clads TextView -->
     <string name="sign_up_login_tag_line"> Lorem ipsum, ipsum sum</string>
 
@@ -16,12 +16,12 @@
     <string name ="sign_up_email_password">Password</string>
     <string name ="sign_up_email_confirm_password">Confirm Password</string>
     <string name="splash_screen_placeholder_text">Splash Screen</string>
-    <string name="signup_with_google">Signup with Google</string>
-    <string name="sign_up_with_email">Sign up with email</string>
-    <string name="sign_up_with_phone_number">Sign up with phone number</string>
-    <string name="have_an_account">Have an account?</string>
-    <string name="login">Login</string>
-    <string name="a_logo_of_the_app">A logo of the app</string>
-    <string name="sign_up">Sign up</string>
+    <string name="signup_choices_fragment_signup_with_google">Signup with Google</string>
+    <string name="signup_choices_fragment_sign_up_with_email">Sign up with email</string>
+    <string name="signup_choices_fragment_sign_up_with_phone_number">Sign up with phone number</string>
+    <string name="signup_choices_fragment_have_an_account">Have an account?</string>
+    <string name="signup_choices_fragment_login">Login</string>
+    <string name="signup_choices_fragment_a_logo_of_the_app">A logo of the app</string>
+    <string name="signup_login_fragment_sign_up">Sign up</string>
 
 </resources>
