@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    //Margin imensions for Signup choices screen
-    <dimen name="textSize_16sp">16sp</dimen>
+
     <dimen name="margin_65dp">65dp</dimen>
     <dimen name="marginTop_30dp">30dp</dimen>
     <dimen name="margin_78dp">78dp</dimen>
@@ -17,15 +16,15 @@
     <dimen name="marginStart_100dp">100dp</dimen>
     <dimen name="marginStart_8dp">8dp</dimen>
     <dimen name="margin_20dp">20dp</dimen>
+
     <dimen name="textSize_18sp">18sp</dimen>
     <dimen name="textSize_22dp">22dp</dimen>
     <dimen name="textSize_14sp">14sp</dimen>
-
+    <dimen name="textSize_16sp">16sp</dimen>
 
     // Padding dimensions for Signup choices screen
     <dimen name="padding_16dp">16dp</dimen>
     <dimen name="padding_10dp">10dp</dimen>
-
 
     //Dimension for landing screen
     <dimen name="margin_top_255dp">255dp</dimen>
