@@ -37,6 +37,7 @@
     <dimen name="textsize_14sp">14sp</dimen>
     <dimen name="textsize_11sp">11sp</dimen>
     <dimen name="textsize_13sp">13sp</dimen>
+    <dimen name="margin_50dp">50dp</dimen>
 
 
 </resources>

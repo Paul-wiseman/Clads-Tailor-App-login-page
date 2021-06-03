@@ -9,15 +9,15 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-       >
+        android:layout_height="match_parent">
 
 
         <ImageView
+            android:contentDescription="@string/app_name"
             android:id="@+id/email_verification_fragment_clads_image_view"
             android:layout_width="103dp"
             android:layout_height="28.54dp"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="@dimen/margin_50dp"
             android:src="@drawable/clads_logo"
             card_view:layout_constraintBottom_toBottomOf="parent"
             card_view:layout_constraintEnd_toEndOf="parent"
@@ -30,8 +30,10 @@
             android:id="@+id/email_verification_fragment_browser_prompt_text_view"
             android:layout_width="85dp"
             android:layout_height="17dp"
+            android:clickable="true"
+            android:focusable="true"
             android:text="@string/view_in_browser"
-            android:textSize="11dp"
+            android:textSize="@dimen/textsize_11sp"
             card_view:layout_constraintBottom_toTopOf="@+id/email_verification_fragment_email_icon_frame_linear_layout"
             card_view:layout_constraintEnd_toEndOf="parent"
             card_view:layout_constraintHorizontal_bias="0.761"
@@ -43,34 +45,31 @@
             android:id="@+id/email_verification_fragment_email_icon_frame_linear_layout"
             android:layout_width="313dp"
             android:layout_height="86dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="@dimen/margin_16dp"
             android:background="@drawable/email_confirmation_icon_background"
             android:gravity="center"
-
             card_view:layout_constraintBottom_toTopOf="@id/email_verification_fragment_email_confirmation_card_view"
             card_view:layout_constraintEnd_toEndOf="parent"
             card_view:layout_constraintStart_toStartOf="parent"
             card_view:layout_constraintTop_toBottomOf="@+id/email_verification_fragment_clads_image_view">
 
             <ImageView
+                android:contentDescription="@string/email_confirmation"
                 android:id="@+id/email_verification_fragment_email_in_motion_icon"
                 android:layout_width="99dp"
                 android:layout_height="46.22dp"
                 android:src="@drawable/email_in_motion_icon" />
-
-
         </LinearLayout>
 
         <androidx.cardview.widget.CardView
             android:id="@+id/email_verification_fragment_email_confirmation_card_view"
             android:layout_width="313dp"
             android:layout_height="217dp"
-            card_view:cardElevation="10dp"
+            card_view:cardElevation="@dimen/margin_3dp"
             card_view:layout_constraintEnd_toEndOf="parent"
             card_view:layout_constraintStart_toStartOf="parent"
             card_view:layout_constraintTop_toBottomOf="@+id/email_verification_fragment_email_icon_frame_linear_layout"
             tools:layout_editor_absoluteY="241dp">
-
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -82,12 +81,11 @@
                     android:id="@+id/email_verification_fragment_email_confirmation_heading_text_view"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="3dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/margin_3dp"
                     android:fontFamily="@font/poppins"
                     android:text="@string/email_confirmation"
-                    android:textFontWeight="700"
-                    android:layout_gravity="center_horizontal"/>
-
+                    android:textFontWeight="700" />
 
                 <TextView
                     android:id="@+id/email_verification_fragment_prompt_message_text_view"
@@ -95,10 +93,10 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginBottom="@dimen/margin_10dp"
+                    android:padding="@dimen/margin_28dp"
                     android:text="@string/prompt_message"
                     android:textFontWeight="400"
-                    android:textSize="12sp"
-                    android:padding="@dimen/margin_28dp"/>
+                    android:textSize="12sp" />
 
 
                 <Button
@@ -107,6 +105,7 @@
                     android:layout_height="wrap_content"
                     android:backgroundTint="@color/deep_sky_blue"
                     android:clickable="true"
+                    android:focusable="true"
                     android:fontFamily="@font/poppins"
                     android:gravity="center"
                     android:text="@string/verify_email_address"
@@ -125,7 +124,7 @@
             android:fontFamily="@font/raleway"
             android:text="@string/stay_in_touch"
             android:textFontWeight="1000"
-            android:textSize="13dp"
+            android:textSize="@dimen/textsize_13sp"
             android:textStyle="italic"
             card_view:layout_constraintBottom_toBottomOf="parent"
             card_view:layout_constraintEnd_toEndOf="parent"
@@ -138,50 +137,59 @@
             android:id="@+id/email_verification_fragment_icon_group_linear_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="@dimen/margin_8dp"
             android:gravity="center_horizontal"
             android:orientation="horizontal"
             card_view:layout_constraintTop_toBottomOf="@+id/email_verification_fragment_stay_in_touch_text_view"
             tools:layout_editor_absoluteX="0dp">
 
             <ImageView
+                android:contentDescription="@string/social_media"
                 android:id="@+id/email_verification_fragment_facebook_icon_image_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
+                android:layout_marginEnd="@dimen/margin_8dp"
                 android:clickable="true"
+                android:focusable="true"
                 android:src="@drawable/facebook_icon"
                 card_view:layout_constraintHorizontal_bias="0.5" />
 
             <ImageView
+                android:contentDescription="@string/social_media"
                 android:id="@+id/email_verification_fragment_twitter_icon_image_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
+                android:layout_marginEnd="@dimen/margin_8dp"
                 android:clickable="true"
+                android:focusable="true"
                 android:src="@drawable/twitter_icon" />
 
             <ImageView
+                android:contentDescription="@string/social_media"
                 android:id="@+id/email_verification_fragment_instagram_icon_image_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
+                android:layout_marginEnd="@dimen/margin_8dp"
                 android:clickable="true"
+                android:focusable="true"
                 android:src="@drawable/instagram_icon" />
 
             <ImageView
+                android:contentDescription="@string/social_media"
                 android:id="@+id/email_verification_fragment_email_icon_image_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:clickable="true"
+                android:focusable="true"
                 android:src="@drawable/email_icon" />
+
         </androidx.appcompat.widget.LinearLayoutCompat>
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/email_verification_fragment_email_sent_by_text_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="18dp"
+            android:layout_marginTop="@dimen/margin_18dp"
             android:fontFamily="@font/poppins"
             android:text="@string/email_sent_by"
             android:textFontWeight="400"
@@ -194,10 +202,10 @@
             android:id="@+id/email_verification_fragment_copyright_text_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="6dp"
+            android:layout_marginTop="@dimen/margin_6dp"
             android:text="@string/copyright"
             android:textFontWeight="400"
-            android:textSize="11sp"
+            android:textSize="@dimen/textsize_11sp"
             card_view:layout_constraintEnd_toEndOf="parent"
             card_view:layout_constraintStart_toStartOf="parent"
             card_view:layout_constraintTop_toBottomOf="@+id/email_verification_fragment_email_sent_by_text_view" />
