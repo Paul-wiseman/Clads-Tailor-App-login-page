@@ -1,185 +1,209 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/email_verification_fragment_parent_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EmailVerificationFragment"
-    android:layout_marginLeft="23dp"
-    android:layout_marginRight="26dp">
+    tools:context=".EmailVerificationFragment">
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="103dp"
-        android:layout_height="28.54dp"
-        android:layout_marginTop="50dp"
-        android:src="@drawable/clads_logo"
-        card_view:layout_constraintBottom_toBottomOf="parent"
-        card_view:layout_constraintEnd_toEndOf="parent"
-        card_view:layout_constraintHorizontal_bias="0.096"
-        card_view:layout_constraintStart_toStartOf="parent"
-        card_view:layout_constraintTop_toTopOf="parent"
-        card_view:layout_constraintVertical_bias="0.092" />
-
-    <TextView
-        android:id="@+id/info_text"
-        android:layout_width="85dp"
-        android:layout_height="17dp"
-        android:text="@string/view_in_browser"
-        android:textSize="11dp"
-
-
-        card_view:layout_constraintBottom_toBottomOf="parent"
-        card_view:layout_constraintEnd_toEndOf="parent"
-        card_view:layout_constraintHorizontal_bias="0.973"
-        card_view:layout_constraintStart_toEndOf="@+id/imageView"
-        card_view:layout_constraintTop_toTopOf="parent"
-        card_view:layout_constraintVertical_bias="0.17" />
-
-    <LinearLayout
-        android:layout_width="313dp"
-        android:layout_height="86dp"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/email_confirmation_icon_background"
-        android:gravity="center"
-        card_view:layout_constraintTop_toBottomOf="@+id/imageView"
-        tools:layout_editor_absoluteX="25dp">
 
         <ImageView
-            android:layout_width="99dp"
-            android:layout_height="46.22dp"
-            android:src="@drawable/email_in_motion_icon" />
-            str
+            android:id="@+id/email_verification_fragment_clads_image_view"
+            android:layout_width="103dp"
+            android:layout_height="28.54dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/clads_logo"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintHorizontal_bias="0.0"
+            card_view:layout_constraintStart_toStartOf="@+id/email_verification_fragment_email_confirmation_card_view"
+            card_view:layout_constraintTop_toTopOf="parent"
+            card_view:layout_constraintVertical_bias="0.0" />
 
-    </LinearLayout>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardView"
-        android:layout_width="313dp"
-        android:layout_height="217dp"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="241dp"
-        card_view:cardElevation="10dp">
-
+        <TextView
+            android:id="@+id/email_verification_fragment_browser_prompt_text_view"
+            android:layout_width="85dp"
+            android:layout_height="17dp"
+            android:text="@string/view_in_browser"
+            android:textSize="11dp"
+            card_view:layout_constraintBottom_toTopOf="@+id/email_verification_fragment_email_icon_frame_linear_layout"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintHorizontal_bias="0.761"
+            card_view:layout_constraintStart_toEndOf="@+id/email_verification_fragment_clads_image_view"
+            card_view:layout_constraintTop_toTopOf="parent"
+            card_view:layout_constraintVertical_bias="0.805" />
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
+            android:id="@+id/email_verification_fragment_email_icon_frame_linear_layout"
+            android:layout_width="313dp"
+            android:layout_height="86dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/email_confirmation_icon_background"
             android:gravity="center"
-            >
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/email_confirmation"
-                android:layout_marginBottom="33dp"
-                android:textFontWeight="700"
-                android:fontFamily="@font/poppins"
-                />
+            card_view:layout_constraintBottom_toTopOf="@id/email_verification_fragment_email_confirmation_card_view"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toBottomOf="@+id/email_verification_fragment_clads_image_view">
 
+            <ImageView
+                android:id="@+id/email_verification_fragment_email_in_motion_icon"
+                android:layout_width="99dp"
+                android:layout_height="46.22dp"
+                android:src="@drawable/email_in_motion_icon" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="12dp"
-                android:textFontWeight="400"
-                android:text="@string/prompt_message"
-                android:layout_marginBottom="36dp"
-
-                />
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@color/deep_sky_blue"
-                android:fontFamily="@font/poppins"
-                android:gravity="center"
-                android:text="@string/verify_email_address"
-                android:textAllCaps="false"
-                android:textFontWeight="700" />
 
         </LinearLayout>
 
-    </androidx.cardview.widget.CardView>
-
-    <com.google.android.material.textview.MaterialTextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:fontFamily="@font/raleway"
-        android:text="@string/stay_in_touch"
-        android:textFontWeight="1000"
-        android:textSize="13dp"
-        android:textStyle="italic"
-        card_view:layout_constraintBottom_toBottomOf="parent"
-        card_view:layout_constraintEnd_toEndOf="parent"
-        card_view:layout_constraintStart_toStartOf="parent"
-        card_view:layout_constraintTop_toBottomOf="@+id/cardView"
-        card_view:layout_constraintVertical_bias="0.0" />
+        <androidx.cardview.widget.CardView
+            android:id="@+id/email_verification_fragment_email_confirmation_card_view"
+            android:layout_width="313dp"
+            android:layout_height="217dp"
+            card_view:cardElevation="10dp"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toBottomOf="@+id/email_verification_fragment_email_icon_frame_linear_layout"
+            tools:layout_editor_absoluteY="241dp">
 
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="4dp"
-        android:src="@drawable/instagram_icon"
-        card_view:layout_constraintEnd_toStartOf="@+id/imageView4"
-        tools:layout_editor_absoluteY="518dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:src="@drawable/twitter_icon"
-        card_view:layout_constraintEnd_toStartOf="@+id/imageView3"
-        tools:layout_editor_absoluteY="518dp" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:src="@drawable/facebook_icon"
-        card_view:layout_constraintEnd_toStartOf="@+id/imageView2"
-        card_view:layout_constraintHorizontal_bias="1.0"
-        card_view:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="518dp" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/email_icon"
-        tools:layout_editor_absoluteX="218dp"
-        tools:layout_editor_absoluteY="518dp" />
-
-    <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/materialTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="18dp"
-        android:fontFamily="@font/poppins"
-        android:text="@string/email_sent_by"
-        android:textFontWeight="400"
-        android:textSize="12dp"
-        card_view:layout_constraintBottom_toBottomOf="parent"
-        card_view:layout_constraintEnd_toEndOf="parent"
-        card_view:layout_constraintStart_toStartOf="parent"
-        card_view:layout_constraintTop_toBottomOf="@+id/imageView2"
-        card_view:layout_constraintVertical_bias="0.135" />
-
-    <com.google.android.material.textview.MaterialTextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="6dp"
-        android:text="@string/copyright"
-        card_view:layout_constraintBottom_toBottomOf="parent"
-        card_view:layout_constraintTop_toBottomOf="@+id/materialTextView"
-        card_view:layout_constraintVertical_bias="0.046"
-        tools:layout_editor_absoluteX="70dp" />
+                <TextView
+                    android:id="@+id/email_verification_fragment_email_confirmation_heading_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="@string/email_confirmation"
+                    android:textFontWeight="700"
+                    android:layout_gravity="center_horizontal"/>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+                <TextView
+                    android:id="@+id/email_verification_fragment_prompt_message_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/margin_10dp"
+                    android:text="@string/prompt_message"
+                    android:textFontWeight="400"
+                    android:textSize="12sp"
+                    android:padding="@dimen/margin_28dp"/>
+
+
+                <Button
+                    android:id="@+id/email_verification_fragment_verify_email_address_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/deep_sky_blue"
+                    android:clickable="true"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="center"
+                    android:text="@string/verify_email_address"
+                    android:textAllCaps="false"
+                    android:textFontWeight="700" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/email_verification_fragment_stay_in_touch_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway"
+            android:text="@string/stay_in_touch"
+            android:textFontWeight="1000"
+            android:textSize="13dp"
+            android:textStyle="italic"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toBottomOf="@+id/email_verification_fragment_email_confirmation_card_view"
+            card_view:layout_constraintVertical_bias="0.112" />
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/email_verification_fragment_icon_group_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            card_view:layout_constraintTop_toBottomOf="@+id/email_verification_fragment_stay_in_touch_text_view"
+            tools:layout_editor_absoluteX="0dp">
+
+            <ImageView
+                android:id="@+id/email_verification_fragment_facebook_icon_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:clickable="true"
+                android:src="@drawable/facebook_icon"
+                card_view:layout_constraintHorizontal_bias="0.5" />
+
+            <ImageView
+                android:id="@+id/email_verification_fragment_twitter_icon_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:clickable="true"
+                android:src="@drawable/twitter_icon" />
+
+            <ImageView
+                android:id="@+id/email_verification_fragment_instagram_icon_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:clickable="true"
+                android:src="@drawable/instagram_icon" />
+
+            <ImageView
+                android:id="@+id/email_verification_fragment_email_icon_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:src="@drawable/email_icon" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/email_verification_fragment_email_sent_by_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/email_sent_by"
+            android:textFontWeight="400"
+            android:textSize="12sp"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toBottomOf="@+id/email_verification_fragment_icon_group_linear_layout" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/email_verification_fragment_copyright_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/copyright"
+            android:textFontWeight="400"
+            android:textSize="11sp"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toBottomOf="@+id/email_verification_fragment_email_sent_by_text_view" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.core.widget.NestedScrollView>
