@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import androidx.core.widget.doOnTextChanged
 import androidx.fragment.app.Fragment
@@ -14,7 +13,6 @@ import com.decagonhq.clads.databinding.FragmentSignupEmailBinding
 import com.decagonhq.clads.utils.SignUpEmailFragmentValidator
 
 class SignupEmailFragment : Fragment() {
-
 
     private var _binding: FragmentSignupEmailBinding? = null
     private val binding get() = _binding!!
@@ -36,8 +34,7 @@ class SignupEmailFragment : Fragment() {
         setUpUI()
     }
 
-
-    //bind the views
+    // bind the views
     private fun setUpUI() {
 
         ArrayAdapter.createFromResource(
@@ -69,11 +66,9 @@ class SignupEmailFragment : Fragment() {
         }
         binding.emailSignUpFragmentFirstnameTextInputEditText.doOnTextChanged { _, _, _, _ ->
             binding.emailSignUpFragmentFirstnameTextInputLayout.error = ""
-
         }
         binding.emailSignUpFragmentLastnameTextInputEditText.doOnTextChanged { _, _, _, _ ->
             binding.emailSignUpFragmentLastnameTextInputLayout.error = ""
-
         }
         binding.emailSignUpFragmentAccountCategoryAutoTextView.apply {
             doOnTextChanged { _, _, _, _ ->
@@ -87,7 +82,6 @@ class SignupEmailFragment : Fragment() {
         _binding = null
     }
 
-
     // Validation of fields
     private fun validateFields(): Boolean {
 
@@ -98,7 +92,6 @@ class SignupEmailFragment : Fragment() {
                 binding.emailSignUpFragmentFirstnameTextInputLayout.error =
                     "Field is empty or invalid name format entered"
                 isFieldValidated = false
-
             }
             else -> {
                 binding.emailSignUpFragmentFirstnameTextInputLayout.error = ""
@@ -162,5 +155,4 @@ class SignupEmailFragment : Fragment() {
 
         return isFieldValidated
     }
-
 }
