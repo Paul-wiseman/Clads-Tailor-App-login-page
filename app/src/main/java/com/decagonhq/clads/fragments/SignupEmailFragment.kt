@@ -9,17 +9,13 @@ import android.widget.ArrayAdapter
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.decagonhq.clads.R
+import com.decagonhq.clads.databinding.FragmentSignupEmailBinding
 import com.decagonhq.clads.utils.SignUpEmailFragmentValidator
 
-import com.decagonhq.clads.databinding.FragmentSignupEmailBinding
+class SignupEmailFragment : Fragment(), AdapterView.OnItemSelectedListener {
 
-
-class SignupEmailFragment: Fragment(), AdapterView.OnItemSelectedListener {
-
-    private lateinit  var binding: FragmentSignupEmailBinding
+    private lateinit var binding: FragmentSignupEmailBinding
     lateinit var itemSelected: String
-
-
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -41,15 +37,10 @@ class SignupEmailFragment: Fragment(), AdapterView.OnItemSelectedListener {
         itemSelected = parent?.getItemAtPosition(position) as String
     }
 
-
     override fun onNothingSelected(parent: AdapterView<*>?) {
-
     }
 
-
-
-
-    private fun setUpUI(){
+    private fun setUpUI() {
 
         ArrayAdapter.createFromResource(
             requireContext(),
@@ -57,7 +48,7 @@ class SignupEmailFragment: Fragment(), AdapterView.OnItemSelectedListener {
             R.layout.signup_email_autotextview
         ).also { adapter -> // Specifies the layout to use when the list of choices appears
             adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-            binding.emailSignUpFragmentAccountCategoryAutoTextView.setAdapter(adapter)  // Applies the adapter to the spinner
+            binding.emailSignUpFragmentAccountCategoryAutoTextView.setAdapter(adapter) // Applies the adapter to the spinner
         }
         binding.emailSignUpFragmentAccountCategoryAutoTextView.onItemSelectedListener = this
 
@@ -65,43 +56,33 @@ class SignupEmailFragment: Fragment(), AdapterView.OnItemSelectedListener {
 //        arrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
 //        binding.accountCategoryFilledDropdown.setAdapter(arrayAdapter)
         binding.emailSignUpFragmentSignUpButton.apply {
-            setOnClickListener{
-                if(validateFields()){
+            setOnClickListener {
+                if (validateFields()) {
                     findNavController().navigate(R.id.action_signupEmailFragment_to_emailVerificationFragment)
                 }
             }
         }
-
     }
-
-
 
     private fun validateFields(): Boolean {
 
         var isFieldValidated = true
 
-
-            when{
-                    (!SignUpEmailFragmentValidator.nameValidator(binding.emailSignUpFragmentFirstnameTextInputEditText.text.toString())) ->
-                    {binding.emailSignUpFragmentFirstnameTextInputLayout.error = "Field is empty or invalid name format entered"
-                        isFieldValidated = false}
-                else -> {binding.emailSignUpFragmentFirstnameTextInputLayout.error = ""
-
+        when {
+            (!SignUpEmailFragmentValidator.nameValidator(binding.emailSignUpFragmentFirstnameTextInputEditText.text.toString())) ->
+                {
+                    binding.emailSignUpFragmentFirstnameTextInputLayout.error = "Field is empty or invalid name format entered"
+                    isFieldValidated = false
                 }
-
+            else -> {
+                binding.emailSignUpFragmentFirstnameTextInputLayout.error = ""
             }
-
-
-
-
-
+        }
 
         if (!SignUpEmailFragmentValidator.nameValidator(binding.emailSignUpFragmentLastnameTextInputEditText.text.toString())) {
             binding.emailSignUpFragmentLastnameTextInputLayout.error = "Field is empty or invalid name format entered"
             isFieldValidated = false
         }
-
-
 
         if (!SignUpEmailFragmentValidator.emailValidator(
                 binding.emailSignUpFragmentEmailAddressTextInputEditText.text.toString().trim()
@@ -114,8 +95,7 @@ class SignupEmailFragment: Fragment(), AdapterView.OnItemSelectedListener {
         if (!SignUpEmailFragmentValidator.accountCategoryValidator(binding.emailSignUpFragmentAccountCategoryAutoTextView.text.toString())) {
 
             binding.emailSignUpFragmentAccountCategoryTextInputLayout.error = "Select an account type"
-                isFieldValidated = false
-
+            isFieldValidated = false
         }
 
         if (!SignUpEmailFragmentValidator.passwordValidator(
@@ -141,7 +121,7 @@ class SignupEmailFragment: Fragment(), AdapterView.OnItemSelectedListener {
                 binding.emailSignUpFragmentConfirmPasswordTextInputEditText.text.toString()
             )
 
-             ) {
+        ) {
 
             binding.emailSignUpFragmentConfirmPasswordTextInputLayout.error = "Passwords do not match"
             binding.emailSignUpFragmentConfirmPasswordTextInputLayout.errorIconDrawable = null
@@ -150,6 +130,4 @@ class SignupEmailFragment: Fragment(), AdapterView.OnItemSelectedListener {
 
         return isFieldValidated
     }
-
-
 }
