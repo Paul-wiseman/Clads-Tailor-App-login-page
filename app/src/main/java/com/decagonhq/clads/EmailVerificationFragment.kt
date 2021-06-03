@@ -25,7 +25,6 @@ class EmailVerificationFragment : Fragment() {
     ): View? {
         preBinding = FragmentEmailVerificationBinding.inflate(inflater, container, false)
         return preBinding!!.root
-
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
