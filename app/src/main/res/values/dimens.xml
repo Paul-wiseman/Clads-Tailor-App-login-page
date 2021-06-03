@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    //dimensions for textSize
+    <dimen name="textSize_18sp">18sp</dimen>
+    <dimen name="textSize_14sp">14sp</dimen>
+
+    //dimension for margin
+    <dimen name="margin_120dp">120dp</dimen>
+    <dimen name="margin_89dp">89dp</dimen>
+    <dimen name="margin_83dp">83dp</dimen>
+    <dimen name="margin_29dp">29dp</dimen>
+    <dimen name="margin_23dp">23dp</dimen>
+    <dimen name="margin_22dp">23dp</dimen>
+    <dimen name="margin_9dp">9dp</dimen>
+    <dimen name="cornerRadius_5dp">5dp</dimen>
+    <dimen name="padding_12dp">12dp</dimen>
+
 
     <!--  Signup_email_layout_paddings -->
     <dimen name="padding_10dp">10dp</dimen>

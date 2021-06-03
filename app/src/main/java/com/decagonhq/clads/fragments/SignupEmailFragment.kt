@@ -15,8 +15,9 @@ import com.decagonhq.clads.utils.SignUpEmailFragmentValidator
 
 class SignupEmailFragment : Fragment() {
 
-    private lateinit var binding: FragmentSignupEmailBinding
 
+    private var _binding: FragmentSignupEmailBinding? = null
+    private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -25,7 +26,7 @@ class SignupEmailFragment : Fragment() {
     ): View {
 
         // Inflate the layout for this fragment and return the view
-        binding = FragmentSignupEmailBinding.inflate(inflater, container, false)
+        _binding = FragmentSignupEmailBinding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -79,6 +80,11 @@ class SignupEmailFragment : Fragment() {
                 binding.emailSignUpFragmentAccountCategoryTextInputLayout.error = ""
             }
         }
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 
 
