@@ -1,4 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <!--  Signup_email_layout_paddings -->
+    <dimen name="padding_10dp">10dp</dimen>
+    <dimen name="padding_54dp">54dp</dimen>
+
+
+    <!--  Signup_email_layout_text_line_height or weight -->
+    <dimen name="line_height_27sp">27sp</dimen>
+
+
+    <!--  Signup_email_layout_heights or weights -->
+    <dimen name="layout_height_or_width_0dp">0dp</dimen>
+    <dimen name="layout_height_or_width_1dp">1dp</dimen>
+    <dimen name="layout_height_or_width_2dp">2dp</dimen>
+    <dimen name="layout_height_or_width_3dp">3dp</dimen>
+    <dimen name="layout_height_or_width_4dp">4dp</dimen>
+    <dimen name="layout_height_or_width_5dp">5dp</dimen>
+    <dimen name="layout_height_or_width_6dp">6dp</dimen>
+    <dimen name="layout_height_or_width_7dp">7dp</dimen>
+    <dimen name="layout_height_or_width_8dp">8dp</dimen>
+    <dimen name="layout_height_or_width_9dp">9dp</dimen>
+    <dimen name="layout_height_or_width_10dp">10dp</dimen>
+    <dimen name="layout_height_or_width_15dp">15dp</dimen>
+    <dimen name="layout_height_or_width_18dp">18dp</dimen>
+    <dimen name="layout_height_or_width_21dp">21dp</dimen>
+    <dimen name="layout_height_or_width_27dp">27dp</dimen>
+    <dimen name="layout_height_or_width_57dp">57dp</dimen>
+    <dimen name="layout_height_or_width_60dp">60dp</dimen>
+
+
+    <!--  Signup_email_layout_text_sizes -->
+    <dimen name="text_size_8sp">8sp</dimen>
+    <dimen name="text_size_9sp">9sp</dimen>
+    <dimen name="text_size_10sp">10sp</dimen>
+    <dimen name="text_size_11sp">11sp</dimen>
+    <dimen name="text_size_12sp">12sp</dimen>
+    <dimen name="text_size_13sp">13sp</dimen>
+    <dimen name="text_size_14sp">14sp</dimen>
+    <dimen name="text_size_15sp">15sp</dimen>
+    <dimen name="text_size_16sp">16sp</dimen>
+    <dimen name="text_size_17sp">17sp</dimen>
+    <dimen name="text_size_18sp">22sp</dimen>
+
+
+    <!--  Signup_email_layout_margins -->
+    <dimen name ="margin_8dp">8dp</dimen>
+    <dimen name ="margin_18dp">18dp</dimen>
+    <dimen name ="margin_16dp">16dp</dimen>
+    <dimen name ="margin_30dp">30dp</dimen>
+    <dimen name ="margin_27dp">27dp</dimen>
+    <dimen name ="margin_32dp">32dp</dimen>
+    <dimen name ="margin_40dp">40dp</dimen>
+    <dimen name ="margin_44dp">44dp</dimen>
+    <dimen name ="margin_15dp">15dp</dimen>
+
+    <!--  Signup_email_layout_bias -->
+    <dimen name ="bias_0">0</dimen>
+    <dimen name ="bias_0.49">0.49</dimen>
+    <dimen name ="bias_0.50">0.50</dimen>
+    <dimen name ="bias_0.70">0.70</dimen>
+
+
 </resources>
