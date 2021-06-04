@@ -1,4 +1,4 @@
-package com.decagonhq.clads
+package com.decagonhq.clads.activities
 
 import android.content.Intent
 import android.os.Bundle

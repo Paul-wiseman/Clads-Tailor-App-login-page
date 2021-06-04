@@ -1,4 +1,4 @@
-package com.decagonhq.clads
+package com.decagonhq.clads.fragments
 
 import android.graphics.Color
 import android.graphics.Typeface
@@ -12,6 +12,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
+import com.decagonhq.clads.R
 import com.decagonhq.clads.databinding.FragmentSignupChoicesBinding
 
 class SignupChoicesFragment : Fragment() {

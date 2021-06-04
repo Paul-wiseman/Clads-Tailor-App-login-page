@@ -8,9 +8,9 @@
     android:paddingHorizontal="@dimen/margin_20dp"
     android:fillViewport="true"
     android:background="@color/deep_sky_blue"
-    tools:context=".SignupLoginFragment"
-    android:id="@+id/fragment_signup_login_parent_layout"
-    >
+    tools:context=".fragments.SignupLoginFragment"
+    android:id="@+id/fragment_signup_login_parent_layout">
+
 
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
@@ -52,14 +52,14 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/fragment_signup_login_image_view" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/fragment_signup_signup_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/marginTop_100dp"
-            android:background="@drawable/custom_sign_up_button"
             android:backgroundTint="@color/white"
             android:fontFamily="@font/poppins_bold"
+            app:cornerRadius="@dimen/margin_5dp"
             android:text="@string/signup_login_fragment_sign_up"
             android:textAllCaps="true"
             android:textColor="@color/deep_sky_blue"
@@ -68,13 +68,14 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/fragment_signup_login_textview" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/fragment_signup_login_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/deep_sky_blue"
             android:layout_marginTop="@dimen/maginTop_20dp"
+            app:strokeWidth="@dimen/layout_height_or_width_2dp"
             android:layout_marginBottom="@dimen/margin_Bottom24dp"
-            android:background="@drawable/custom_login_button"
             android:fontFamily="@font/poppins_bold"
             android:text="@string/signup_choices_fragment_login"
             android:textAlignment="center"
@@ -95,4 +96,5 @@
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
+
 

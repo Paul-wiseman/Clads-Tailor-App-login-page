@@ -11,6 +11,7 @@ import androidx.test.espresso.action.ViewActions
 import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.matcher.ViewMatchers.* // ktlint-disable no-wildcard-imports
 import androidx.test.ext.junit.runners.AndroidJUnit4
+import com.decagonhq.clads.fragments.SignupLoginFragment
 import junit.framework.TestCase
 import org.junit.Before
 import org.junit.Test

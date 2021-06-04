@@ -8,12 +8,12 @@
 
     <activity
         android:id="@+id/clads_activity"
-        android:name="com.decagonhq.clads.CladsActivity"
+        android:name="com.decagonhq.clads.activities.CladsActivity"
         android:label="activity_clads"
         tools:layout="@layout/activity_clads" />
     <fragment
         android:id="@+id/signup_login_fragment"
-        android:name="com.decagonhq.clads.SignupLoginFragment"
+        android:name="com.decagonhq.clads.fragments.SignupLoginFragment"
         android:label="fragment_signup_login"
         tools:layout="@layout/fragment_signup_login"
         app:startDestination="@id/action_signupLoginFragment_to_signupChoicesFragment">
@@ -27,7 +27,7 @@
     </fragment>
     <fragment
         android:id="@+id/signup_choices_fragment"
-        android:name="com.decagonhq.clads.SignupChoicesFragment"
+        android:name="com.decagonhq.clads.fragments.SignupChoicesFragment"
         android:label="fragment_signup_choices"
         tools:layout="@layout/fragment_signup_choices" >
         <action
@@ -39,7 +39,7 @@
     </fragment>
     <fragment
         android:id="@+id/signup_email_fragment"
-        android:name="com.decagonhq.clads.SignupEmailFragment"
+        android:name="com.decagonhq.clads.fragments.SignupEmailFragment"
         android:label="fragment_signup_email"
         tools:layout="@layout/fragment_signup_email" >
         <action
@@ -48,7 +48,7 @@
     </fragment>
     <fragment
         android:id="@+id/signup_google_fragment"
-        android:name="com.decagonhq.clads.SignupGoogleFragment"
+        android:name="com.decagonhq.clads.fragments.SignupGoogleFragment"
         android:label="fragment_signup_google"
         tools:layout="@layout/fragment_signup_google" >
         <action
@@ -56,10 +56,10 @@
             app:destination="@id/signup_email_fragment" />
     </fragment>
     <fragment
-        android:id="@+id/login_fragment"
-        android:name="com.decagonhq.clads.LoginFragment"
+        android:id="@+id/fragment_login_screen"
+        android:name="com.decagonhq.clads.fragments.LoginScreenFragment"
         android:label="fragment_login"
-        tools:layout="@layout/fragment_login" >
+        tools:layout="@layout/fragment_login_screen" >
         <action
             android:id="@+id/action_loginFragment_to_forgotPasswordFragment"
             app:destination="@id/forgot_password_fragment" />
@@ -69,16 +69,16 @@
     </fragment>
     <fragment
         android:id="@+id/email_verification_fragment"
-        android:name="com.decagonhq.clads.EmailVerificationFragment"
+        android:name="com.decagonhq.clads.fragments.EmailVerificationFragment"
         android:label="fragment_email_verification"
         tools:layout="@layout/fragment_email_verification" >
         <action
             android:id="@+id/action_emailVerificationFragment_to_loginFragment"
-            app:destination="@id/login_fragment" />
+            app:destination="@id/fragment_login_screen" />
     </fragment>
     <fragment
         android:id="@+id/forgot_password_fragment"
-        android:name="com.decagonhq.clads.ForgotPasswordFragment"
+        android:name="com.decagonhq.clads.fragments.ForgotPasswordFragment"
         android:label="fragment_forgot_password"
         tools:layout="@layout/fragment_forgot_password" >
         <action
@@ -87,7 +87,7 @@
     </fragment>
     <fragment
         android:id="@+id/reset_password_verification"
-        android:name="com.decagonhq.clads.ResetPasswordVerification"
+        android:name="com.decagonhq.clads.fragments.ResetPasswordVerification"
         android:label="fragment_reset_password_verification"
         tools:layout="@layout/fragment_reset_password_verification" >
         <action
@@ -96,12 +96,12 @@
     </fragment>
     <fragment
         android:id="@+id/reset_password"
-        android:name="com.decagonhq.clads.ResetPassword"
+        android:name="com.decagonhq.clads.fragments.ResetPassword"
         android:label="fragment_reset_password"
         tools:layout="@layout/fragment_reset_password" >
         <action
             android:id="@+id/action_resetPassword_to_loginFragment"
-            app:destination="@id/login_fragment" />
+            app:destination="@id/fragment_login_screen" />
     </fragment>
     <fragment android:id="@+id/placeholder" />
 </navigation>
