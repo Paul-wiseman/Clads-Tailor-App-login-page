@@ -11,6 +11,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.findNavController
 import com.decagonhq.clads.databinding.FragmentSignupChoicesBinding
 
 class SignupChoicesFragment : Fragment() {
@@ -34,6 +35,16 @@ class SignupChoicesFragment : Fragment() {
         binding.fragmentSignupChoicesTextviewHaveAccount.setOnClickListener {
         }
 
+        binding.fragmentSignupChoicesButtonWithEmail.apply {
+            setOnClickListener {
+                findNavController().navigate(R.id.action_signupChoicesFragment_to_signupEmailFragment2)
+            }
+        }
+        binding.fragmentSignupChoicesButtonWithGoogle.apply {
+            setOnClickListener {
+                findNavController().navigate(R.id.action_signupChoicesFragment_to_signupGoogleFragment2)
+            }
+        }
         signUpChoicesHaveAccountTextView()
     }
 
