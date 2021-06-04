@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    //dimensions for textSize
+    <dimen name="textSize_18sp">18sp</dimen>
+    <dimen name="textSize_14sp">14sp</dimen>
+
+    //dimension for margin
+    <dimen name="marginStart_120dp">120dp</dimen>
+    <dimen name="marginTop_89dp">89dp</dimen>
+    <dimen name="marginStart_83dp">83dp</dimen>
+    <dimen name="marginTop_44dp">44dp</dimen>
+    <dimen name="marginTop_32dp">32dp</dimen>
+    <dimen name="marginTop_29dp">29dp</dimen>
+    <dimen name="marginTop_23dp">23dp</dimen>
+    <dimen name="marginTop_22dp">23dp</dimen>
+    <dimen name="marginTop_9dp">9dp</dimen>
+    <dimen name="marginEnd_18dp">18dp</dimen>
+    <dimen name="marginStart_18dp">18dp</dimen>
+    <dimen name="cornerRadius_5dp">5dp</dimen>
+    <dimen name="drawable_padding_12dp">12dp</dimen>
+
+
+</resources>
