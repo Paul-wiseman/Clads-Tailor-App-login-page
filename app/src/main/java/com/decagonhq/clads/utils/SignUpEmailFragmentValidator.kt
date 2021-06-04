@@ -22,7 +22,7 @@ class SignUpEmailFragmentValidator {
         fun accountCategoryValidator(account_Category: String): Boolean {
             return when {
                 account_Category.toUpperCase() == AccountCategory.CLIENT.name ||
-                    account_Category == AccountCategory.WEAVER.name ||
+                    account_Category.toUpperCase() == AccountCategory.WEAVER.name ||
                     account_Category.toUpperCase() == AccountCategory.TAILOR.name -> {
                     true
                 }

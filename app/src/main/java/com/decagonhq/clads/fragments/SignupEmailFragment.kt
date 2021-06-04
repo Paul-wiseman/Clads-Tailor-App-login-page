@@ -50,6 +50,7 @@ class SignupEmailFragment : Fragment() {
             setOnClickListener {
                 if (validateFields()) {
                     findNavController().navigate(R.id.action_signupEmailFragment_to_emailVerificationFragment)
+
                 }
             }
         }
