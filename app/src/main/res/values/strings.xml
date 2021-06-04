@@ -19,7 +19,7 @@
     <string name="signup_choices_fragment_signup_with_google">Signup with Google</string>
     <string name="signup_choices_fragment_sign_up_with_email">Sign up with email</string>
     <string name="signup_choices_fragment_sign_up_with_phone_number">Sign up with phone number</string>
-    <string name="signup_choices_fragment_have_an_account">Have an account?</string>
+<!--    <string name="signup_choices_fragment_have_an_account_login_text">Have an account? Login</string>-->
     <string name="signup_choices_fragment_login">Login</string>
     <string name="signup_choices_fragment_a_logo_of_the_app">A logo of the app</string>
     <string name="signup_login_fragment_sign_up">Sign up</string>

@@ -9,9 +9,4 @@
         android:gravity="center"
         android:drawable="@drawable/ic_clad_logo_white"
         android:filter="true"/>
-
-    <item android:bottom="100dp">
-        <bitmap android:gravity="bottom"
-            android:src="@drawable/splash_screen_progress_bar_"/>
-    </item>
 </layer-list>

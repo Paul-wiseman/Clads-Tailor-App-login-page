@@ -61,9 +61,4 @@ class SignupChoicesFragmentTest : TestCase() {
             .check(ViewAssertions.matches(ViewMatchers.isDisplayed()))
     }
 
-    @Test
-    fun is_Signup_Choices_Fragment_Login_Textview_Visible() {
-        Espresso.onView(ViewMatchers.withId(R.id.fragment_signup_choices_textview_login))
-            .check(ViewAssertions.matches(ViewMatchers.isDisplayed()))
-    }
 }
