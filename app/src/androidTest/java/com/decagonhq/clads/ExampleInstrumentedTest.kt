@@ -12,9 +12,6 @@ import org.junit.runner.RunWith
  * See [testing documentation](http://d.android.com/tools/testing).
  */
 
-// @get:Rule
-// var activityScenarioRule = activityScenarioRule<CladsActivity>()
-
 @RunWith(AndroidJUnit4::class)
 class ExampleInstrumentedTest {
     @Test
