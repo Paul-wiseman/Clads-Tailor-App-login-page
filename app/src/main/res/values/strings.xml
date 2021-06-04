@@ -26,9 +26,9 @@
     <string name="fragment_login_screen_signup_for_free">SignUp for free</string>
     <string name="fragment_login_screen_forgot_password">Forgot Password?</string>
     <string name="fragment_login_screen_login_with_google">Login with Google</string>
-=======
+
     <string name="sign_up_login_tag_line"> Lorem ipsum, ipsum sum</string>
->>>>>>> f9a5b90561108f7fc9345985a38e41a37cacf513
+
 
 
     <string name="all_placeholder_text">Hello blank fragment</string>
