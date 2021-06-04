@@ -60,5 +60,4 @@ class SignupChoicesFragmentTest : TestCase() {
         Espresso.onView(ViewMatchers.withId(R.id.fragment_signup_choices_textview_have_account))
             .check(ViewAssertions.matches(ViewMatchers.isDisplayed()))
     }
-
 }
