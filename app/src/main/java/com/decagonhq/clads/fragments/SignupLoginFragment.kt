@@ -8,7 +8,6 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.decagonhq.clads.databinding.FragmentSignupLoginBinding
 
-
 class SignupLoginFragment : Fragment() {
     // Declare binding variable
     private var _binding: FragmentSignupLoginBinding? = null
