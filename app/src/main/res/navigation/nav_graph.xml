@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
+
     app:startDestination="@id/signup_login_fragment">
 
     <activity
@@ -18,7 +19,11 @@
         app:startDestination="@id/action_signupLoginFragment_to_signupChoicesFragment">
         <action
             android:id="@+id/action_signupLoginFragment_to_signupChoicesFragment"
-            app:destination="@id/signup_choices_fragment" />
+            app:destination="@id/signup_choices_fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/signup_choices_fragment"

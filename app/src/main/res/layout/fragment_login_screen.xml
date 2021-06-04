@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/fragment_login_screen"
@@ -54,7 +55,7 @@
             android:textSize="@dimen/textSize_18sp"
             android:textStyle="bold"
             app:cornerRadius="@dimen/cornerRadius_5dp"
-            app:icon="@drawable/google_icon2"
+            app:icon="@drawable/google_logo_icon"
             app:iconGravity="textStart"
             app:iconTintMode="multiply" />
 

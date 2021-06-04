@@ -1,8 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    //dimensions for textSize
+
+    <dimen name="margin_65dp">65dp</dimen>
+    <dimen name="marginTop_30dp">30dp</dimen>
+    <dimen name="margin_78dp">78dp</dimen>
+    <dimen name="marginTop_492dp">492dp</dimen>
+    <dimen name="marginTop_10dp">10dp</dimen>
+    <dimen name="marginTop_16dp">16dp</dimen>
+    <dimen name="marginTop_128dp">128dp</dimen>
+    <dimen name="marginTop_236dp">236dp</dimen>
+    <dimen name="marginTop_100dp">100dp</dimen>
+    <dimen name="marginTop_104dp">104dp</dimen>
+    <dimen name="marginTop_80dp">80dp</dimen>
+    <dimen name="marginBottom_113dp">113dp</dimen>
+    <dimen name="marginStart_100dp">100dp</dimen>
+    <dimen name="marginStart_8dp">8dp</dimen>
+    <dimen name="margin_20dp">20dp</dimen>
+
     <dimen name="textSize_18sp">18sp</dimen>
+    <dimen name="textSize_22dp">22dp</dimen>
     <dimen name="textSize_14sp">14sp</dimen>
+    <dimen name="textSize_16sp">16sp</dimen>
+    <dimen name="textSize_15sp">15sp</dimen>
+
 
     //dimension for margin
     <dimen name="margin_120dp">120dp</dimen>
@@ -74,6 +94,7 @@
     <dimen name ="margin_44dp">44dp</dimen>
     <dimen name ="margin_15dp">15dp</dimen>
     <dimen name ="margin_10dp">10dp</dimen>
+    <dimen name ="margin_50dp">10dp</dimen>
 
     <!--  Signup_email_layout_bias -->
     <dimen name ="bias_0">0.0</dimen>
@@ -82,4 +103,18 @@
     <dimen name ="bias_0.70">0.70</dimen>
 
 
+    // Padding dimensions for Signup choices screen
+    <dimen name="padding_16dp">16dp</dimen>
+    <dimen name="padding_40dp">40dp</dimen>
+
+
+
+    //Dimension for landing screen
+    <dimen name="margin_top_255dp">255dp</dimen>
+    <dimen name="marginTop_120dp">120dp</dimen>
+    <dimen name="marginBottom_240dp">240dp</dimen>
+    <dimen name="padding_6dp">6dp</dimen>
+    <dimen name="marginTop_12dp">12dp</dimen>
+    <dimen name="maginTop_20dp">20dp</dimen>
+    <dimen name="margin_Bottom24dp">24dp</dimen>
 </resources>

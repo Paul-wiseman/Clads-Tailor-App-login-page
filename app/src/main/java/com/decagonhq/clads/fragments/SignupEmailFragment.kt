@@ -25,7 +25,8 @@ class SignupEmailFragment : Fragment() {
 
         // Inflate the layout for this fragment and return the view
         _binding = FragmentSignupEmailBinding.inflate(inflater, container, false)
-        return binding.root
+
+        return  binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

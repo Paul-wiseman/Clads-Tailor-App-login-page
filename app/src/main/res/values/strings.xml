@@ -9,9 +9,10 @@
     <string name="email_sign_up_login_tag_line"> Lorem ipsum. ipsum sum</string>
 
     <!-- loading TextView -->
-    <string name="splash_screen_loading">Loading...</string>
+    <string name="splash_screen_loading_text">Loading...</string>
     <!-- Clads TextView -->
-    <string name="sign_up_login_tag_line"> Lorem ipsum. ipsum sum</string>
+
+
 
 
     //string resources for fragment login screen
@@ -25,12 +26,16 @@
     <string name="fragment_login_screen_signup_for_free">SignUp for free</string>
     <string name="fragment_login_screen_forgot_password">Forgot Password?</string>
     <string name="fragment_login_screen_login_with_google">Login with Google</string>
+=======
+    <string name="sign_up_login_tag_line"> Lorem ipsum, ipsum sum</string>
+>>>>>>> f9a5b90561108f7fc9345985a38e41a37cacf513
 
 
     <string name="all_placeholder_text">Hello blank fragment</string>
     <string name ="email_sign_up_fragment_create_acount_text">Create an account</string>
     <string name ="email_sign_up_fragment_lets_get_to_know_you_text">Lets get to know you</string>
     <string name="splash_screen_placeholder_text">Splash Screen</string>
+
     <string name="email_sign_up_fragment_firstname_hint_text">First Name</string>
     <string name="email_sign_up_fragment_lastname_hint_text">Last Name</string>
     <string name="email_sign_up_fragment_other_name_hint_text">Other Name</string>
@@ -47,6 +52,14 @@
     <string name="sign_up_email_edit_texts__error_message">Field must not be empty</string>
     <string name="sign_up_email_confirm_password__error_message">Passwords do not match</string>
 
+
+    <string name="signup_choices_fragment_signup_with_google">Signup with Google</string>
+    <string name="signup_choices_fragment_sign_up_with_email">Sign up with email</string>
+    <string name="signup_choices_fragment_sign_up_with_phone_number">Sign up with phone number</string>
+<!--    <string name="signup_choices_fragment_have_an_account_login_text">Have an account? Login</string>-->
+    <string name="signup_choices_fragment_login">Login</string>
+    <string name="signup_choices_fragment_a_logo_of_the_app">A logo of the app</string>
+    <string name="signup_login_fragment_sign_up">Sign up</string>
 
 
     <string-array name="email_sign_up_fragment_choose_account_category_array" >
