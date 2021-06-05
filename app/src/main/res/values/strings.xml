@@ -80,4 +80,26 @@
         <item>Weaver</item>
         <item>Client</item>
     </string-array>
+
+    <string name ="sign_up_email_title">Create an account</string>
+    <string name ="sign_up_email_description">Lets get to know you</string>
+    <string name ="sign_up_email_first_name">First Name</string>
+    <string name ="sign_up_email_last_name">Last Name</string>
+    <string name ="sign_up_email_other_name">Other Name</string>
+    <string name ="sign_up_email_email_address">Email Address</string>
+    <string name ="sign_up_email_password">Password</string>
+    <string name ="sign_up_email_confirm_password">Confirm Password</string>
+    <string name="reset_password_fragment_view_in_browser">view in browser</string>
+    <string name="all_reset_password">Reset Password</string>
+    <string name="reset_password_fragment_click_reset_button">Hi,<br/> You’re almost there. To finish resetting your password, please click on the  reset button below</string>
+    <string name="reset_password_fragment_stay_in_touch">stay in touch</string>
+    <string name="reset_password_fragment_email_sent_by_clads">email sent by clads</string>
+    <string name="reset_password_fragment_copyright_text">copyright 2020. All Rights Reserved</string>
+    <string name="all_forgot_password">Forgot Password</string>
+    <string name="all_email_address">Email Address</string>
+    <string name="forgot_password_fragment_send_request_password_link">Send Request Password Link</string>
+    <string name="all_i_can_remember_my_password">I can remember my password,</string>
+    <string name="all_login">Login</string>
+    <string name="reset_password_verification_fragment_new_password">New Password</string>
+    <string name="reset_password_verification_fragment_confirm_new_password">Confirm New Password</string>
 </resources>
