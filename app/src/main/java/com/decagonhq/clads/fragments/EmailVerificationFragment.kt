@@ -19,7 +19,6 @@ class EmailVerificationFragment : Fragment() {
         super.onCreate(savedInstanceState)
     }
 
-
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -37,8 +36,5 @@ class EmailVerificationFragment : Fragment() {
         binding.emailVerificationFragmentVerifyEmailAddressButton.setOnClickListener {
             findNavController().navigate(R.id.action_emailVerificationFragment_to_loginFragment)
         }
-
-
-}
-
+    }
 }
