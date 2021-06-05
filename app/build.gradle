@@ -22,6 +22,11 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    buildFeatures{
+        viewBinding = true
+        dataBinding = true
+    }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -44,6 +49,7 @@ android {
 
 dependencies {
 
+    def androidx_test="1.1.0"
     //Default Dependencies
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$versions.kotlin_version"
     implementation 'androidx.core:core-ktx:1.5.0'
@@ -69,6 +75,9 @@ dependencies {
     androidTestImplementation "androidx.navigation:navigation-testing:$versions.nav_version"
 
 
+    // Navigation testing
+    androidTestImplementation "androidx.navigation:navigation-testing:2.3.5"
+
     //Retrofit
     implementation "com.squareup.retrofit2:retrofit:$versions.retrofit_version"
     implementation "com.squareup.retrofit2:converter-gson:$versions.retrofit_version"
@@ -89,11 +98,15 @@ dependencies {
     implementation "androidx.fragment:fragment-ktx:$versions.fragment_version"
     debugImplementation "androidx.fragment:fragment-testing:$versions.fragment_version"
 
+    //Mockito
+    testImplementation "org.mockito:mockito-core:$versions.mokito_version"
+    androidTestImplementation "org.mockito:mockito-android:$versions.mokito_version"
     //Glide
     implementation "com.github.bumptech.glide:glide:$versions.glide_version"
     kapt "com.github.bumptech.glide:compiler:$versions.glide_version"
 
     implementation "com.jakewharton.timber:timber:$versions.timber_version"
+
 
     //to test fragment
     debugImplementation "androidx.fragment:fragment-testing:$versions.fragment_version"
@@ -101,5 +114,25 @@ dependencies {
     //mockito
     testImplementation 'org.mockito:mockito-core:2.24.5'
     androidTestImplementation 'org.mockito:mockito-android:2.24.5'
+
+
+  // Espresso
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    androidTestImplementation 'androidx.test:rules:1.3.0'
+
+    //fragment Ktx
+    implementation "androidx.fragment:fragment-ktx:$versions.fragment_version"
+    debugImplementation "androidx.fragment:fragment-testing:$versions.fragment_version"
+
+//Mockito
+    testImplementation "org.mockito:mockito-core:$versions.mockito_version"
+//    implementation("org.mockito:mockito-core:3.10.0")
+    androidTestImplementation "org.mockito:mockito-android:$versions.mockito_version"
+
+    // Library to use gif Images
+    implementation "pl.droidsonroids.gif:android-gif-drawable:$versions.gif_version"
+
+
 
 }

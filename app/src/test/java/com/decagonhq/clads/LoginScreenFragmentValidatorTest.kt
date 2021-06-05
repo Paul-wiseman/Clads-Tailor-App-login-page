@@ -1,10 +1,11 @@
 package com.decagonhq.clads
 
+import com.decagonhq.clads.utils.LoginScreenFragmentValidator
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
 import org.junit.Test
 
-class ValidatorTest {
+class LoginScreenFragmentValidatorTest {
     /**
      * the user should not be able to login if the:
      * ... password field is empty
@@ -14,19 +15,19 @@ class ValidatorTest {
      */
     @Test
     fun `validateEmail returns true if the input is not empty and is a correct email pattern`() {
-        val result = Validator.validateEmail("emeka.paul@decagon.dev")
+        val result = LoginScreenFragmentValidator.validateEmail("emeka.paul@decagon.dev")
         assertTrue(result)
     }
 
     @Test
     fun `ValidateEmail returns false if the email input is empty`() {
-        val result = Validator.validateEmail(" ")
+        val result = LoginScreenFragmentValidator.validateEmail(" ")
         assertFalse(result)
     }
 
     @Test
     fun `ValidateEmail returns false if the pattern of the email is not correct`() {
-        val result = Validator.validateEmail("emeka")
+        val result = LoginScreenFragmentValidator.validateEmail("emeka")
         assertFalse(result)
     }
 
@@ -36,13 +37,13 @@ class ValidatorTest {
      */
     @Test
     fun `ValidatePassword returns true if the password is valid`() {
-        val result = Validator.validatePassword("ticTactoe@tango1")
+        val result = LoginScreenFragmentValidator.validatePassword("ticTactoe@tango1")
         assertTrue(result)
     }
 
     @Test
     fun `ValidatePassword returns false if the password input is empty`() {
-        val result = Validator.validatePassword(" ")
+        val result = LoginScreenFragmentValidator.validatePassword(" ")
         assertFalse(result)
     }
 }
