@@ -108,6 +108,14 @@ dependencies {
     implementation "com.jakewharton.timber:timber:$versions.timber_version"
 
 
+    //to test fragment
+    debugImplementation "androidx.fragment:fragment-testing:$versions.fragment_version"
+
+    //mockito
+    testImplementation 'org.mockito:mockito-core:2.24.5'
+    androidTestImplementation 'org.mockito:mockito-android:2.24.5'
+
+
   // Espresso
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
@@ -122,18 +130,9 @@ dependencies {
 //    implementation("org.mockito:mockito-core:3.10.0")
     androidTestImplementation "org.mockito:mockito-android:$versions.mockito_version"
 
-
-
-
-
-
-
-
-
-
-
     // Library to use gif Images
     implementation "pl.droidsonroids.gif:android-gif-drawable:$versions.gif_version"
+
 
 
 }

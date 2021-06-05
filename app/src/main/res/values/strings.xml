@@ -27,7 +27,10 @@
     <string name="fragment_login_screen_forgot_password">Forgot Password?</string>
     <string name="fragment_login_screen_login_with_google">Login with Google</string>
 
+
+
     <string name="sign_up_login_tag_line"> Lorem ipsum, ipsum sum</string>
+
 
 
 
@@ -35,6 +38,16 @@
     <string name ="email_sign_up_fragment_create_acount_text">Create an account</string>
     <string name ="email_sign_up_fragment_lets_get_to_know_you_text">Lets get to know you</string>
     <string name="splash_screen_placeholder_text">Splash Screen</string>
+    <string name="view_in_browser">view in browser</string>
+    <string name="email_confirmation">Email Confirmation</string>
+    <string name="prompt_message">Hey Ijeoma, you are almost ready to start <br/> enjoying Obioma. Simply click the big blue<br/>button below to verify your email address.</string>
+    <string name="verify_email_address">Verify Email Address</string>
+    <string name="stay_in_touch">Stay in touch</string>
+    <string name="email_sent_by">email sent by Obioma</string>
+    <string name="copyright">copyright 2020. All Rights Reserved</string>
+    <string name="social_media">Social Media Link</string>
+
+
 
     <string name="email_sign_up_fragment_firstname_hint_text">First Name</string>
     <string name="email_sign_up_fragment_lastname_hint_text">Last Name</string>

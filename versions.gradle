@@ -17,4 +17,5 @@ ext.versions = [
         mokito_version         : "2.24.5",
         gif_version            : "1.2.22"
 
+
 ]

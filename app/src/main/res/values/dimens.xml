@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+
+    <dimen name="margin_0dp">0dp</dimen>
+    <dimen name="margin_1dp">1dp</dimen>
+    <dimen name="margin_2dp">2dp</dimen>
+    <dimen name="margin_3dp">3dp</dimen>
+    <dimen name="margin_4dp">4dp</dimen>
+    <dimen name="margin_6dp">6dp</dimen>
+    <dimen name="margin_7dp">7dp</dimen>
+    <dimen name="margin_11dp">11dp</dimen>
+    <dimen name="margin_12dp">12dp</dimen>
+    <dimen name="margin_13dp">13dp</dimen>
+    <dimen name="margin_14dp">14dp</dimen>
+    <dimen name="margin_17dp">17dp</dimen>
+    <dimen name="margin_19dp">19dp</dimen>
+    <dimen name="margin_21dp">21dp</dimen>
+    <dimen name="margin_24dp">24dp</dimen>
+    <dimen name="margin_25dp">25dp</dimen>
+    <dimen name="margin_26dp">26dp</dimen>
+    <dimen name="margin_28dp">28dp</dimen>
+
+    //dimensions for textSize
+    <dimen name="text_size_22sp">22sp</dimen>
+
+
     <dimen name="margin_65dp">65dp</dimen>
     <dimen name="marginTop_30dp">30dp</dimen>
     <dimen name="margin_78dp">78dp</dimen>
@@ -22,6 +46,7 @@
     <dimen name="textSize_14sp">14sp</dimen>
     <dimen name="textSize_16sp">16sp</dimen>
     <dimen name="textSize_15sp">15sp</dimen>
+
 
 
     //dimension for margin
@@ -117,4 +142,6 @@
     <dimen name="marginTop_12dp">12dp</dimen>
     <dimen name="maginTop_20dp">20dp</dimen>
     <dimen name="margin_Bottom24dp">24dp</dimen>
+    <dimen name="margin_70dp">70dp</dimen>
+    <dimen name="margin_80dp">80dp</dimen>
 </resources>

@@ -1,4 +1,4 @@
-package com.decagonhq.clads
+package com.decagonhq.clads.utils
 
 /**
  * the user can only login if the input field for the email and password is:
@@ -6,7 +6,7 @@ package com.decagonhq.clads
  * ... contains valid format for email and password...
  *
  */
-object Validator {
+object LoginScreenFragmentValidator {
 
     // validation function for Email Address
     fun validateEmail(email: String): Boolean {

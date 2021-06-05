@@ -7,8 +7,8 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.Toast
 import androidx.fragment.app.Fragment
-import com.decagonhq.clads.Validator
 import com.decagonhq.clads.databinding.FragmentLoginScreenBinding
+import com.decagonhq.clads.utils.LoginScreenFragmentValidator
 import com.google.android.material.textfield.TextInputEditText
 
 class LoginScreenFragment : Fragment() {
@@ -47,15 +47,18 @@ class LoginScreenFragment : Fragment() {
         loginButton.setOnClickListener {
             val email = emailEditText.text.toString()
             val password = passwordEditText.text.toString()
-            if (Validator.validateEmail(email) && Validator.validatePassword(password)) {
+            if (LoginScreenFragmentValidator.validateEmail(email) && LoginScreenFragmentValidator.validatePassword(
+                    password
+                )
+            ) {
             } else {
                 when {
-                    !Validator.validatePassword(password) -> Toast.makeText(
+                    !LoginScreenFragmentValidator.validatePassword(password) -> Toast.makeText(
                         requireContext(),
                         "Please input correct password",
                         Toast.LENGTH_LONG
                     ).show()
-                    !Validator.validateEmail(email) -> Toast.makeText(
+                    !LoginScreenFragmentValidator.validateEmail(email) -> Toast.makeText(
                         requireContext(),
                         "Please input correct Email",
                         Toast.LENGTH_LONG
