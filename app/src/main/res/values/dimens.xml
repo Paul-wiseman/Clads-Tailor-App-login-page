@@ -142,6 +142,6 @@
     <dimen name="marginTop_12dp">12dp</dimen>
     <dimen name="maginTop_20dp">20dp</dimen>
     <dimen name="margin_Bottom24dp">24dp</dimen>
-    <dimen name="margin_32dp">32dp</dimen>
-    <dimen name="margin_0dp">0dp</dimen>
+    <dimen name="margin_70dp">70dp</dimen>
+    <dimen name="margin_80dp">80dp</dimen>
 </resources>

@@ -16,12 +16,10 @@
             android:id="@+id/email_verification_fragment_clads_image_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin_32dp"
+            android:layout_marginTop="@dimen/margin_80dp"
             android:contentDescription="@string/app_name"
             android:src="@drawable/clads_logo"
-            card_view:layout_constraintEnd_toEndOf="parent"
-            card_view:layout_constraintHorizontal_bias="0.15"
-            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintStart_toStartOf="@+id/email_verification_fragment_email_icon_frame_linear_layout"
             card_view:layout_constraintTop_toTopOf="parent" />
 
         <TextView
@@ -31,11 +29,11 @@
             android:clickable="true"
             android:focusable="true"
             android:text="@string/view_in_browser"
-            android:textSize="@dimen/text_size_11sp"
-            card_view:layout_constraintBottom_toTopOf="@+id/email_verification_fragment_email_icon_frame_linear_layout"
+            android:textSize="@dimen/text_size_14sp"
+            card_view:layout_constraintBottom_toBottomOf="@+id/email_verification_fragment_clads_image_view"
             card_view:layout_constraintEnd_toEndOf="@+id/email_verification_fragment_email_icon_frame_linear_layout"
-            card_view:layout_constraintTop_toTopOf="parent"
-            card_view:layout_constraintVertical_bias="0.71000004" />
+            card_view:layout_constraintHorizontal_bias="0.963"
+            card_view:layout_constraintStart_toEndOf="@+id/email_verification_fragment_clads_image_view" />
 
         <LinearLayout
             android:id="@+id/email_verification_fragment_email_icon_frame_linear_layout"
@@ -46,6 +44,7 @@
             android:gravity="center"
             card_view:layout_constraintBottom_toTopOf="@id/email_verification_fragment_email_confirmation_card_view"
             card_view:layout_constraintEnd_toEndOf="@+id/email_verification_fragment_email_confirmation_card_view"
+            card_view:layout_constraintHorizontal_bias="0.0"
             card_view:layout_constraintStart_toStartOf="@+id/email_verification_fragment_email_confirmation_card_view"
             card_view:layout_constraintTop_toBottomOf="@+id/email_verification_fragment_clads_image_view">
 
@@ -63,8 +62,8 @@
             android:id="@+id/email_verification_fragment_email_confirmation_card_view"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/margin_50dp"
-            android:layout_marginEnd="@dimen/margin_50dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
             card_view:cardElevation="@dimen/margin_3dp"
             card_view:layout_constraintEnd_toEndOf="parent"
             card_view:layout_constraintStart_toStartOf="parent"
@@ -72,9 +71,11 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:gravity="center"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/margin_24dp"
+                android:paddingRight="@dimen/margin_24dp">
 
                 <TextView
                     android:id="@+id/email_verification_fragment_email_confirmation_heading_text_view"
@@ -92,24 +93,27 @@
                     android:id="@+id/email_verification_fragment_prompt_message_text_view"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/margin_12dp"
                     android:layout_gravity="center_horizontal"
-                    android:padding="@dimen/margin_20dp"
+                    android:layout_marginTop="@dimen/margin_12dp"
                     android:layout_marginBottom="@dimen/margin_10dp"
+                    android:gravity="center"
+                    android:lineHeight="18dp"
                     android:text="@string/prompt_message"
+                    android:textAlignment="center"
                     android:textFontWeight="400"
-                    android:textSize="@dimen/text_size_12sp" />
+                    android:textSize="@dimen/text_size_14sp"
+                    tools:ignore="RtlCompat" />
 
 
                 <Button
                     android:id="@+id/email_verification_fragment_verify_email_address_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_24dp"
+                    android:layout_marginBottom="@dimen/margin_32dp"
                     android:backgroundTint="@color/deep_sky_blue"
                     android:clickable="true"
                     android:focusable="true"
-                    android:layout_marginTop="@dimen/margin_24dp"
-                    android:layout_marginBottom="@dimen/margin_32dp"
                     android:fontFamily="@font/poppins"
                     android:gravity="center"
                     android:text="@string/verify_email_address"
@@ -125,65 +129,66 @@
             android:id="@+id/email_verification_fragment_stay_in_touch_text_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
             android:fontFamily="@font/raleway"
             android:text="@string/stay_in_touch"
             android:textFontWeight="1000"
             android:textSize="@dimen/text_size_13sp"
             android:textStyle="italic"
-            card_view:layout_constraintBottom_toBottomOf="parent"
-            card_view:layout_constraintEnd_toEndOf="parent"
-            card_view:layout_constraintStart_toStartOf="parent"
-            card_view:layout_constraintTop_toBottomOf="@+id/email_verification_fragment_email_confirmation_card_view"
-            card_view:layout_constraintVertical_bias="0.112" />
-
+            card_view:layout_constraintEnd_toEndOf="@+id/email_verification_fragment_email_confirmation_card_view"
+            card_view:layout_constraintHorizontal_bias="0.498"
+            card_view:layout_constraintStart_toStartOf="@+id/email_verification_fragment_email_confirmation_card_view"
+            card_view:layout_constraintTop_toBottomOf="@+id/email_verification_fragment_email_confirmation_card_view" />
 
         <androidx.appcompat.widget.LinearLayoutCompat
             android:id="@+id/email_verification_fragment_icon_group_linear_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin_8dp"
+            android:layout_marginTop="20dp"
             android:gravity="center_horizontal"
             android:orientation="horizontal"
-            card_view:layout_constraintTop_toBottomOf="@+id/email_verification_fragment_stay_in_touch_text_view"
-            tools:layout_editor_absoluteX="@dimen/margin_0dp">
+            card_view:layout_constraintEnd_toEndOf="@+id/email_verification_fragment_email_confirmation_card_view"
+            card_view:layout_constraintHorizontal_bias="0.526"
+            card_view:layout_constraintStart_toStartOf="@+id/email_verification_fragment_email_confirmation_card_view"
+            card_view:layout_constraintTop_toBottomOf="@+id/email_verification_fragment_stay_in_touch_text_view">
 
             <ImageView
-                android:contentDescription="@string/social_media"
                 android:id="@+id/email_verification_fragment_facebook_icon_image_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="@dimen/margin_8dp"
                 android:clickable="true"
+                android:contentDescription="@string/social_media"
                 android:focusable="true"
                 android:src="@drawable/facebook_icon"
                 card_view:layout_constraintHorizontal_bias="0.5" />
 
             <ImageView
-                android:contentDescription="@string/social_media"
                 android:id="@+id/email_verification_fragment_twitter_icon_image_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="@dimen/margin_8dp"
                 android:clickable="true"
+                android:contentDescription="@string/social_media"
                 android:focusable="true"
                 android:src="@drawable/twitter_icon" />
 
             <ImageView
-                android:contentDescription="@string/social_media"
                 android:id="@+id/email_verification_fragment_instagram_icon_image_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="@dimen/margin_8dp"
                 android:clickable="true"
+                android:contentDescription="@string/social_media"
                 android:focusable="true"
                 android:src="@drawable/instagram_icon" />
 
             <ImageView
-                android:contentDescription="@string/social_media"
                 android:id="@+id/email_verification_fragment_email_icon_image_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:clickable="true"
+                android:contentDescription="@string/social_media"
                 android:focusable="true"
                 android:src="@drawable/email_icon" />
 
@@ -193,7 +198,7 @@
             android:id="@+id/email_verification_fragment_email_sent_by_text_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin_18dp"
+            android:layout_marginTop="12dp"
             android:fontFamily="@font/poppins"
             android:text="@string/email_sent_by"
             android:textFontWeight="400"
