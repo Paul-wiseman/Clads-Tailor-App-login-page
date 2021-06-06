@@ -5,7 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.decagonhq.clads.R
+import com.decagonhq.clads.databinding.FragmentTablayoutSpecialtyBinding
 
 
 class TablayoutSpecialtyFragment : Fragment() {
@@ -16,7 +16,7 @@ class TablayoutSpecialtyFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_tablayout_specialty, container, false)
+        return FragmentTablayoutSpecialtyBinding.inflate(inflater).root
     }
 
 

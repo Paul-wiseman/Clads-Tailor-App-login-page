@@ -5,7 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.decagonhq.clads.R
+import com.decagonhq.clads.databinding.FragmentEditProfileBinding
 
 
 class EditProfileFragment : Fragment() {
@@ -16,7 +16,7 @@ class EditProfileFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_edit_profile, container, false)
+        return FragmentEditProfileBinding.inflate(inflater).root
     }
 
     

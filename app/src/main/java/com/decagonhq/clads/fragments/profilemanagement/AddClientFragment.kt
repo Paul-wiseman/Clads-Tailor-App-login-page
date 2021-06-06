@@ -5,7 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.decagonhq.clads.R
+import com.decagonhq.clads.databinding.FragmentAddClientBinding
 
 
 class AddClientFragment : Fragment() {
@@ -17,7 +17,7 @@ class AddClientFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_add_client, container, false)
+        return FragmentAddClientBinding.inflate(inflater).root
     }
 
 

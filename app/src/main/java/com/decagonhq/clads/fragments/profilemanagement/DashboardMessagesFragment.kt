@@ -6,7 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.decagonhq.clads.R
-
+import com.decagonhq.clads.databinding.FragmentDashboardMessagesBinding
 
 
 class DashboardMessagesFragment : Fragment() {
@@ -17,7 +17,7 @@ class DashboardMessagesFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_dashboard_messages, container, false)
+        return FragmentDashboardMessagesBinding.inflate(inflater).root
     }
 
 }

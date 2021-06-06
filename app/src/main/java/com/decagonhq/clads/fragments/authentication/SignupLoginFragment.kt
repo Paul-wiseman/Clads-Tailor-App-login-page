@@ -1,13 +1,15 @@
 package com.decagonhq.clads.fragments.authentication
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import com.decagonhq.clads.activities.DashboardActivity
 import com.decagonhq.clads.databinding.FragmentSignupLoginBinding
-import com.decagonhq.clads.fragments.SignupLoginFragmentDirections
+
 
 class SignupLoginFragment : Fragment() {
     // Declare binding variable
@@ -31,6 +33,9 @@ class SignupLoginFragment : Fragment() {
             val action =
                 SignupLoginFragmentDirections.actionSignupLoginFragmentToSignupChoicesFragment()
             findNavController().navigate(action)
+        }
+        binding.fragmentSignupLoginButton.setOnClickListener {
+         startActivity(Intent(requireContext(),DashboardActivity::class.java))
         }
     }
 

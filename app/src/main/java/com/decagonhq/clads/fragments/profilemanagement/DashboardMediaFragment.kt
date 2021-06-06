@@ -5,7 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.decagonhq.clads.R
+import com.decagonhq.clads.databinding.FragmentDashboardHomeBinding
+import com.decagonhq.clads.databinding.FragmentDashboardMediaBinding
 
 
 class DashboardMediaFragment : Fragment() {
@@ -17,7 +18,7 @@ class DashboardMediaFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_dashboard_media, container, false)
+        return FragmentDashboardMediaBinding.inflate(inflater).root
     }
 
 

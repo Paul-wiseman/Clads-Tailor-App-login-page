@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BottomNavigationThemeActive">
+        <item name="android:iconTint">@color/deep_sky_blue</item>
+        <item name="itemTextColor">@color/deep_sky_blue</item>
+    </style>
+</resources>

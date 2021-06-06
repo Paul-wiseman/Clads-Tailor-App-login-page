@@ -5,7 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.decagonhq.clads.R
+import com.decagonhq.clads.databinding.FragmentTablayoutSecurityBinding
 
 
 class TablayoutSecurityFragment : Fragment() {
@@ -15,7 +15,7 @@ class TablayoutSecurityFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_tablayout_security, container, false)
+        return FragmentTablayoutSecurityBinding.inflate(inflater).root
     }
 
 

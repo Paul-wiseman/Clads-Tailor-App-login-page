@@ -5,9 +5,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.decagonhq.clads.R
+import com.decagonhq.clads.databinding.FragmentDashboardHomeBinding
 
-class DashboardFragment : Fragment() {
+class DashboardHomeFragment : Fragment() {
 
 
     override fun onCreateView(
@@ -15,7 +15,7 @@ class DashboardFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_dashboard_home, container, false)
+        return FragmentDashboardHomeBinding.inflate(inflater).root
     }
 
 }
