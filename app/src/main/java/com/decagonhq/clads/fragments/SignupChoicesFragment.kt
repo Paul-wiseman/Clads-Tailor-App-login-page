@@ -3,7 +3,6 @@ package com.decagonhq.clads.fragments
 import android.content.Intent
 import android.graphics.Color
 import android.graphics.Typeface
-import android.net.Uri
 import android.os.Bundle
 import android.text.Spannable
 import android.text.SpannableString
@@ -23,26 +22,15 @@ import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.api.ApiException
-import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.GoogleAuthProvider
-import com.google.firebase.auth.ktx.auth
-import com.google.firebase.ktx.Firebase
 import timber.log.Timber
 
 class SignupChoicesFragment : Fragment() {
-    // Declare binding variable
-    private lateinit var firebaseAuth: FirebaseAuth
+
     private lateinit var googleSignInClient: GoogleSignInClient
+    // Declare binding variable
     private var _binding: FragmentSignupChoicesBinding? = null
     private val binding
         get() = _binding!!
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-        // Initialize Firebase Auth
-        firebaseAuth = Firebase.auth
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -108,10 +96,9 @@ class SignupChoicesFragment : Fragment() {
 
     override fun onStart() {
         super.onStart()
-
         // Check if user is signed in (non-null) and update UI accordingly.
-        val currentUser = firebaseAuth.currentUser
-        if (currentUser != null) {
+        val account = GoogleSignIn.getLastSignedInAccount(requireContext())
+        if (account != null) {
             moveTo(R.id.signup_email_fragment)
         }
     }
@@ -126,7 +113,7 @@ class SignupChoicesFragment : Fragment() {
                 // Google Sign In was successful, authenticate with Firebase
                 val account = task.getResult(ApiException::class.java)!!
                 Timber.d("firebaseAuthWithGoogle: ${account.id}")
-                firebaseAuthWithGoogle(account.idToken!!)
+                account.email?.let { updateUi(it) }
             } catch (e: ApiException) {
                 Toast.makeText(
                     requireContext(), "Login Failed: ${e.message}",
@@ -141,23 +128,11 @@ class SignupChoicesFragment : Fragment() {
         startActivityForResult(signInIntent, REQUEST_SIGN_IN)
     }
 
-    private fun firebaseAuthWithGoogle(idToken: String) {
-        val credential = GoogleAuthProvider.getCredential(idToken, null)
-        firebaseAuth.signInWithCredential(credential)
-            .addOnCompleteListener(requireActivity()) { task ->
-                if (task.isSuccessful) {
-                    // Sign in success, update UI with the signed-in user's information
-                    Timber.d("signInWithCredential:success")
-                    val user = firebaseAuth.currentUser
-                    val userEmail = user?.email
-                    val action =
-                        SignupChoicesFragmentDirections.actionSignupChoicesFragmentToSignupEmailFragment(userEmail)
-                    moveTo(action)
-                } else {
-                    // If sign in fails, display a message to the user.
-                    Timber.tag("SignInFailure: ").w(task.exception, "signInWithCredential:failure")
-                }
-            }
+    private fun updateUi(email: String) {
+        val userEmail = email
+        val action =
+            SignupChoicesFragmentDirections.actionSignupChoicesFragmentToSignupEmailFragment(userEmail)
+        moveTo(action)
     }
 
     companion object {
@@ -176,8 +151,4 @@ fun Fragment.moveTo(id: Int) {
 
 fun Fragment.moveTo(direction: NavDirections) {
     findNavController().navigate(direction)
-}
-
-fun Fragment.moveTo(uri: Uri) {
-    findNavController().navigate(uri)
 }
