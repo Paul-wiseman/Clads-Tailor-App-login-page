@@ -93,7 +93,7 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$versions.lifecycle_version"
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:$versions.lifecycle_version"
 
-    // fragment Ktx
+    // Fragment Ktx
     implementation "androidx.fragment:fragment-ktx:$versions.fragment_version"
     debugImplementation "androidx.fragment:fragment-testing:$versions.fragment_version"
 
@@ -105,16 +105,13 @@ dependencies {
     implementation "com.github.bumptech.glide:glide:$versions.glide_version"
     kapt "com.github.bumptech.glide:compiler:$versions.glide_version"
 
-    // Firebase
-    implementation "com.google.firebase:firebase-auth-ktx:$versions.firebase_auth_version"
-
     // Google sign-up authentication
     implementation "com.google.android.gms:play-services-auth:$versions.play_services_version"
 
     // Timber for debugging
     implementation "com.jakewharton.timber:timber:$versions.timber_version"
 
-    // to test fragment
+    // To test fragment
     debugImplementation "androidx.fragment:fragment-testing:$versions.fragment_version"
 
     // Espresso
