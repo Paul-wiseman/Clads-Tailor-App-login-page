@@ -10,7 +10,6 @@
     tools:context=".fragments.SignupChoicesFragment"
     android:id="@+id/fragment_signup_choices_parent_layout">
 
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -40,7 +39,7 @@
                 android:id="@+id/fragment_signup_choices_button_with_google"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/marginTop_100dp"
+                android:layout_marginTop="@dimen/margin_100dp"
                 android:drawableLeft="@drawable/google_logo_icon"
                 android:drawablePadding="@dimen/padding_10dp"
                 android:fontFamily="@font/poppins"
@@ -51,7 +50,7 @@
                 android:textColor="@color/black"
                 android:textFontWeight="600"
                 android:backgroundTint="@color/white"
-                android:textSize="@dimen/textSize_14sp"
+                android:textSize="@dimen/text_size_14sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/fragment_signup_choices_imageview" />
@@ -60,7 +59,7 @@
                 android:id="@+id/fragment_signup_choices_button_with_email"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/marginTop_30dp"
+                android:layout_marginTop="@dimen/margin_30dp"
                 android:backgroundTint="@color/deep_sky_blue"
                 android:fontFamily="@font/poppins"
                 android:paddingHorizontal="@dimen/padding_40dp"
@@ -72,7 +71,7 @@
                 android:textAllCaps="false"
                 android:textColor="@color/white"
                 android:textFontWeight="500"
-                android:textSize="@dimen/textSize_18sp"
+                android:textSize="@dimen/text_size_18sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/fragment_signup_choices_button_with_google" />
@@ -85,7 +84,7 @@
                 android:layout_marginBottom="@dimen/margin_16dp"
                 android:fontFamily="@font/poppins"
                 android:text="Have an account? Login"
-                android:textSize="@dimen/textSize_15sp"
+                android:textSize="@dimen/text_size_15sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/fragment_signup_choices_button_with_email"
                 app:layout_constraintStart_toStartOf="@+id/fragment_signup_choices_button_with_email"

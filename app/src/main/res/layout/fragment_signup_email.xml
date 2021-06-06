@@ -1,8 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/deep_sky_blue"
+    tools:context=".SignupEmailFragment">
+
+    <TextView
+        android:id="@+id/signup_email_fragment_title_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="@dimen/margin_18dp"
+        android:layout_marginTop="46dp"
+        android:fontFamily="@font/poppins"
+        android:gravity="top"
+        android:text="@string/sign_up_email_title"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_24dp"
+        android:layout_marginTop="@dimen/margin_9dp"
+        android:text="@string/sign_up_email_description"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signup_email_fragment_title_text_view" />
+
     <androidx.core.widget.NestedScrollView
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fillViewport="true"
@@ -13,10 +46,10 @@
         android:background="@color/deep_sky_blue"
         tools:context=".fragments.SignupEmailFragment">
 
-
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+
             <TextView
                 android:id="@+id/email_sign_up_fragment_create_an_account_text_view"
                 android:layout_width="@dimen/layout_height_or_width_0dp"
@@ -27,7 +60,7 @@
                 android:layout_marginTop="@dimen/margin_44dp"
                 android:fontFamily="@font/poppins_bold"
                 android:gravity="top"
-                android:text="@string/email_sign_up_fragment_create_acount_text"
+                android:text="@string/email_sign_up_fragment_create_account_text"
                 android:textColor="@color/white"
                 android:textSize="@dimen/text_size_18sp"
                 android:textStyle="bold"
@@ -346,4 +379,4 @@
 
     </androidx.core.widget.NestedScrollView>
 
-
+</androidx.constraintlayout.widget.ConstraintLayout>

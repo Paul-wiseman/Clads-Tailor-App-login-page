@@ -6,9 +6,11 @@ plugins {
     id 'dagger.hilt.android.plugin'
     id 'androidx.navigation.safeargs.kotlin'
     id "org.jlleitschuh.gradle.ktlint"
+    id 'com.google.gms.google-services'
 }
 
 android {
+
     compileSdkVersion 30
     buildToolsVersion "30.0.2"
 
@@ -50,6 +52,7 @@ android {
 dependencies {
 
     def androidx_test="1.1.0"
+
     //Default Dependencies
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$versions.kotlin_version"
     implementation 'androidx.core:core-ktx:1.5.0'
@@ -57,26 +60,22 @@ dependencies {
     implementation 'com.google.android.material:material:1.3.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    // Testing libraries
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
     implementation 'com.google.android.material:material:1.4.0-beta01'
 
     // androidx.test
     androidTestImplementation "androidx.test:runner:$versions.androidx_test"
     androidTestImplementation "androidx.test:core:$versions.androidx_test"
-    androidTestImplementation "androidx.test.ext:junit-ktx:1.1.2"
-    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
     //navigation controller
     implementation "androidx.navigation:navigation-fragment-ktx:$versions.nav_version"
     implementation "androidx.navigation:navigation-ui-ktx:$versions.nav_version"
     androidTestImplementation "androidx.navigation:navigation-testing:$versions.nav_version"
-
-
-    // Navigation testing
-    androidTestImplementation "androidx.navigation:navigation-testing:2.3.5"
 
     //Retrofit
     implementation "com.squareup.retrofit2:retrofit:$versions.retrofit_version"
@@ -84,55 +83,42 @@ dependencies {
     implementation "com.squareup.okhttp3:okhttp:$versions.okhttp3_version"
     implementation "com.squareup.okhttp3:logging-interceptor:$versions.okhttp3_version"
 
-    //Dagger-hilt
+    // Google sign-up authentication
+    implementation "com.google.android.gms:play-services-auth:$versions.play_services_version"
+
+    // Dagger-hilt
     implementation "com.google.dagger:hilt-android:$versions.hilt_version"
     kapt "com.google.dagger:hilt-android-compiler:$versions.hilt_version"
     implementation "androidx.hilt:hilt-lifecycle-viewmodel:$versions.hilt_life_cycle_version"
     kapt "androidx.hilt:hilt-compiler:$versions.hilt_compiler_version"
 
-    //Life cycles
+    // Life cycles
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$versions.lifecycle_version"
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:$versions.lifecycle_version"
 
-    //fragment Ktx
+    // Fragment Ktx
     implementation "androidx.fragment:fragment-ktx:$versions.fragment_version"
     debugImplementation "androidx.fragment:fragment-testing:$versions.fragment_version"
 
-    //Mockito
+    // Mockito
     testImplementation "org.mockito:mockito-core:$versions.mokito_version"
     androidTestImplementation "org.mockito:mockito-android:$versions.mokito_version"
-    //Glide
+
+    // Glide
     implementation "com.github.bumptech.glide:glide:$versions.glide_version"
     kapt "com.github.bumptech.glide:compiler:$versions.glide_version"
 
+    // Timber for debugging
     implementation "com.jakewharton.timber:timber:$versions.timber_version"
 
-
-    //to test fragment
+    // To test fragment
     debugImplementation "androidx.fragment:fragment-testing:$versions.fragment_version"
 
-    //mockito
-    testImplementation 'org.mockito:mockito-core:2.24.5'
-    androidTestImplementation 'org.mockito:mockito-android:2.24.5'
-
-
-  // Espresso
+    // Espresso
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
     androidTestImplementation 'androidx.test:rules:1.3.0'
 
-    //fragment Ktx
-    implementation "androidx.fragment:fragment-ktx:$versions.fragment_version"
-    debugImplementation "androidx.fragment:fragment-testing:$versions.fragment_version"
-
-//Mockito
-    testImplementation "org.mockito:mockito-core:$versions.mockito_version"
-//    implementation("org.mockito:mockito-core:3.10.0")
-    androidTestImplementation "org.mockito:mockito-android:$versions.mockito_version"
-
     // Library to use gif Images
     implementation "pl.droidsonroids.gif:android-gif-drawable:$versions.gif_version"
-
-
-
 }

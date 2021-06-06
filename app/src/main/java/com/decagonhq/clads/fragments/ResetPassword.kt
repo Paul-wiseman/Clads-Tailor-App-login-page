@@ -16,9 +16,6 @@ class ResetPassword : Fragment() {
     // declaring binding variables
     private var _binding: FragmentResetPasswordBinding? = null
     private val binding get() = _binding!!
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater,
