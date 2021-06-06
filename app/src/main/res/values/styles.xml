@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <style name="SplashScreenLoading_">
+            <item name="android:textSize">@dimen/text_size_16sp</item>
+            <item name="android:textColor">@color/loading_color</item>
+            <item name="android:gravity">top</item>
+        </style>
+</resources>
