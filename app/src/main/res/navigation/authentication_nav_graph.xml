@@ -30,10 +30,7 @@
         android:label="fragment_signup_choices"
         tools:layout="@layout/fragment_signup_choices" >
         <action
-            android:id="@+id/action_signupChoicesFragment_to_signupGoogleFragment2"
-            app:destination="@id/signup_google_fragment" />
-        <action
-            android:id="@+id/action_signupChoicesFragment_to_signupEmailFragment2"
+            android:id="@+id/action_signupChoicesFragment_to_signupEmailFragment"
             app:destination="@id/signup_email_fragment" />
     </fragment>
     <fragment
@@ -43,6 +40,7 @@
         tools:layout="@layout/fragment_signup_email" >
         <action
             android:id="@+id/action_signupEmailFragment_to_emailVerificationFragment"
+<<<<<<< HEAD:app/src/main/res/navigation/authentication_nav_graph.xml
             app:destination="@id/email_verification_fragment" />
     </fragment>
     <fragment
@@ -53,6 +51,14 @@
         <action
             android:id="@+id/action_signupGoogleFragment_to_signupEmailFragment"
             app:destination="@id/signup_email_fragment" />
+=======
+            app:destination="@id/email_verification_fragment">
+        </action>
+        <argument
+            android:name="userEmail"
+            app:argType="string"
+            app:nullable="true" />
+>>>>>>> 4eae5435d46df7aa0d78ffad6ec5e203f720b52d:app/src/main/res/navigation/nav_graph.xml
     </fragment>
     <fragment
         android:id="@+id/fragment_login_screen"

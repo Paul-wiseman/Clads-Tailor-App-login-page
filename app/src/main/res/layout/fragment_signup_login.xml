@@ -11,7 +11,6 @@
     tools:context=".fragments.authentication.SignupLoginFragment"
     android:id="@+id/fragment_signup_login_parent_layout">
 
-
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
@@ -41,12 +40,12 @@
             android:id="@+id/fragment_signup_login_textview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/marginTop_12dp"
+            android:layout_marginTop="@dimen/margin_12dp"
             android:fontFamily="@font/poppins"
             android:text="@string/sign_up_login_tag_line"
             android:textAlignment="center"
             android:textColor="@color/white"
-            android:textSize="@dimen/textSize_14sp"
+            android:textSize="@dimen/text_size_14sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
@@ -56,7 +55,7 @@
             android:id="@+id/fragment_signup_signup_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/marginTop_100dp"
+            android:layout_marginTop="@dimen/margin_100dp"
             android:backgroundTint="@color/white"
             android:fontFamily="@font/poppins_bold"
             app:cornerRadius="@dimen/margin_5dp"
@@ -73,9 +72,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/deep_sky_blue"
-            android:layout_marginTop="@dimen/maginTop_20dp"
+            android:layout_marginTop="@dimen/margin_20dp"
             app:strokeWidth="@dimen/layout_height_or_width_2dp"
-            android:layout_marginBottom="@dimen/margin_Bottom24dp"
+            android:layout_marginBottom="@dimen/margin_24dp"
             android:fontFamily="@font/poppins_bold"
             android:text="@string/signup_choices_fragment_login"
             android:textAlignment="center"

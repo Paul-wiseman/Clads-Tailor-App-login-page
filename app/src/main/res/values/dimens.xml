@@ -1,80 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-
+    <!-- Dimensions for margins-->
     <dimen name="margin_0dp">0dp</dimen>
     <dimen name="margin_1dp">1dp</dimen>
     <dimen name="margin_2dp">2dp</dimen>
     <dimen name="margin_3dp">3dp</dimen>
     <dimen name="margin_4dp">4dp</dimen>
+    <dimen name="margin_5dp">5dp</dimen>
     <dimen name="margin_6dp">6dp</dimen>
     <dimen name="margin_7dp">7dp</dimen>
+    <dimen name="margin_8dp">8dp</dimen>
+    <dimen name="margin_9dp">9dp</dimen>
+    <dimen name="margin_10dp">10dp</dimen>
     <dimen name="margin_11dp">11dp</dimen>
     <dimen name="margin_12dp">12dp</dimen>
     <dimen name="margin_13dp">13dp</dimen>
     <dimen name="margin_14dp">14dp</dimen>
+    <dimen name="margin_15dp">15dp</dimen>
+    <dimen name="margin_16dp">16dp</dimen>
     <dimen name="margin_17dp">17dp</dimen>
+    <dimen name="margin_18dp">18dp</dimen>
     <dimen name="margin_19dp">19dp</dimen>
+    <dimen name="margin_20dp">20dp</dimen>
     <dimen name="margin_21dp">21dp</dimen>
+    <dimen name="margin_22dp">22dp</dimen>
+    <dimen name="margin_23dp">23dp</dimen>
     <dimen name="margin_24dp">24dp</dimen>
     <dimen name="margin_25dp">25dp</dimen>
     <dimen name="margin_26dp">26dp</dimen>
+    <dimen name="margin_27dp">27dp</dimen>
     <dimen name="margin_28dp">28dp</dimen>
+    <dimen name="margin_29dp">29dp</dimen>
+    <dimen name="margin_30dp">30dp</dimen>
+    <dimen name="margin_32dp">32dp</dimen>
+    <dimen name="margin_36dp">36dp</dimen>
+    <dimen name="margin_40dp">40dp</dimen>
+    <dimen name="margin_44dp">44dp</dimen>
+    <dimen name="margin_45dp">45dp</dimen>
+    <dimen name="margin_50dp">10dp</dimen>
+    <dimen name="margin_65dp">65dp</dimen>
+    <dimen name="margin_70dp">70dp</dimen>
+    <dimen name="margin_78dp">78dp</dimen>
+    <dimen name="margin_80dp">80dp</dimen>
+    <dimen name="margin_83dp">83dp</dimen>
+    <dimen name="margin_89dp">89dp</dimen>
+    <dimen name="margin_100dp">100dp</dimen>
+    <dimen name="margin_120dp">120dp</dimen>
+    <dimen name="margin_240dp">240dp</dimen>
+    <dimen name="margin_255dp">255dp</dimen>
 
-    //dimensions for textSize
+    <!-- Dimensions for textSize -->
+    <dimen name="text_size_8sp">8sp</dimen>
+    <dimen name="text_size_9sp">9sp</dimen>
+    <dimen name="text_size_10sp">10sp</dimen>
+    <dimen name="text_size_11sp">11sp</dimen>
+    <dimen name="text_size_12sp">12sp</dimen>
+    <dimen name="text_size_13sp">13sp</dimen>
+    <dimen name="text_size_14sp">14sp</dimen>
+    <dimen name="text_size_15sp">15sp</dimen>
+    <dimen name="text_size_16sp">16sp</dimen>
+    <dimen name="text_size_17sp">17sp</dimen>
+    <dimen name="text_size_18sp">18sp</dimen>
     <dimen name="text_size_22sp">22sp</dimen>
 
-
-    <dimen name="margin_65dp">65dp</dimen>
-    <dimen name="marginTop_30dp">30dp</dimen>
-    <dimen name="margin_78dp">78dp</dimen>
-    <dimen name="marginTop_492dp">492dp</dimen>
-    <dimen name="marginTop_10dp">10dp</dimen>
-    <dimen name="marginTop_16dp">16dp</dimen>
-    <dimen name="marginTop_128dp">128dp</dimen>
-    <dimen name="marginTop_236dp">236dp</dimen>
-    <dimen name="marginTop_100dp">100dp</dimen>
-    <dimen name="marginTop_104dp">104dp</dimen>
-    <dimen name="marginTop_80dp">80dp</dimen>
-    <dimen name="marginBottom_113dp">113dp</dimen>
-    <dimen name="marginStart_100dp">100dp</dimen>
-    <dimen name="marginStart_8dp">8dp</dimen>
-    <dimen name="margin_20dp">20dp</dimen>
-
-    <dimen name="textSize_18sp">18sp</dimen>
-    <dimen name="textSize_22dp">22dp</dimen>
-    <dimen name="textSize_14sp">14sp</dimen>
-    <dimen name="textSize_16sp">16sp</dimen>
-    <dimen name="textSize_15sp">15sp</dimen>
-
-
-
-    //dimension for margin
-    <dimen name="margin_120dp">120dp</dimen>
-    <dimen name="margin_89dp">89dp</dimen>
-    <dimen name="margin_83dp">83dp</dimen>
-    <dimen name="margin_29dp">29dp</dimen>
-    <dimen name="margin_23dp">23dp</dimen>
-    <dimen name="margin_22dp">23dp</dimen>
-    <dimen name="margin_9dp">9dp</dimen>
-    <dimen name="margin_5dp">5dp</dimen>
-    <dimen name="cornerRadius_5dp">5dp</dimen>
+    <!-- Dimensions for padding-->
+    <dimen name="padding_0dp">0dp</dimen>
+    <dimen name="padding_5dp">5dp</dimen>
+    <dimen name="padding_6dp">6dp</dimen>
+    <dimen name="padding_10dp">10dp</dimen>
     <dimen name="padding_12dp">12dp</dimen>
+    <dimen name="padding_16dp">16dp</dimen>
+    <dimen name="padding_40dp">40dp</dimen>
+    <dimen name="padding_54dp">54dp</dimen>
 
     <dimen name="corner_radius_5dp">5dp</dimen>
 
-
-    <!--  Signup_email_layout_paddings -->
-    <dimen name="padding_10dp">10dp</dimen>
-    <dimen name="padding_54dp">54dp</dimen>
-    <dimen name="padding_0dp">0dp</dimen>
-    <dimen name="padding_5dp">5dp</dimen>
-
-    <!--  Signup_email_layout_text_line_height or weight -->
+    <!-- Signup_email_layout_text_line_height or weight -->
     <dimen name="line_height_27sp">27sp</dimen>
 
-
-    <!--  Signup_email_layout_heights or weights -->
+    <!-- Signup_email_layout_heights or weights -->
     <dimen name="layout_height_or_width_0dp">0dp</dimen>
     <dimen name="layout_height_or_width_1dp">1dp</dimen>
     <dimen name="layout_height_or_width_2dp">2dp</dimen>
@@ -93,55 +98,13 @@
     <dimen name="layout_height_or_width_57dp">57dp</dimen>
     <dimen name="layout_height_or_width_60dp">60dp</dimen>
 
+    <!-- Signup_email_layout_bias -->
+    <dimen name="bias_0">0.0</dimen>
+    <dimen name="bias_0.49">0.49</dimen>
+    <dimen name="bias_0.50">0.50</dimen>
+    <dimen name="bias_0.70">0.70</dimen>
 
-    <!--  Signup_email_layout_text_sizes -->
-    <dimen name="text_size_8sp">8sp</dimen>
-    <dimen name="text_size_9sp">9sp</dimen>
-    <dimen name="text_size_10sp">10sp</dimen>
-    <dimen name="text_size_11sp">11sp</dimen>
-    <dimen name="text_size_12sp">12sp</dimen>
-    <dimen name="text_size_13sp">13sp</dimen>
-    <dimen name="text_size_14sp">14sp</dimen>
-    <dimen name="text_size_15sp">15sp</dimen>
-    <dimen name="text_size_16sp">16sp</dimen>
-    <dimen name="text_size_17sp">17sp</dimen>
-    <dimen name="text_size_18sp">22sp</dimen>
+    <!-- Reset password verification screen-->
+    <dimen name="imageview_width_34dp">34dp</dimen>
 
-
-    <!--  Signup_email_layout_margins -->
-    <dimen name ="margin_8dp">8dp</dimen>
-    <dimen name ="margin_18dp">18dp</dimen>
-    <dimen name ="margin_16dp">16dp</dimen>
-    <dimen name ="margin_30dp">30dp</dimen>
-    <dimen name ="margin_27dp">27dp</dimen>
-    <dimen name ="margin_32dp">32dp</dimen>
-    <dimen name ="margin_40dp">40dp</dimen>
-    <dimen name ="margin_44dp">44dp</dimen>
-    <dimen name ="margin_15dp">15dp</dimen>
-    <dimen name ="margin_10dp">10dp</dimen>
-    <dimen name ="margin_50dp">10dp</dimen>
-
-    <!--  Signup_email_layout_bias -->
-    <dimen name ="bias_0">0.0</dimen>
-    <dimen name ="bias_0.49">0.49</dimen>
-    <dimen name ="bias_0.50">0.50</dimen>
-    <dimen name ="bias_0.70">0.70</dimen>
-
-
-    // Padding dimensions for Signup choices screen
-    <dimen name="padding_16dp">16dp</dimen>
-    <dimen name="padding_40dp">40dp</dimen>
-
-
-
-    //Dimension for landing screen
-    <dimen name="margin_top_255dp">255dp</dimen>
-    <dimen name="marginTop_120dp">120dp</dimen>
-    <dimen name="marginBottom_240dp">240dp</dimen>
-    <dimen name="padding_6dp">6dp</dimen>
-    <dimen name="marginTop_12dp">12dp</dimen>
-    <dimen name="maginTop_20dp">20dp</dimen>
-    <dimen name="margin_Bottom24dp">24dp</dimen>
-    <dimen name="margin_70dp">70dp</dimen>
-    <dimen name="margin_80dp">80dp</dimen>
 </resources>

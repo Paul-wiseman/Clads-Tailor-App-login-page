@@ -25,7 +25,7 @@
             android:fontFamily="@font/poppins"
             android:text="@string/fragment_login_screen_welcome_back"
             android:textColor="@color/white"
-            android:textSize="@dimen/text_size_18sp"
+            android:textSize="@dimen/text_size_22sp"
             android:textStyle="bold" />
 
         <TextView
@@ -54,7 +54,7 @@
             android:textColor="@color/black"
             android:textSize="@dimen/text_size_18sp"
             android:textStyle="bold"
-            app:cornerRadius="@dimen/cornerRadius_5dp"
+            app:cornerRadius="@dimen/corner_radius_5dp"
             app:icon="@drawable/google_logo_icon"
             app:iconGravity="textStart"
             app:iconTintMode="multiply" />
@@ -136,7 +136,7 @@
                 android:id="@+id/fragment_login_screen_newUser_text_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="15dp"
+                android:layout_marginEnd="@dimen/margin_15dp"
                 android:text="@string/fragment_login_screen_new_user"
                 android:textColor="@color/grey"
                 android:textFontWeight="400"

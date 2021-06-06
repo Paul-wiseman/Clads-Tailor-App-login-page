@@ -7,7 +7,6 @@ import com.decagonhq.clads.databinding.ActivityCladsBinding
 class CladsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         setContentView(ActivityCladsBinding.inflate(layoutInflater).root)
     }
 }
