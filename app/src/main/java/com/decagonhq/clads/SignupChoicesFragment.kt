@@ -1,12 +1,15 @@
 package com.decagonhq.clads
 
+import android.app.Activity
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.navigation.NavDirections
 import androidx.navigation.fragment.findNavController
 import com.decagonhq.clads.databinding.FragmentSignupChoicesBinding
 import com.google.android.gms.auth.api.signin.GoogleSignIn
@@ -64,7 +67,7 @@ class SignupChoicesFragment : Fragment() {
         // Check if user is signed in (non-null) and update UI accordingly.
         val currentUser = firebaseAuth.currentUser
         if (currentUser != null) {
-            findNavController().navigate(R.id.action_signupChoicesFragment_to_signupEmailFragment)
+            moveTo(R.id.signup_email_fragment)
         }
     }
 
@@ -104,7 +107,7 @@ class SignupChoicesFragment : Fragment() {
                     val userEmail = user?.email
                     val action =
                         SignupChoicesFragmentDirections.actionSignupChoicesFragmentToSignupEmailFragment(userEmail)
-                    findNavController().navigate(action)
+                    moveTo(action)
                 } else {
                     // If sign in fails, display a message to the user.
                     tag("SignInFailure: ").w(task.exception, "signInWithCredential:failure")
@@ -120,4 +123,24 @@ class SignupChoicesFragment : Fragment() {
         super.onDestroyView()
         _binding = null
     }
+}
+
+fun Fragment.moveTo(id: Int) {
+    findNavController().navigate(id)
+}
+
+fun Fragment.moveTo(direction: NavDirections) {
+    findNavController().navigate(direction)
+}
+
+fun Fragment.moveTo(uri: Uri) {
+    findNavController().navigate(uri)
+}
+
+fun Activity.getSomething(): String {
+    return "string"
+}
+
+fun Fragment.getSomething(): String {
+    return requireActivity().getSomething()
 }
