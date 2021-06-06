@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profile_management_nav_graph"
+    app:startDestination="@id/dashboardhomeFragment">
+
+    <fragment
+        android:id="@+id/dashboardhomeFragment"
+        android:name="com.decagonhq.clads.fragments.DashboardFragment"
+        android:label="fragment_dashboard_home"
+        tools:layout="@layout/fragment_dashboard_home" >
+        <action
+            android:id="@+id/action_dashboardhomeFragment_to_dashboardMessagesFragment"
+            app:destination="@id/dashboardMessagesFragment" />
+        <action
+            android:id="@+id/action_dashboardhomeFragment_to_dashboardMediaFragment"
+            app:destination="@id/dashboardMediaFragment" />
+        <action
+            android:id="@+id/action_dashboardhomeFragment_to_editProfileFragment2"
+            app:destination="@id/editProfileFragment2" />
+        <action
+            android:id="@+id/action_dashboardhomeFragment_to_clientsListFragment2"
+            app:destination="@id/clientsListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dashboardMessagesFragment"
+        android:name="com.decagonhq.clads.fragments.profilemanagement.DashboardMessagesFragment"
+        android:label="fragment_dashboard_messages"
+        tools:layout="@layout/fragment_dashboard_messages" >
+        <action
+            android:id="@+id/action_dashboardMessagesFragment_to_dashboardMediaFragment"
+            app:destination="@id/dashboardMediaFragment" />
+        <action
+            android:id="@+id/action_dashboardMessagesFragment_to_dashboardhomeFragment"
+            app:destination="@id/dashboardhomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dashboardMediaFragment"
+        android:name="com.decagonhq.clads.fragments.profilemanagement.DashboardMediaFragment"
+        android:label="fragment_dashboard_media"
+        tools:layout="@layout/fragment_dashboard_media" >
+        <action
+            android:id="@+id/action_dashboardMediaFragment_to_dashboardMessagesFragment"
+            app:destination="@id/dashboardMessagesFragment" />
+        <action
+            android:id="@+id/action_dashboardMediaFragment_to_dashboardhomeFragment"
+            app:destination="@id/dashboardhomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editProfileFragment2"
+        android:name="com.decagonhq.clads.fragments.profilemanagement.EditProfileFragment"
+        android:label="fragment_edit_profile"
+        tools:layout="@layout/fragment_edit_profile" />
+    <fragment
+        android:id="@+id/clientsListFragment"
+        android:name="com.decagonhq.clads.fragments.profilemanagement.ClientsListFragment"
+        android:label="fragment_clients_list"
+        tools:layout="@layout/fragment_clients_list" >
+        <action
+            android:id="@+id/action_clientsListFragment_to_addClientFragment"
+            app:destination="@id/addClientFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addClientFragment"
+        android:name="com.decagonhq.clads.fragments.profilemanagement.AddClientFragment"
+        android:label="fragment_add_client"
+        tools:layout="@layout/fragment_add_client" />
+</navigation>

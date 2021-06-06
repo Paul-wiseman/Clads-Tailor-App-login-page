@@ -4,19 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.CladsActivity">
+    tools:context=".activities.DashboardActivity">
 
-
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/clads_activity_nav_host_fragment_container"
+    <fragment
+        android:id="@+id/fragment"
         android:name="androidx.navigation.fragment.NavHostFragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
         app:defaultNavHost="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:navGraph="@navigation/authentication_nav_graph" />
-
+        app:navGraph="@navigation/profile_management_nav_graph" />
 </androidx.constraintlayout.widget.ConstraintLayout>
