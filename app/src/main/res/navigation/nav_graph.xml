@@ -51,10 +51,10 @@
             app:destination="@id/signup_email_fragment" />
     </fragment>
     <fragment
-        android:id="@+id/login_fragment"
-        android:name="com.decagonhq.clads.LoginFragment"
-        android:label="fragment_login"
-        tools:layout="@layout/fragment_login" >
+        android:id="@+id/loginScreenFragment"
+        android:name="com.decagonhq.clads.LoginScreenFragment"
+        android:label="fragment_login_screen"
+        tools:layout="@layout/fragment_login_screen" >
         <action
             android:id="@+id/action_loginFragment_to_forgotPasswordFragment"
             app:destination="@id/forgot_password_fragment" />
@@ -69,7 +69,7 @@
         tools:layout="@layout/fragment_email_verification" >
         <action
             android:id="@+id/action_emailVerificationFragment_to_loginFragment"
-            app:destination="@id/login_fragment" />
+            app:destination="@id/loginScreenFragment" />
     </fragment>
     <fragment
         android:id="@+id/forgot_password_fragment"
@@ -96,7 +96,12 @@
         tools:layout="@layout/fragment_reset_password" >
         <action
             android:id="@+id/action_resetPassword_to_loginFragment"
-            app:destination="@id/login_fragment" />
+            app:destination="@id/loginScreenFragment" />
     </fragment>
-    <fragment android:id="@+id/placeholder" />
+    <fragment android:id="@+id/placeholder" >
+        <action
+            android:id="@+id/action_placeholder_to_loginScreenFragment"
+            app:destination="@id/loginScreenFragment" />
+    </fragment>
+
 </navigation>

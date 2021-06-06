@@ -1,11 +1,16 @@
 package com.decagonhq.clads
 
 import android.os.Bundle
+import android.text.Spannable
+import android.text.SpannableString
+import android.text.style.ForegroundColorSpan
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.TextView
 import android.widget.Toast
+import androidx.core.content.ContextCompat.getColor
 import androidx.fragment.app.Fragment
 import com.decagonhq.clads.databinding.FragmentLoginScreenBinding
 import com.google.android.material.textfield.TextInputEditText
@@ -32,6 +37,7 @@ class LoginScreenFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
 
         // getting the reference of the user input edit text
         emailEditText = binding.fragmentLoginScreenEmailAddressTextInputEditText
@@ -64,9 +70,9 @@ class LoginScreenFragment : Fragment() {
         }
     }
 
-    // setting the binding to null when the app is killed
-    override fun onDestroyView() {
-        super.onDestroyView()
+    override fun onDestroy() {
+        super.onDestroy()
         _binding = null
+
     }
 }

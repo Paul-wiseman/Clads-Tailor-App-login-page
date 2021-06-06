@@ -5,9 +5,7 @@
     <dimen name="textSize_14sp">14sp</dimen>
 
     //dimension for margin
-    <dimen name="margin_120dp">120dp</dimen>
     <dimen name="margin_89dp">89dp</dimen>
-    <dimen name="margin_83dp">83dp</dimen>
     <dimen name="margin_44dp">44dp</dimen>
     <dimen name="margin_32dp">32dp</dimen>
     <dimen name="margin_29dp">29dp</dimen>
