@@ -13,6 +13,7 @@
         app:flow_wrapMode="chain"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:tabGravity="start"
         app:tabIndicatorColor="@color/deep_sky_blue"
         app:tabMode="auto"

@@ -131,7 +131,7 @@ class SignupChoicesFragment : Fragment() {
     private fun updateUi(email: String) {
         val userEmail = email
         val action =
-            SignupChoicesFragmentDirections.actionSignupChoicesFragmentToSignupEmailFragment(userEmail)
+            SignupChoicesFragmentDirections.actionSignupChoicesFragmentToSignupEmailFragment()
         moveTo(action)
     }
 
