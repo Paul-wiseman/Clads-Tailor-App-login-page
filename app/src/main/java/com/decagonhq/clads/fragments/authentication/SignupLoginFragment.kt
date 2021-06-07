@@ -10,7 +10,6 @@ import androidx.navigation.fragment.findNavController
 import com.decagonhq.clads.activities.DashboardActivity
 import com.decagonhq.clads.databinding.FragmentSignupLoginBinding
 
-
 class SignupLoginFragment : Fragment() {
     // Declare binding variable
     private var _binding: FragmentSignupLoginBinding? = null
@@ -35,7 +34,7 @@ class SignupLoginFragment : Fragment() {
             findNavController().navigate(action)
         }
         binding.fragmentSignupLoginButton.setOnClickListener {
-         startActivity(Intent(requireContext(),DashboardActivity::class.java))
+            startActivity(Intent(requireContext(), DashboardActivity::class.java))
         }
     }
 
