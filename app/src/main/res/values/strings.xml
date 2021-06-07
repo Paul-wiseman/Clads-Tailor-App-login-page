@@ -75,7 +75,7 @@
 
 
 <!--    <string name="signup_choices_fragment_have_an_account_login_text">Have an account? Login</string>-->
->>>>>>> 4eae5435d46df7aa0d78ffad6ec5e203f720b52d
+
     <string name="signup_choices_fragment_login">Login</string>
     <string name="signup_choices_fragment_a_logo_of_the_app">A logo of the app</string>
     <string name="signup_login_fragment_sign_up">Sign up</string>
