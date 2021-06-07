@@ -1,25 +1,65 @@
 <resources>
     <string name="app_name">Clads</string>
 
-    <!-- loading TextView -->
-    <string name="splash_screen_loading">Loading...</string>
-    <!-- Clads TextView -->
-    <string name="sign_up_login_tag_line"> Lorem ipsum. ipsum sum</string>
+    <!-- email signup fragment views texts -->
+    <string name="email_sign_up_login_tag_line"> Lorem ipsum. ipsum sum</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    //string resources for fragment login screen
+    <!-- loading TextView -->
+    <string name="splash_screen_loading_text">Loading...</string>
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="fragment_login_screen_welcome_back">Welcome back</string>
     <string name="fragment_login_screen_login_to_continue">Login to continue</string>
     <string name="fragment_login_screen_email_address">Email Address</string>
     <string name="fragment_login_screen_password">Password</string>
     <string name="fragment_login_screen_login">Login</string>
-    <string name="fragment_login_screen_new_user">New User?</string>
-    <string name="fragment_login_screen_signup_for_free">New User? SignUp for free</string>
+    <string name="fragment_login_screen_new_user">New User? SignUp for free</string>
+    <string name="fragment_login_screen_signup_for_free">SignUp for free</string>
     <string name="fragment_login_screen_forgot_password">Forgot Password?</string>
     <string name="fragment_login_screen_login_with_google">Login with Google</string>
-
+    <string name="sign_up_login_tag_line"> Lorem ipsum, ipsum sum</string>
     <string name="all_placeholder_text">Hello blank fragment</string>
+    <string name ="email_sign_up_fragment_create_account_text">Create an account</string>
+    <string name ="email_sign_up_fragment_lets_get_to_know_you_text">Lets get to know you</string>
+    <string name="view_in_browser">view in browser</string>
+    <string name="email_confirmation">Email Confirmation</string>
+    <string name="prompt_message">Hey Ijeoma, you are almost ready to start <br/> enjoying Clads. Simply click the big blue<br/>button below to verify your email address.</string>
+    <string name="verify_email_address">Verify Email Address</string>
+    <string name="stay_in_touch">Stay in touch</string>
+    <string name="email_sent_by">email sent by Clads</string>
+    <string name="copyright">copyright 2020. All Rights Reserved</string>
+    <string name="social_media">Social Media Link</string>
+
+    <string name="email_sign_up_fragment_firstname_hint_text">First Name</string>
+    <string name="email_sign_up_fragment_lastname_hint_text">Last Name</string>
+    <string name="email_sign_up_fragment_other_name_hint_text">Other Name</string>
+    <string name="email_sign_up_fragment_email_address_hint_text">Email Address</string>
+    <string name="email_sign_up_fragment_password_hint_text">Password</string>
+    <string name="email_sign_up_fragment_confirm_password_hint_text">Confirm Password</string>
+    <string name ="email_sign_up_fragment_sign_up_button_text">Sign Up</string>
+    <string name ="email_sign_up_fragment_already_have_an_account_text">Have an Account? </string>
+    <string name ="email_sign_up_fragment_login_textview_text">Login </string>
+    <string name ="email_sign_up_fragment_choose_account_category_text">Choose account category </string>
+     <string name="all_tailor">Tailor</string>
+
+    <string name="sign_up_email_edit_texts__error_message">Field must not be empty</string>
+    <string name="sign_up_email_confirm_password__error_message">Passwords do not match</string>
+
+    <string name="signup_choices_fragment_signup_with_google">Signup with Google</string>
+    <string name="signup_choices_fragment_sign_up_with_email">Sign up with email</string>
+    <string name="signup_choices_fragment_sign_up_with_phone_number">Sign up with phone number</string>
+
+<!--    <string name="signup_choices_fragment_have_an_account_login_text">Have an account? Login</string>-->
+    <string name="signup_choices_fragment_login">Login</string>
+    <string name="signup_choices_fragment_a_logo_of_the_app">A logo of the app</string>
+    <string name="signup_login_fragment_sign_up">Sign up</string>
+
+    <string-array name="email_sign_up_fragment_choose_account_category_array" >
+        <item>Tailor</item>
+        <item>Weaver</item>
+        <item>Client</item>
+    </string-array>
+
     <string name ="sign_up_email_title">Create an account</string>
     <string name ="sign_up_email_description">Lets get to know you</string>
     <string name ="sign_up_email_first_name">First Name</string>
@@ -29,5 +69,19 @@
     <string name ="sign_up_email_password">Password</string>
     <string name ="sign_up_email_confirm_password">Confirm Password</string>
     <string name="splash_screen_placeholder_text">Splash Screen</string>
-
+    <string name="fragment_signup_choices_button_text">Signup with Google</string>
+    <string name="signup_login_fragment_signup_button">Sign Up</string>
+    <string name="reset_password_fragment_view_in_browser">view in browser</string>
+    <string name="all_reset_password">Reset Password</string>
+    <string name="reset_password_fragment_click_reset_button">Hi,<br/> You’re almost there. To finish resetting your password, please click on the  reset button below</string>
+    <string name="reset_password_fragment_stay_in_touch">stay in touch</string>
+    <string name="reset_password_fragment_email_sent_by_clads">email sent by clads</string>
+    <string name="reset_password_fragment_copyright_text">copyright 2020. All Rights Reserved</string>
+    <string name="all_forgot_password">Forgot Password</string>
+    <string name="all_email_address">Email Address</string>
+    <string name="forgot_password_fragment_send_request_password_link">Send Request Password Link</string>
+    <string name="all_i_can_remember_my_password">I can remember my password,</string>
+    <string name="all_login">Login</string>
+    <string name="reset_password_verification_fragment_new_password">New Password</string>
+    <string name="reset_password_verification_fragment_confirm_new_password">Confirm New Password</string>
 </resources>
