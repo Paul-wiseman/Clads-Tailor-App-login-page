@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-
     app:startDestination="@id/signup_login_fragment">
 
     <activity
@@ -13,7 +13,7 @@
         tools:layout="@layout/activity_clads" />
     <fragment
         android:id="@+id/signup_login_fragment"
-        android:name="com.decagonhq.clads.fragments.SignupLoginFragment"
+        android:name="com.decagonhq.clads.fragments.authentication.SignupLoginFragment"
         android:label="fragment_signup_login"
         tools:layout="@layout/fragment_signup_login"
         app:startDestination="@id/action_signupLoginFragment_to_signupChoicesFragment">
@@ -27,7 +27,7 @@
     </fragment>
     <fragment
         android:id="@+id/signup_choices_fragment"
-        android:name="com.decagonhq.clads.fragments.SignupChoicesFragment"
+        android:name="com.decagonhq.clads.fragments.authentication.SignupChoicesFragment"
         android:label="fragment_signup_choices"
         tools:layout="@layout/fragment_signup_choices" >
         <action
@@ -36,21 +36,32 @@
     </fragment>
     <fragment
         android:id="@+id/signup_email_fragment"
-        android:name="com.decagonhq.clads.fragments.SignupEmailFragment"
+        android:name="com.decagonhq.clads.fragments.authentication.SignupEmailFragment"
         android:label="fragment_signup_email"
         tools:layout="@layout/fragment_signup_email" >
         <action
             android:id="@+id/action_signupEmailFragment_to_emailVerificationFragment"
-            app:destination="@id/email_verification_fragment">
-        </action>
+            app:destination="@id/email_verification_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signup_google_fragment"
+        android:name="com.decagonhq.clads.fragments.authentication.SignupGoogleFragment"
+        android:label="fragment_signup_google"
+        tools:layout="@layout/fragment_signup_google" >
+        <action
+            android:id="@+id/action_signupGoogleFragment_to_signupEmailFragment"
+            app:destination="@id/signup_email_fragment" >
         <argument
             android:name="userEmail"
             app:argType="string"
             app:nullable="true" />
+        </action>
+
+
     </fragment>
     <fragment
         android:id="@+id/fragment_login_screen"
-        android:name="com.decagonhq.clads.fragments.LoginScreenFragment"
+        android:name="com.decagonhq.clads.fragments.authentication.LoginScreenFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login_screen" >
         <action
@@ -60,27 +71,30 @@
             android:id="@+id/action_loginFragment_to_placeholder"
             app:destination="@id/placeholder" />
     </fragment>
+
     <fragment
         android:id="@+id/email_verification_fragment"
-        android:name="com.decagonhq.clads.fragments.EmailVerificationFragment"
+        android:name="com.decagonhq.clads.fragments.authentication.EmailVerificationFragment"
         android:label="fragment_email_verification"
         tools:layout="@layout/fragment_email_verification" >
         <action
             android:id="@+id/action_emailVerificationFragment_to_loginFragment"
             app:destination="@id/fragment_login_screen" />
     </fragment>
+
     <fragment
         android:id="@+id/forgot_password_fragment"
-        android:name="com.decagonhq.clads.fragments.ForgotPasswordFragment"
+        android:name="com.decagonhq.clads.fragments.authentication.ForgotPasswordFragment"
         android:label="fragment_forgot_password"
         tools:layout="@layout/fragment_forgot_password" >
         <action
             android:id="@+id/action_forgotPasswordFragment_to_resetPasswordVerification"
             app:destination="@id/reset_password_verification" />
     </fragment>
+
     <fragment
         android:id="@+id/reset_password_verification"
-        android:name="com.decagonhq.clads.fragments.ResetPasswordVerification"
+        android:name="com.decagonhq.clads.fragments.authentication.ResetPasswordVerification"
         android:label="fragment_reset_password_verification"
         tools:layout="@layout/fragment_reset_password_verification" >
         <action
@@ -89,7 +103,7 @@
     </fragment>
     <fragment
         android:id="@+id/reset_password"
-        android:name="com.decagonhq.clads.fragments.ResetPassword"
+        android:name="com.decagonhq.clads.fragments.authentication.ResetPassword"
         android:label="fragment_reset_password"
         tools:layout="@layout/fragment_reset_password" >
         <action

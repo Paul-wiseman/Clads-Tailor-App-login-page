@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Clads">
 
+        <activity android:name=".activities.DashboardActivity">
+        </activity>
+
         <activity android:name=".activities.SplashScreenActivity"
             android:theme="@style/splashScreenTheme">
             <intent-filter>
@@ -20,6 +23,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
 
         <activity android:name=".activities.CladsActivity">
             <intent-filter>

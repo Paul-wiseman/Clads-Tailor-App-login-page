@@ -1,4 +1,4 @@
-package com.decagonhq.clads.fragments
+package com.decagonhq.clads.fragments.authentication
 
 import android.content.Intent
 import android.graphics.Color
@@ -131,7 +131,7 @@ class SignupChoicesFragment : Fragment() {
     private fun updateUi(email: String) {
         val userEmail = email
         val action =
-            SignupChoicesFragmentDirections.actionSignupChoicesFragmentToSignupEmailFragment(userEmail)
+            SignupChoicesFragmentDirections.actionSignupChoicesFragmentToSignupEmailFragment()
         moveTo(action)
     }
 

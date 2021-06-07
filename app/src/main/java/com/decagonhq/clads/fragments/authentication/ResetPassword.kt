@@ -1,4 +1,4 @@
-package com.decagonhq.clads.fragments
+package com.decagonhq.clads.fragments.authentication
 
 import android.os.Bundle
 import android.view.LayoutInflater
