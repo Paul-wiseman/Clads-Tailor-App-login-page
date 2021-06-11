@@ -113,7 +113,7 @@
     <dimen name="margin_53dp">53dp</dimen>
     <dimen name="marginTop_22dp">22dp</dimen>
     <dimen name="cornerRadius_5dp">5dp</dimen>
-=======
+
     //dimensions for textSize
     <dimen name="textSize_18sp">18sp</dimen>
     <dimen name="textSize_14sp">14sp</dimen>
