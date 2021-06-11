@@ -64,16 +64,10 @@ class LoginScreenFragment : Fragment() {
 
             } else {
                 when {
-                    !LoginScreenFragmentValidator.validatePassword(password) -> Toast.makeText(
-                        requireContext(),
-                        "Please input correct password",
-                        Toast.LENGTH_LONG
-                    ).show()
-                    !LoginScreenFragmentValidator.validateEmail(email) -> Toast.makeText(
-                        requireContext(),
-                        "Please input correct Email",
-                        Toast.LENGTH_LONG
-                    ).show()
+                    !LoginScreenFragmentValidator.validatePassword(password) -> passwordEditText.error = "Please input correct password"
+
+                    !LoginScreenFragmentValidator.validateEmail(email) -> emailEditText.error = "Please input correct Email"
+
                 }
             }
         }
