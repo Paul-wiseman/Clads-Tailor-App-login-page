@@ -21,7 +21,6 @@ class AddClientFragment : Fragment() {
 
     private lateinit var add_client_viewpager2: ViewPager2
 
-
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -43,14 +42,14 @@ class AddClientFragment : Fragment() {
 
         // connecting the viewpager with the adapter
         // An instance of the the viewpager adapter class
-         var adapter = AddClientViewPagerAdapter(
+        var adapter = AddClientViewPagerAdapter(
             requireActivity().supportFragmentManager,
             lifecycle
         )
         add_client_viewpager2.adapter = adapter
 
         // tablayout setup with the viewpager to show the different fragments as tabs
-        TabLayoutMediator(tabLayout,add_client_viewpager2) { tab, position ->
+        TabLayoutMediator(tabLayout, add_client_viewpager2) { tab, position ->
             when (position) {
                 0 -> {
                     tab.text = "Client Account"
@@ -64,12 +63,4 @@ class AddClientFragment : Fragment() {
             }
         }.attach()
     }
-
-
-
-
-
-
-
 }
-

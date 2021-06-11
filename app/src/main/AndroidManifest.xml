@@ -2,8 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.decagonhq.clads">
 
+<<<<<<< HEAD
     <uses-permission android:name="android.permission.INTERNET"/>
 
+=======
+>>>>>>> 5508168d96f47cfc2cc8bc12a15a63800c1f167e
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -11,18 +14,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Clads">
+<<<<<<< HEAD
 
         <activity android:name=".activities.DashboardActivity">
         </activity>
 
         <activity android:name=".activities.SplashScreenActivity"
             android:theme="@style/splashScreenTheme">
+=======
+        <activity android:name=".MainActivity">
+>>>>>>> 5508168d96f47cfc2cc8bc12a15a63800c1f167e
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
 
 
 
@@ -37,6 +45,8 @@
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+=======
+>>>>>>> 5508168d96f47cfc2cc8bc12a15a63800c1f167e
     </application>
 
 </manifest>

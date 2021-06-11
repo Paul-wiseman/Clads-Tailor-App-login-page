@@ -11,7 +11,10 @@ import org.junit.runner.RunWith
  *
  * See [testing documentation](http://d.android.com/tools/testing).
  */
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5508168d96f47cfc2cc8bc12a15a63800c1f167e
 @RunWith(AndroidJUnit4::class)
 class ExampleInstrumentedTest {
     @Test

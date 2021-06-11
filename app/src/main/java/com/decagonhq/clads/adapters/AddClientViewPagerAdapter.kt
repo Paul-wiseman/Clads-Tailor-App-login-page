@@ -8,25 +8,23 @@ import com.decagonhq.clads.fragments.profilemanagement.TablayoutClientAccountFra
 import com.decagonhq.clads.fragments.profilemanagement.TablayoutDeliveryAddressListFragment
 import com.decagonhq.clads.fragments.profilemanagement.TablayoutMeasurementFragment
 
-class AddClientViewPagerAdapter (
+class AddClientViewPagerAdapter(
     fm: FragmentManager,
     lifecycle: Lifecycle
 ) : FragmentStateAdapter(fm, lifecycle) {
     override fun getItemCount(): Int {
-return 3
+        return 3
     }
     // the viewpager will have 3 fragments
     override fun createFragment(position: Int): Fragment {
-        return  when(position) {
+        return when (position) {
             0 -> {
                 TablayoutClientAccountFragment()
             }
             1 -> {
                 TablayoutMeasurementFragment()
             }
-            else ->  {TablayoutDeliveryAddressListFragment()}
+            else -> { TablayoutDeliveryAddressListFragment() }
         }
-
     }
-
 }

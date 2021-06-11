@@ -1,27 +1,20 @@
-package com.decagonhq.clads.fragments.authentication
+package com.decagonhq.clads
 
-import android.content.Intent
-import android.graphics.Color
 import android.os.Bundle
-import android.text.Spannable
-import android.text.SpannableString
-import android.text.style.ForegroundColorSpan
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import android.widget.TextView
+import android.widget.Toast
 import androidx.fragment.app.Fragment
-import com.decagonhq.clads.activities.DashboardActivity
+import androidx.navigation.fragment.findNavController
 import com.decagonhq.clads.databinding.FragmentLoginScreenBinding
-import com.decagonhq.clads.utils.LoginScreenFragmentValidator
 import com.google.android.material.textfield.TextInputEditText
 
 class LoginScreenFragment : Fragment() {
 
     private lateinit var emailEditText: TextInputEditText
     private lateinit var passwordEditText: TextInputEditText
-    private lateinit var newUserTextview: TextView
     private lateinit var loginButton: Button
 
     private var _binding: FragmentLoginScreenBinding? = null
@@ -32,7 +25,6 @@ class LoginScreenFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
         // Inflate the layout for this fragment
         _binding = FragmentLoginScreenBinding.inflate(inflater, container, false)
         return binding.root
@@ -45,41 +37,38 @@ class LoginScreenFragment : Fragment() {
         emailEditText = binding.fragmentLoginScreenEmailAddressTextInputEditText
         passwordEditText = binding.fragmentLoginScreenPasswordTextInputEditText
         loginButton = binding.fragmentLoginScreenLoginButton
-        newUserTextview = binding.fragmentLoginScreenNewUserTextView
-        textSpan()
+
         /* Onclick of the login button the user's input is converted to string and validated and if the user's
         *  input is correct the next fragment is launched else the user is notified which field is not
         * field properly
         */
-
         loginButton.setOnClickListener {
             val email = emailEditText.text.toString()
             val password = passwordEditText.text.toString()
-            if (LoginScreenFragmentValidator.validateEmail(email) && LoginScreenFragmentValidator.validatePassword(
-                    password
-                )
-            ) {
-                startActivity(Intent(requireContext(), DashboardActivity::class.java))
+            if (Validator.validateEmail(email) && Validator.validatePassword(password)) {
+                val action =
+                    LoginScreenFragmentDirections.actionLoginFragmentToBlankFragment()
+                findNavController().navigate(action)
             } else {
                 when {
-                    !LoginScreenFragmentValidator.validatePassword(password) -> passwordEditText.error = "Please input correct password"
-
-                    !LoginScreenFragmentValidator.validateEmail(email) -> emailEditText.error = "Please input correct Email"
+                    !Validator.validatePassword(password) -> Toast.makeText(
+                        requireContext(),
+                        "Please input correct password",
+                        Toast.LENGTH_LONG
+                    ).show()
+                    !Validator.validateEmail(email) -> Toast.makeText(
+                        requireContext(),
+                        "Please input correct Email",
+                        Toast.LENGTH_LONG
+                    ).show()
                 }
             }
         }
     }
 
-    override fun onDestroy() {
-        super.onDestroy()
+    // setting the binding to null when the app is killed
+    override fun onDestroyView() {
+        super.onDestroyView()
         _binding = null
-    }
-
-    // this function is used to programmatically change the color style of a text in the layout file
-    private fun textSpan() {
-        val spannableString = SpannableString("New User? SignUp for free")
-        val fcolor = ForegroundColorSpan(Color.WHITE)
-        spannableString.setSpan(fcolor, 10, 25, Spannable.SPAN_INCLUSIVE_INCLUSIVE)
-        newUserTextview.text = spannableString
     }
 }

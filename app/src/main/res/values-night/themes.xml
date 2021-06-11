@@ -1,6 +1,10 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
+<<<<<<< HEAD
     <style name="Theme.Clads" parent="Theme.AppCompat.Light">
+=======
+    <style name="Theme.Clads" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+>>>>>>> 5508168d96f47cfc2cc8bc12a15a63800c1f167e
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_200</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>

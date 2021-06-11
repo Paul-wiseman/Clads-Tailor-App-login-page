@@ -64,8 +64,6 @@ class ClientsListFragment : Fragment() {
         recyclerView.adapter = adapter
 
         displayRecyclerviewOrNoClientText()
-
-
     }
 
     // this function checks the recyclerview and if the list is empty a
@@ -82,6 +80,4 @@ class ClientsListFragment : Fragment() {
             noClientText.isVisible = false
         }
     }
-
 }
-

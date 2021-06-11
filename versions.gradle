@@ -13,6 +13,7 @@ ext.versions = [
         glide_version          : '4.12.0',
         androidx_test          : "1.3.0",
         timber_version         : "4.7.1",
+<<<<<<< HEAD
         ktlint_version         : "10.0.0",
         play_services_version  : "19.0.0",
         firebase_auth_version   : "21.0.1",
@@ -20,4 +21,7 @@ ext.versions = [
         gif_version            : "1.2.22",
         text_drawable            : "1.0.1",
         dexter            : "6.2.2"
+=======
+        ktlint_version         : "10.0.0"
+>>>>>>> 5508168d96f47cfc2cc8bc12a15a63800c1f167e
 ]

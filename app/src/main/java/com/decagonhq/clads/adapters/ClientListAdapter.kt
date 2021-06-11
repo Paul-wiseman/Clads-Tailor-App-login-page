@@ -7,17 +7,17 @@ import androidx.recyclerview.widget.RecyclerView
 import com.amulyakhare.textdrawable.TextDrawable
 import com.decagonhq.clads.databinding.FragmentClientsListRecyclerviewLayoutBinding
 import com.decagonhq.clads.utils.ClientDetailsDataClass
-import java.util.*
+import java.util.Random
 
 class ClientListAdapter : RecyclerView.Adapter<ClientListAdapter.ClientListViewHolder>() {
 
-     var clients = mutableListOf<ClientDetailsDataClass>()
+    var clients = mutableListOf<ClientDetailsDataClass>()
     // this function is responsible for setting up the list to be displayed in the recyclerview
     private fun setClientData(clients: MutableList<ClientDetailsDataClass>) {
         this.clients = clients
     }
     inner class ClientListViewHolder(val binding: FragmentClientsListRecyclerviewLayoutBinding) :
-        RecyclerView.ViewHolder(binding.root) {}
+        RecyclerView.ViewHolder(binding.root)
 
     override fun onCreateViewHolder(
         parent: ViewGroup,
@@ -45,7 +45,7 @@ class ClientListAdapter : RecyclerView.Adapter<ClientListAdapter.ClientListViewH
         // creating a random color
         val rnd = Random()
         val color = Color.argb(230, rnd.nextInt(256), rnd.nextInt(256), rnd.nextInt(256))
-        //below text drawable is a circular
+        // below text drawable is a circular
         var drawable2 = TextDrawable.builder().beginConfig()
             .width(100)
             .height(100)
@@ -54,14 +54,12 @@ class ClientListAdapter : RecyclerView.Adapter<ClientListAdapter.ClientListViewH
             // as we are building a circular drawable
             // we are calling a build round method.
             // in that method we are passing our text and color.
-     .buildRound(setCircleText(currentClient.firstName?.trim(), currentClient.lastName?.trim()), color)
+            .buildRound(setCircleText(currentClient.firstName?.trim(), currentClient.lastName?.trim()), color)
 
         holder.binding.fragmentClientsListRecyclerviewLayoutCircularImageTextViewText.setImageDrawable(drawable2)
     }
 
     override fun getItemCount() = clients.size
-
-
 
     // the function takes the user's first and last name, splits it to get the first letters of first and last name
     // and the string result is used in the circle image view
@@ -71,6 +69,4 @@ class ClientListAdapter : RecyclerView.Adapter<ClientListAdapter.ClientListViewH
 
         return "$firstText$secondText"
     }
-
-
 }

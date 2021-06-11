@@ -1,7 +1,13 @@
+<<<<<<< HEAD
  <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Theme.Clads" parent="Theme.MaterialComponents.DayNight.NoActionBar">
 
+=======
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Clads" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+>>>>>>> 5508168d96f47cfc2cc8bc12a15a63800c1f167e
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/deep_sky_blue</item>
@@ -11,6 +17,7 @@
         <item name="colorSecondaryVariant">@color/teal_700</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
+<<<<<<< HEAD
         <item name="android:statusBarColor" tools:targetApi="l">@color/deep_sky_blue</item>
         <item name="colorAccent">@color/white</item>
     </style>
@@ -46,5 +53,10 @@
 <!--         <item name="strokeColor">@color/navy_blue</item>-->
 <!--         <item name="colorAccent">@color/navy_blue</item>-->
 <!--     </style>-->
+=======
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+>>>>>>> 5508168d96f47cfc2cc8bc12a15a63800c1f167e
 
 </resources>

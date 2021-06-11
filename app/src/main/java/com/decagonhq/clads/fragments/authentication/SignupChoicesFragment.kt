@@ -17,7 +17,6 @@ import androidx.navigation.NavDirections
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import com.decagonhq.clads.R
-import com.decagonhq.clads.activities.DashboardActivity
 import com.decagonhq.clads.databinding.FragmentSignupChoicesBinding
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInClient

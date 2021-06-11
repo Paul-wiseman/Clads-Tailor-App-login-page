@@ -19,6 +19,7 @@ Clads Codebase is designed to enable easy flow and collaboration among android n
 - [Espresso](https://developer.android.com/training/testing/espresso) & [Robolectric for testing](http://robolectric.org/)
 - And many more
 
+<<<<<<< HEAD
 
 ## Contribution
 
@@ -33,3 +34,6 @@ Wiki Pages :
 3. [Wiki PR Guidelines](https://github.com/decadevs/clads/wiki/Style)
 
 
+=======
+![](app/src/main/res/drawable/screenshot.png)
+>>>>>>> 5508168d96f47cfc2cc8bc12a15a63800c1f167e
