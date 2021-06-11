@@ -5,4 +5,9 @@
         <item name="android:iconTint">@color/deep_sky_blue</item>
         <item name="itemTextColor">@color/deep_sky_blue</item>
     </style>
+
+    <style name="BottomNavigationViewActive" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">13sp</item>
+        <item name="android:iconTint">@color/deep_sky_blue</item>
+    </style>
 </resources>

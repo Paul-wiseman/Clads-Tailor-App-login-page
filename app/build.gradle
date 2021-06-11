@@ -5,28 +5,19 @@ plugins {
     id 'kotlin-parcelize'
     id 'dagger.hilt.android.plugin'
     id 'androidx.navigation.safeargs.kotlin'
-    id "org.jlleitschuh.gradle.ktlint"
-<<<<<<< HEAD
+//    id "org.jlleitschuh.gradle.ktlint"
     id 'com.google.gms.google-services'
 }
 
-android {
-
-=======
-}
 
 android {
->>>>>>> 5508168d96f47cfc2cc8bc12a15a63800c1f167e
     compileSdkVersion 30
-    buildToolsVersion "30.0.2"
+    buildToolsVersion "30.0.3"
 
     defaultConfig {
         applicationId "com.decagonhq.clads"
-<<<<<<< HEAD
+
         minSdkVersion 26
-=======
-        minSdkVersion 21
->>>>>>> 5508168d96f47cfc2cc8bc12a15a63800c1f167e
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
@@ -34,14 +25,11 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
-<<<<<<< HEAD
     buildFeatures{
         viewBinding = true
         dataBinding = true
     }
 
-=======
->>>>>>> 5508168d96f47cfc2cc8bc12a15a63800c1f167e
     buildTypes {
         release {
             minifyEnabled false
@@ -63,10 +51,6 @@ android {
 }
 
 dependencies {
-<<<<<<< HEAD
-    def androidx_test="1.1.0"
-=======
->>>>>>> 5508168d96f47cfc2cc8bc12a15a63800c1f167e
 
     //Default Dependencies
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$versions.kotlin_version"
@@ -75,60 +59,44 @@ dependencies {
     implementation 'com.google.android.material:material:1.3.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-<<<<<<< HEAD
 
     // Testing libraries
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
-=======
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
->>>>>>> 5508168d96f47cfc2cc8bc12a15a63800c1f167e
     implementation 'com.google.android.material:material:1.4.0-beta01'
 
     // androidx.test
     androidTestImplementation "androidx.test:runner:$versions.androidx_test"
     androidTestImplementation "androidx.test:core:$versions.androidx_test"
-<<<<<<< HEAD
-=======
     androidTestImplementation "androidx.test.ext:junit-ktx:1.1.2"
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
->>>>>>> 5508168d96f47cfc2cc8bc12a15a63800c1f167e
 
     //navigation controller
     implementation "androidx.navigation:navigation-fragment-ktx:$versions.nav_version"
     implementation "androidx.navigation:navigation-ui-ktx:$versions.nav_version"
     androidTestImplementation "androidx.navigation:navigation-testing:$versions.nav_version"
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 5508168d96f47cfc2cc8bc12a15a63800c1f167e
     //Retrofit
     implementation "com.squareup.retrofit2:retrofit:$versions.retrofit_version"
     implementation "com.squareup.retrofit2:converter-gson:$versions.retrofit_version"
     implementation "com.squareup.okhttp3:okhttp:$versions.okhttp3_version"
     implementation "com.squareup.okhttp3:logging-interceptor:$versions.okhttp3_version"
 
-<<<<<<< HEAD
     // Google sign-up authentication
     implementation "com.google.android.gms:play-services-auth:$versions.play_services_version"
 
-    // Dagger-hilt
-=======
     //Dagger-hilt
->>>>>>> 5508168d96f47cfc2cc8bc12a15a63800c1f167e
     implementation "com.google.dagger:hilt-android:$versions.hilt_version"
     kapt "com.google.dagger:hilt-android-compiler:$versions.hilt_version"
     implementation "androidx.hilt:hilt-lifecycle-viewmodel:$versions.hilt_life_cycle_version"
     kapt "androidx.hilt:hilt-compiler:$versions.hilt_compiler_version"
-
-<<<<<<< HEAD
     // Life cycles
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$versions.lifecycle_version"
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:$versions.lifecycle_version"
@@ -163,7 +131,7 @@ dependencies {
 
     implementation "com.karumi:dexter:$versions.dexter"
     implementation "com.amulyakhare:com.amulyakhare.textdrawable:$versions.text_drawable"
-=======
+
     //Life cycles
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$versions.lifecycle_version"
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:$versions.lifecycle_version"
@@ -184,5 +152,4 @@ dependencies {
     testImplementation 'org.mockito:mockito-core:2.24.5'
     androidTestImplementation 'org.mockito:mockito-android:2.24.5'
 
->>>>>>> 5508168d96f47cfc2cc8bc12a15a63800c1f167e
 }

@@ -12,20 +12,12 @@ buildscript {
 
     dependencies {
         classpath "com.android.tools.build:gradle:$versions.build_gradle_version"
-<<<<<<< HEAD
-=======
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$versions.kotlin_version"
->>>>>>> 5508168d96f47cfc2cc8bc12a15a63800c1f167e
         classpath "com.google.gms:google-services:$versions.google_services"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$versions.kotlin_version"
         classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$versions.nav_version"
         classpath "com.google.dagger:hilt-android-gradle-plugin:$versions.hilt_version"
         classpath "org.jlleitschuh.gradle:ktlint-gradle:$versions.ktlint_version"
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 5508168d96f47cfc2cc8bc12a15a63800c1f167e
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }

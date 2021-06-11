@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-<<<<<<< HEAD
 
     <!-- Dimensions for margins-->
     <dimen name="margin_0dp">0dp</dimen>
@@ -127,13 +126,9 @@
     <dimen name="marginTop_32dp">32dp</dimen>
     <dimen name="marginTop_29dp">29dp</dimen>
     <dimen name="marginTop_23dp">23dp</dimen>
-    <dimen name="marginTop_22dp">23dp</dimen>
     <dimen name="marginTop_9dp">9dp</dimen>
     <dimen name="marginEnd_18dp">18dp</dimen>
     <dimen name="marginStart_18dp">18dp</dimen>
-    <dimen name="cornerRadius_5dp">5dp</dimen>
     <dimen name="drawable_padding_12dp">12dp</dimen>
-
->>>>>>> 5508168d96f47cfc2cc8bc12a15a63800c1f167e
 
 </resources>

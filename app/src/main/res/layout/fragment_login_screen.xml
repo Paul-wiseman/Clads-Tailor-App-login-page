@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
-<androidx.core.widget.NestedScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-=======
+
 <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
->>>>>>> 5508168d96f47cfc2cc8bc12a15a63800c1f167e
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/fragment_login_screen"
@@ -13,11 +9,8 @@
     android:background="@color/deep_sky_blue"
     android:fillViewport="true"
     android:orientation="vertical"
-<<<<<<< HEAD
     tools:context=".fragments.authentication.LoginScreenFragment">
-=======
-    tools:context=".LoginScreenFragment">
->>>>>>> 5508168d96f47cfc2cc8bc12a15a63800c1f167e
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -28,92 +21,48 @@
             android:id="@+id/fragment_login_screen_welcomeBack_text_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-<<<<<<< HEAD
-            android:layout_marginStart="@dimen/margin_18dp"
-            android:layout_marginTop="@dimen/margin_89dp"
-            android:fontFamily="@font/poppins"
-            android:text="@string/fragment_login_screen_welcome_back"
-            android:textColor="@color/white"
-            android:textSize="@dimen/text_size_22sp"
-=======
             android:layout_marginStart="@dimen/marginStart_18dp"
             android:layout_marginTop="@dimen/marginTop_89dp"
             android:fontFamily="@font/poppins"
             android:text="@string/fragment_login_screen_welcome_back"
             android:textColor="@color/white"
             android:textSize="@dimen/textSize_18sp"
->>>>>>> 5508168d96f47cfc2cc8bc12a15a63800c1f167e
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/fragment_login_screen_login_to_continue_text_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-<<<<<<< HEAD
             android:layout_marginStart="@dimen/margin_18dp"
             android:layout_marginTop="@dimen/margin_9dp"
             android:fontFamily="@font/poppins"
             android:text="@string/fragment_login_screen_login_to_continue"
             android:textColor="@color/white"
             android:textSize="@dimen/text_size_14sp" />
-=======
-            android:layout_marginStart="@dimen/marginStart_18dp"
-            android:layout_marginTop="@dimen/marginTop_9dp"
-            android:fontFamily="@font/poppins"
-            android:text="@string/fragment_login_screen_login_to_continue"
-            android:textColor="@color/white"
-            android:textSize="@dimen/textSize_14sp" />
->>>>>>> 5508168d96f47cfc2cc8bc12a15a63800c1f167e
 
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/fragment_login_screen_login_with_google_material_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-<<<<<<< HEAD
             android:layout_marginStart="@dimen/margin_18dp"
             android:layout_marginTop="@dimen/margin_29dp"
             android:layout_marginEnd="@dimen/margin_18dp"
-=======
-            android:layout_marginStart="@dimen/marginStart_18dp"
-            android:layout_marginTop="@dimen/marginTop_29dp"
-            android:layout_marginEnd="@dimen/marginEnd_18dp"
->>>>>>> 5508168d96f47cfc2cc8bc12a15a63800c1f167e
-            android:backgroundTint="@color/white"
-            android:fontFamily="@font/poppins"
-            android:text="@string/fragment_login_screen_login_with_google"
-            android:textAllCaps="false"
-            android:textColor="@color/black"
-<<<<<<< HEAD
             android:textSize="@dimen/text_size_14sp"
             android:textStyle="bold"
             app:cornerRadius="@dimen/corner_radius_5dp"
             app:icon="@drawable/google_logo_icon"
-=======
-            android:textSize="@dimen/textSize_18sp"
-            android:textStyle="bold"
-            app:cornerRadius="@dimen/cornerRadius_5dp"
-            app:icon="@drawable/google_icon2"
->>>>>>> 5508168d96f47cfc2cc8bc12a15a63800c1f167e
             app:iconGravity="textStart"
             app:iconTintMode="multiply" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-<<<<<<< HEAD
-            android:layout_marginStart="@dimen/margin_18dp"
-            android:layout_marginTop="@dimen/margin_44dp"
-            android:layout_marginEnd="@dimen/margin_18dp"
-=======
             android:layout_marginStart="@dimen/marginStart_18dp"
             android:layout_marginTop="@dimen/marginTop_44dp"
             android:layout_marginEnd="@dimen/marginEnd_18dp"
->>>>>>> 5508168d96f47cfc2cc8bc12a15a63800c1f167e
             android:ems="10"
             android:hint="@string/fragment_login_screen_email_address"
-            android:outlineAmbientShadowColor="@color/white"
-            android:outlineSpotShadowColor="@color/white"
             android:textColor="@color/white"
             android:textColorHint="@color/white"
             app:boxStrokeColor="@color/white"
@@ -131,15 +80,9 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-<<<<<<< HEAD
-            android:layout_marginStart="@dimen/margin_18dp"
-            android:layout_marginTop="@dimen/margin_23dp"
-            android:layout_marginEnd="@dimen/margin_18dp"
-=======
             android:layout_marginStart="@dimen/marginStart_18dp"
             android:layout_marginTop="@dimen/marginTop_23dp"
             android:layout_marginEnd="@dimen/marginEnd_18dp"
->>>>>>> 5508168d96f47cfc2cc8bc12a15a63800c1f167e
             android:ems="10"
             android:hint="@string/fragment_login_screen_password"
             android:textColorHint="@color/white"
@@ -161,31 +104,18 @@
             android:id="@+id/fragment_login_screen_login_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-<<<<<<< HEAD
-            android:layout_marginStart="@dimen/margin_18dp"
-            android:layout_marginTop="@dimen/margin_29dp"
-            android:layout_marginEnd="@dimen/margin_18dp"
-=======
             android:layout_marginStart="@dimen/marginStart_18dp"
             android:layout_marginTop="@dimen/marginTop_29dp"
             android:layout_marginEnd="@dimen/marginEnd_18dp"
->>>>>>> 5508168d96f47cfc2cc8bc12a15a63800c1f167e
             android:background="@drawable/login_screen_custom_button_shape"
             android:fontFamily="@font/poppins"
             android:text="@string/fragment_login_screen_login"
             android:textAllCaps="false"
             android:textColor="@color/deep_sky_blue"
-            android:textFontWeight="700"
-<<<<<<< HEAD
             android:textSize="@dimen/text_size_18sp"
             android:textStyle="bold"
             app:backgroundTint="@color/white" />
 
-
-=======
-            android:textSize="@dimen/textSize_18sp"
-            android:textStyle="bold"
-            app:backgroundTint="@color/white" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -195,27 +125,20 @@
             android:gravity="center"
             android:orientation="horizontal"
             android:weightSum="2">
->>>>>>> 5508168d96f47cfc2cc8bc12a15a63800c1f167e
 
             <TextView
                 android:id="@+id/fragment_login_screen_newUser_text_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-<<<<<<< HEAD
                 android:layout_marginEnd="@dimen/margin_15dp"
                 android:text="@string/fragment_login_screen_new_user"
                 android:layout_gravity="center"
                 android:layout_marginTop="@dimen/margin_32dp"
-=======
                 android:layout_marginRight="15dp"
-                android:text="@string/fragment_login_screen_new_user"
->>>>>>> 5508168d96f47cfc2cc8bc12a15a63800c1f167e
                 android:textColor="@color/grey"
                 android:textFontWeight="400"
                 android:textSize="14sp" />
 
-<<<<<<< HEAD
-=======
             <TextView
                 android:id="@+id/fragment_login_screen_signup_text_view"
                 android:layout_width="wrap_content"
@@ -225,26 +148,16 @@
                 android:textSize="@dimen/textSize_14sp"
                 android:textStyle="bold" />
         </LinearLayout>
->>>>>>> 5508168d96f47cfc2cc8bc12a15a63800c1f167e
 
         <TextView
             android:id="@+id/fragment_login_screen_forgotPassword_text_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-<<<<<<< HEAD
             android:layout_gravity="center"
             android:layout_marginTop="@dimen/margin_22dp"
             android:text="@string/fragment_login_screen_forgot_password"
             android:textColor="@color/grey"
             android:textSize="@dimen/text_size_14sp" />
-=======
-            android:layout_marginStart="@dimen/marginStart_120dp"
-            android:layout_marginTop="@dimen/marginTop_22dp"
-            android:text="@string/fragment_login_screen_forgot_password"
-            android:textColor="@color/grey"
-            android:textSize="@dimen/textSize_14sp" />
->>>>>>> 5508168d96f47cfc2cc8bc12a15a63800c1f167e
-
 
     </LinearLayout>
 </androidx.core.widget.NestedScrollView>

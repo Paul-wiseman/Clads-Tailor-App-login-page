@@ -5,7 +5,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.navigation.fragment.navArgs
 import com.decagonhq.clads.databinding.FragmentBlankBinding
 
 class BlankFragment : Fragment() {
@@ -28,6 +27,5 @@ class BlankFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
     }
 }

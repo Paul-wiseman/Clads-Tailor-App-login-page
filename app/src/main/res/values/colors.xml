@@ -14,17 +14,14 @@
     <color name="navy_blue">#0A2E65</color>
     <color name="grey">#ADBACD</color>
     <color name="red">#FF0000</color>
-<<<<<<< HEAD
+
     <color name="error">#7D4242</color>
     <color name="deep_grey">#7F92B4</color>
     <color name="menu_text_color">#506992</color>
     <color name="mtrl_textinput_default_box_stroke_color">#F2F2F2</color>
     <color name="medium_sky_blue">#8FABD3</color>
     <color name="grey_text">#828282</color>
-=======
-    <color name="deep_grey">#7F92B4</color>
-    <color name="menu_text_color">#506992</color>
->>>>>>> 5508168d96f47cfc2cc8bc12a15a63800c1f167e
+
 
 
 
