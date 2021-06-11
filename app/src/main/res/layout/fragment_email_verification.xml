@@ -5,7 +5,7 @@
     android:id="@+id/email_verification_fragment_parent_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.EmailVerificationFragment">
+    tools:context=".fragments.authentication.EmailVerificationFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"

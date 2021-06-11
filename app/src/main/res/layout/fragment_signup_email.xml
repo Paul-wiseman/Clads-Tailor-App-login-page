@@ -44,7 +44,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:background="@color/deep_sky_blue"
-        tools:context=".fragments.SignupEmailFragment">
+        tools:context=".fragments.authentication.SignupEmailFragment">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"

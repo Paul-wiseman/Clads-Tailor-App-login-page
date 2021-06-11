@@ -11,7 +11,7 @@ import androidx.test.espresso.action.ViewActions
 import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.matcher.ViewMatchers.* // ktlint-disable no-wildcard-imports
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import com.decagonhq.clads.fragments.SignupLoginFragment
+import com.decagonhq.clads.fragments.authentication.SignupLoginFragment
 import junit.framework.TestCase
 import org.junit.Before
 import org.junit.Test
@@ -32,7 +32,7 @@ class SignupLoginFragmentTest : TestCase() {
         scenario.moveToState(Lifecycle.State.STARTED)
 
         scenario.onFragment { fragment ->
-            navController.setGraph(R.navigation.nav_graph)
+            navController.setGraph(R.navigation.authentication_nav_graph)
 
             // Make the NavController available via the findNavController() APIs
             Navigation.setViewNavController(fragment.requireView(), navController)

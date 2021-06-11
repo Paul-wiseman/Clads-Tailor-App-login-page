@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.profilemanagement.ClientsListFragment">
+
+
+    <RelativeLayout
+        android:id="@+id/fragment_clients_list_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/fragment_clients_list_female_imageview"
+            android:layout_width="42dp"
+            android:layout_height="47dp"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="false"
+            android:layout_marginLeft="@dimen/cornerRadius_5dp"
+            android:layout_marginEnd="@dimen/cornerRadius_5dp"
+            android:layout_marginBottom="28dp"
+            android:src="@drawable/fragment_clients_list_female_imageview" />
+
+        <ImageView
+            android:id="@+id/fragment_clients_list_male_imageview"
+            android:layout_width="42dp"
+            android:layout_height="47dp"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/fragment_clients_list_female_imageview"
+            android:src="@drawable/fragment_clients_list_male_imageview" />
+
+        <TextView
+            android:id="@+id/fragment_clients_list_you_have_not_added_client_yet_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fragment_clients_list_male_imageview"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="false"
+            android:layout_marginTop="@dimen/marginTop_22dp"
+            android:text="You have not added client yet" />
+
+    </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fragment_client_list_floating_action_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_marginEnd="@dimen/margin_30dp"
+        android:layout_marginBottom="@dimen/margin_45dp"
+        android:backgroundTint="@color/deep_sky_blue"
+        android:src="@drawable/floating_action_button_add_icon"
+        app:elevation="@dimen/margin_8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tint="@color/white" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fragment_clients_list_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteX="18dp"
+        tools:listitem="@layout/fragment_clients_list_recyclerview_layout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

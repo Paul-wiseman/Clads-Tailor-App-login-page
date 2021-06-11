@@ -16,7 +16,7 @@ android {
 
     defaultConfig {
         applicationId "com.decagonhq.clads"
-        minSdkVersion 21
+        minSdkVersion 26
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
@@ -50,7 +50,6 @@ android {
 }
 
 dependencies {
-
     def androidx_test="1.1.0"
 
     //Default Dependencies
@@ -121,4 +120,9 @@ dependencies {
 
     // Library to use gif Images
     implementation "pl.droidsonroids.gif:android-gif-drawable:$versions.gif_version"
+
+    // library to create circular text view
+
+    implementation "com.karumi:dexter:$versions.dexter"
+    implementation "com.amulyakhare:com.amulyakhare.textdrawable:$versions.text_drawable"
 }

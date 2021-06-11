@@ -5,4 +5,75 @@
             <item name="android:textColor">@color/loading_color</item>
             <item name="android:gravity">top</item>
         </style>
+
+    <style name="add_client_fragment_add_client_text_View">
+        <item name="android:layout_marginTop">@dimen/dimen_44_dp</item>
+        <item name="android:layout_marginLeft">@dimen/margin_27dp</item>
+        <item name="android:layout_marginBottom">@dimen/margin_16dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">top</item>
+        <item name="android:textSize">@dimen/text_size_20_sp</item>
+        <item name="android:letterSpacing">0.1</item>
+        <item name="android:textColor">@color/navy_blue</item>
+    </style>
+    <style name="add_client_account_gender_style" parent="input_text_style">
+        <item name="android:layout_marginStart">@dimen/margin_15dp</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_16_dp</item>
+    </style>
+    <style name="input_text_style">
+        <item name="android:textAlignment">textEnd</item>
+        <item name="strokeColor">@color/grey_text</item>
+        <item name="prefixTextColor">@color/navy_blue</item>
+        <item name="android:maxEms">15</item>
+        <item name="android:textSize">@dimen/text_size_12sp</item>
+        <item name="android:letterSpacing">0.1</item>
+        <item name="android:textColor">#506992</item>
+    </style>
+    <style name="radio_input_text_style">
+        <item name="android:textAlignment">textEnd</item>
+        <item name="strokeColor">@color/grey_text</item>
+        <item name="prefixTextColor">@color/navy_blue</item>
+        <item name="android:textSize">@dimen/text_size_12sp</item>
+        <item name="android:letterSpacing">0.1</item>
+        <item name="android:textColor">@color/grey_text</item>
+        <item name="android:buttonTint">@color/deep_sky_blue</item>
+    </style>
+
+    <style name="prefix_text_style">
+        <item name="boxStrokeColor">@color/grey_text</item>
+        <item name="prefixTextColor">@color/navy_blue</item>
+        <item name="android:textSize">@dimen/text_size_14sp</item>
+        <item name="fontFamily">@font/poppins_semibold</item>
+        <item name="android:letterSpacing">0.1</item>
+        <item name="android:textColor">#506992</item>
+    </style>
+    <style name="add_client_fragment_next_button">
+        <item name="textAllCaps">false</item>
+        <item name="backgroundTint">@color/navy_blue</item>
+        <item name="android:layout_marginTop">@dimen/margin_40dp</item>
+        <item name="fontFamily">@font/poppins_bold</item>
+        <item name="android:layout_marginEnd">@dimen/margin_24dp</item>
+        <item name="android:layout_marginStart">@dimen/margin_24dp</item>
+        <item name="android:layout_marginBottom">@dimen/margin_10dp</item>
+    </style>
+    <style name="text_input_layout">
+        <item name="android:layout_marginStart">@dimen/margin_10dp</item>
+        <item name="android:layout_marginEnd">@dimen/margin_10dp</item>
+        <item name="boxBackgroundMode">none</item>
+        <item name="boxStrokeColor">@color/grey_text</item>
+        <item name="hintEnabled">false</item>
+        <item name="prefixTextColor">@color/navy_blue</item>
+        <item name="prefixTextAppearance">@style/prefix_text_style</item>
+    </style>
+    <style name="tab_layout_style">
+        <item name="android:gravity">fill</item>
+        <item name="paddingEnd">@dimen/padding_15_dp</item>
+        <item name="tabPaddingStart">@dimen/padding_15_dp</item>
+        <item name="tabTextAppearance">@style/TextAppearance.AppCompat.Medium</item>
+    </style>
+
+    <dimen name="dimen_44_dp">44dp</dimen>
+    <dimen name="text_size_20_sp">20sp</dimen>
+    <dimen name="dimen_16_dp">16dp</dimen>
+    <dimen name="padding_15_dp">15dp</dimen>
 </resources>

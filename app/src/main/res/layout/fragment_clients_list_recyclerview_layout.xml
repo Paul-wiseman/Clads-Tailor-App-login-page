@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_50"
+    android:layout_marginStart="@dimen/margin_18dp"
+    android:layout_marginEnd="@dimen/margin_18dp"
+    android:layout_marginBottom="@dimen/margin_10dp"
+    android:background="@drawable/fragment_clients_list_recyclerview_layout_style">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/fragment_clients_list_recyclerview_layout_circular_image_text_view_text"
+            android:layout_width="@dimen/margin_30dp"
+            android:layout_height="@dimen/margin_30dp"
+            android:layout_marginStart="@dimen/margin_11dp"
+            android:src="@drawable/fragment_clients_list_recyclerview_layout_circular_text_shape"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.473" />
+
+        <TextView
+            android:id="@+id/fragment_clients_list_recyclerview_layout_first_name_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_8dp"
+            android:text="@string/fragment_clients_list_recyclerview_layout_first_name_text"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/fragment_clients_list_recyclerview_layout_circular_image_text_view_text"
+            app:layout_constraintStart_toEndOf="@+id/fragment_clients_list_recyclerview_layout_circular_image_text_view_text"
+            app:layout_constraintTop_toTopOf="@+id/fragment_clients_list_recyclerview_layout_circular_image_text_view_text" />
+
+        <TextView
+            android:id="@+id/fragment_clients_list_recyclerview_layout_last_name_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/fragment_clients_list_recyclerview_layout_last_name_text"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/fragment_clients_list_recyclerview_layout_first_name_text_view"
+            app:layout_constraintStart_toEndOf="@+id/fragment_clients_list_recyclerview_layout_first_name_text_view"
+            app:layout_constraintTop_toTopOf="@+id/fragment_clients_list_recyclerview_layout_first_name_text_view"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/fragment_clients_list_recyclerview_layout_location_icon4"
+            app:layout_constraintBottom_toBottomOf="@+id/fragment_client_list_recyclerview_layout_location_text_view"
+            app:layout_constraintEnd_toStartOf="@+id/fragment_client_list_recyclerview_layout_location_text_view"
+            app:layout_constraintTop_toTopOf="@+id/fragment_client_list_recyclerview_layout_location_text_view"
+            app:layout_constraintVertical_bias="0.0"
+            app:tint="@color/black" />
+
+        <TextView
+            android:id="@+id/fragment_client_list_recyclerview_layout_location_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_11dp"
+            android:text="@string/fragment_clients_list_recyclerview_layout_location_text"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

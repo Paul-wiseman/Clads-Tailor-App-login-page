@@ -1,5 +1,6 @@
-package com.decagonhq.clads.fragments
+package com.decagonhq.clads.fragments.authentication
 
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.text.Spannable
@@ -12,6 +13,7 @@ import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import com.decagonhq.clads.activities.DashboardActivity
 import com.decagonhq.clads.databinding.FragmentLoginScreenBinding
 import com.decagonhq.clads.utils.LoginScreenFragmentValidator
 import com.google.android.material.textfield.TextInputEditText
@@ -58,6 +60,8 @@ class LoginScreenFragment : Fragment() {
                     password
                 )
             ) {
+                startActivity(Intent(requireContext(), DashboardActivity::class.java))
+
             } else {
                 when {
                     !LoginScreenFragmentValidator.validatePassword(password) -> Toast.makeText(

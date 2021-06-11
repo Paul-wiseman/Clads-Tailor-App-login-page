@@ -8,7 +8,7 @@
     android:paddingHorizontal="@dimen/margin_20dp"
     android:fillViewport="true"
     android:background="@color/deep_sky_blue"
-    tools:context=".fragments.SignupLoginFragment"
+    tools:context=".fragments.authentication.SignupLoginFragment"
     android:id="@+id/fragment_signup_login_parent_layout">
 
 <androidx.constraintlayout.widget.ConstraintLayout

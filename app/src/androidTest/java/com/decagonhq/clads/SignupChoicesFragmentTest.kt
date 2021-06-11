@@ -10,7 +10,7 @@ import androidx.test.espresso.Espresso
 import androidx.test.espresso.assertion.ViewAssertions
 import androidx.test.espresso.matcher.ViewMatchers
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import com.decagonhq.clads.fragments.SignupChoicesFragment
+import com.decagonhq.clads.fragments.authentication.SignupChoicesFragment
 import junit.framework.TestCase
 import org.junit.Before
 import org.junit.Test
@@ -31,7 +31,7 @@ class SignupChoicesFragmentTest : TestCase() {
         scenario.moveToState(Lifecycle.State.STARTED)
 
         scenario.onFragment { fragment ->
-            navController.setGraph(R.navigation.nav_graph)
+            navController.setGraph(R.navigation.authentication_nav_graph)
 
             // Make the NavController available via the findNavController() APIs
             Navigation.setViewNavController(fragment.requireView(), navController)

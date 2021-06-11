@@ -9,7 +9,7 @@
     android:background="@color/deep_sky_blue"
     android:fillViewport="true"
     android:orientation="vertical"
-    tools:context=".fragments.LoginScreenFragment">
+    tools:context=".fragments.authentication.LoginScreenFragment">
 
     <LinearLayout
         android:layout_width="match_parent"

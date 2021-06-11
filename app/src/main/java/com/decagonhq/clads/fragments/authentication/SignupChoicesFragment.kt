@@ -1,4 +1,4 @@
-package com.decagonhq.clads.fragments
+package com.decagonhq.clads.fragments.authentication
 
 import android.content.Intent
 import android.graphics.Color
@@ -17,6 +17,7 @@ import androidx.navigation.NavDirections
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import com.decagonhq.clads.R
+import com.decagonhq.clads.activities.DashboardActivity
 import com.decagonhq.clads.databinding.FragmentSignupChoicesBinding
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
@@ -46,7 +47,6 @@ class SignupChoicesFragment : Fragment() {
 
         binding.fragmentSignupChoicesTextviewHaveAccount.setOnClickListener {
         }
-
         binding.fragmentSignupChoicesButtonWithEmail.apply {
             setOnClickListener {
                 findNavController().navigate(R.id.action_signupChoicesFragment_to_signupEmailFragment)
@@ -131,7 +131,7 @@ class SignupChoicesFragment : Fragment() {
     private fun updateUi(email: String) {
         val userEmail = email
         val action =
-            SignupChoicesFragmentDirections.actionSignupChoicesFragmentToSignupEmailFragment(userEmail)
+            SignupChoicesFragmentDirections.actionSignupChoicesFragmentToSignupEmailFragment()
         moveTo(action)
     }
 

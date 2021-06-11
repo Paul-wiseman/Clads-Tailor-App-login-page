@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profile_management_nav_graph"
+    app:startDestination="@id/clientsListFragment">
+
+    <activity
+        android:id="@+id/dashboard_activity"
+        android:name="com.decagonhq.clads.activities.DashboardActivity"
+        android:label="activity_dashboard"
+        tools:layout="@layout/activity_dashboard" />
+
+    <fragment
+        android:id="@+id/dashboardhomeFragment"
+        android:name="com.decagonhq.clads.fragments.DashboardHomeFragment"
+        android:label="fragment_dashboard_home"
+        tools:layout="@layout/fragment_dashboard_home" >
+        <action
+            android:id="@+id/action_dashboardhomeFragment_to_clientsListFragment"
+            app:destination="@id/clientsListFragment" />
+        <action
+            android:id="@+id/action_dashboardhomeFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
+        <action
+            android:id="@+id/action_dashboardhomeFragment_to_dashboardMediaFragment"
+            app:destination="@id/dashboardMediaFragment" />
+        <action
+            android:id="@+id/action_dashboardhomeFragment_to_dashboardMessagesFragment"
+            app:destination="@id/dashboardMessagesFragment" />
+        <action
+            android:id="@+id/action_dashboardhomeFragment_to_suscriptionFragment"
+            app:destination="@id/suscriptionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dashboardMessagesFragment"
+        android:name="com.decagonhq.clads.fragments.profilemanagement.DashboardMessagesFragment"
+        android:label="Messages"
+        tools:layout="@layout/fragment_dashboard_messages" >
+        <action
+            android:id="@+id/action_dashboardMessagesFragment_to_dashboardMediaFragment"
+            app:destination="@id/dashboardMediaFragment" />
+        <action
+            android:id="@+id/action_dashboardMessagesFragment_to_dashboardhomeFragment"
+            app:destination="@id/dashboardhomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dashboardMediaFragment"
+        android:name="com.decagonhq.clads.fragments.profilemanagement.DashboardMediaFragment"
+        android:label="Media"
+        tools:layout="@layout/fragment_dashboard_media" >
+        <action
+            android:id="@+id/action_dashboardMediaFragment_to_dashboardhomeFragment"
+            app:destination="@id/dashboardhomeFragment" />
+        <action
+            android:id="@+id/action_dashboardMediaFragment_to_dashboardMessagesFragment"
+            app:destination="@id/dashboardMessagesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.decagonhq.clads.fragments.profilemanagement.EditProfileFragment"
+        android:label="Edit Profile"
+        tools:layout="@layout/fragment_edit_profile" />
+    <fragment
+        android:id="@+id/clientsListFragment"
+        android:name="com.decagonhq.clads.fragments.profilemanagement.ClientsListFragment"
+        android:label="Clients"
+        tools:layout="@layout/fragment_clients_list" >
+        <action
+            android:id="@+id/action_clientsListFragment_to_addClientFragment"
+            app:destination="@id/addClientFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addClientFragment"
+        android:name="com.decagonhq.clads.fragments.profilemanagement.AddClientFragment"
+        android:label="Add Client"
+        tools:layout="@layout/fragment_add_client" >
+        <action
+            android:id="@+id/action_addClientFragment_to_addDeliveryAddressFragment"
+            app:destination="@id/addDeliveryAddressFragment" />
+        <action
+            android:id="@+id/action_addClientFragment_to_addMeasurementFragment"
+            app:destination="@id/addMeasurementFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/suscriptionFragment"
+        android:name="com.decagonhq.clads.fragments.profilemanagement.SuscriptionFragment"
+        android:label="Subscription"
+        tools:layout="@layout/fragment_suscription" />
+    <fragment
+        android:id="@+id/addMeasurementFragment"
+        android:name="com.decagonhq.clads.fragments.profilemanagement.AddMeasurementFragment"
+        android:label="Add Measurement"
+        tools:layout="@layout/fragment_add_measurement" />
+    <fragment
+        android:id="@+id/addDeliveryAddressFragment"
+        android:name="com.decagonhq.clads.fragments.profilemanagement.AddDeliveryAddressFragment"
+        android:label="Add Address"
+        tools:layout="@layout/fragment_add_delivery_address" />
+</navigation>

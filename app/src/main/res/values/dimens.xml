@@ -101,11 +101,17 @@
 
     <!-- Signup_email_layout_bias -->
     <dimen name="bias_0">0.0</dimen>
+    <dimen name="weight_sum_2">2</dimen>
+    <dimen name="weight_sum_1">2</dimen>
     <dimen name="bias_0.49">0.49</dimen>
     <dimen name="bias_0.50">0.50</dimen>
     <dimen name="bias_0.70">0.70</dimen>
+    <dimen name="dimen_50">50dp</dimen>
 
     <!-- Reset password verification screen-->
     <dimen name="imageview_width_34dp">34dp</dimen>
+    <dimen name="margin_53dp">53dp</dimen>
+    <dimen name="marginTop_22dp">22dp</dimen>
+    <dimen name="cornerRadius_5dp">5dp</dimen>
 
 </resources>
